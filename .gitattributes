@@ -1,0 +1,2 @@
+lpp_gtfs filter=lfs diff=lfs merge=lfs -text
+lpp_gtfs/*.txt filter=lfs diff=lfs merge=lfs -text
