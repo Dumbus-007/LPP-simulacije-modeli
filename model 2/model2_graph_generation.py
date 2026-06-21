@@ -1,7 +1,7 @@
 import math
 import networkx as nx
 
-# funkcija za izračun razdalje
+# Vaša funkcija za izračun razdalje
 def haversine(lat1, lon1, lat2, lon2):
     """Calculates the distance in meters between two GPS coordinates."""
     R = 6371000  # Earth radius in meters
@@ -14,39 +14,56 @@ def haversine(lat1, lon1, lat2, lon2):
 # 1. Naložimo prvi model
 print("Nalagam prvi model...")
 G1 = nx.read_graphml("model 1/model1_frekvenca.graphml")
-
-# 2. Ustvarimo pomožni neusmerjen graf za iskanje bližnjih postaj
-pomozni_graf = nx.Graph()
 vsa_vozlisca = list(G1.nodes(data=True))
 
-# Dodamo vsa vozlišča v pomožni graf
-for node_id, _ in vsa_vozlisca:
-    pomozni_graf.add_node(node_id)
+# 2. Poiščemo vse dopustne pare za združevanje
+vsi_mozni_pari = []
 
-print("Iščem postajališča, ki so skupaj bližje kot 300 metrov...")
-# Primerjamo vsak par postaj med seboj
+print("Analiziram pare postajališč (iščem nesosednja in bližnja)...")
 for i in range(len(vsa_vozlisca)):
     id1, attrs1 = vsa_vozlisca[i]
-    # Opozorilo: GraphML včasih shrani številke kot nize, zato jih pretvorimo v float
     lat1, lon1 = float(attrs1['lat']), float(attrs1['lon'])
     
     for j in range(i + 1, len(vsa_vozlisca)):
         id2, attrs2 = vsa_vozlisca[j]
-        lat2, lon2 = float(attrs2['lat']), float(attrs2['lon'])
         
-        # Če je razdalja manjša od 300 metrov, ju povežemo v pomožnem grafu
-        if haversine(lat1, lon1, lat2, lon2) < 300:
-            pomozni_graf.add_edge(id1, id2)
+        # POGOJ 1: Vozlišči ne smeta biti sosednji v G1 (v nobeni smeri)
+        if G1.has_edge(id1, id2) or G1.has_edge(id2, id1):
+            continue
+            
+        lat2, lon2 = float(attrs2['lat']), float(attrs2['lon'])
+        razdalja = haversine(lat1, lon1, lat2, lon2)
+        
+        # POGOJ 2: Razdalja mora biti manjša od 300 metrov
+        if razdalja < 300:
+            vsi_mozni_pari.append((razdalja, id1, id2))
 
-# Poiščemo skupine (sklepišča) postaj, ki spadajo skupaj
-skupine_postaj = list(nx.connected_components(pomozni_graf))
+# Sortiramo pare po razdalji naraščajoče (najbližji imajo prednost)
+vsi_mozni_pari.sort(key=lambda x: x[0])
 
-# 3. Izgradnja novega grafa G2 z mega-vozlišči
+# 3. Izbiranje parov brez kaskadnega združevanja
+uporabljene_postaje = set()
+končne_skupine = []
+
+print("Izvajam kontrolirano združevanje (največ 2 postaji skupaj)...")
+for razdalja, id1, id2 in vsi_mozni_pari:
+    # Če nobena od dveh postaj še ni bila združena, tvorita novo mega-vozlišče
+    if id1 not in uporabljene_postaje and id2 not in uporabljene_postaje:
+        končne_skupine.append([id1, id2])
+        uporabljene_postaje.add(id1)
+        uporabljene_postaje.add(id2)
+
+# Vse preostale postaje, ki niso našle nesosednjega para znotraj 300m, ostanejo same
+for id_postaje, _ in vsa_vozlisca:
+    if id_postaje not in uporabljene_postaje:
+        končne_skupine.append([id_postaje])
+
+# 4. Izgradnja novega usmerjenega grafa G2
 G2 = nx.DiGraph()
-preslikava_idjev = {} # Slovar, ki nam bo povedal: stari_id -> novi_mega_id
+preslikava_idjev = {}
 
-print("Ustvarjam združena mega-vozlišča...")
-for index, skupina in enumerate(skupine_postaj):
+print("Gradim končni graf G2...")
+for index, skupina in enumerate(končne_skupine):
     mega_id = f"mega_{index}"
     
     Zbrana_imena = []
@@ -58,39 +75,35 @@ for index, skupina in enumerate(skupine_postaj):
         Zbrana_imena.append(G1.nodes[star_id]['name'])
         vsi_lat.append(float(G1.nodes[star_id]['lat']))
         vsi_lon.append(float(G1.nodes[star_id]['lon']))
+        
+    # Združevanje imen (npr. Ajdovščina/Pošta)
+    unikatna_imena = sorted(list(set(Zbrana_imena)))
+    novo_ime = "/".join(unikatna_imena)
     
-    # Odstranimo duplikate imen, jih uredimo in združimo s poševnico
-    unikates_imena = sorted(list(set(Zbrana_imena)))
-    novo_ime = "/".join(unikates_imena)
-    
-    # Za lokacijo mega-vozlišča vzamemo povprečje vseh udeleženih koordinat
     povprecen_lat = sum(vsi_lat) / len(vsi_lat)
     povprecen_lon = sum(vsi_lon) / len(vsi_lon)
     
-    # Dodamo novo vozlišče v Graf 2
     G2.add_node(mega_id, name=novo_ime, lat=povprecen_lat, lon=povprecen_lon)
 
-# 4. Preslikava in združevanje povezav ter uteži
-print("Združujem povezave in seštevam uteži...")
+# 5. Preslikava povezav in seštevanje uteži
 for u, v, data in G1.edges(data=True):
     novi_u = preslikava_idjev[u]
     novi_v = preslikava_idjev[v]
     utez = data['weight']
     
-    # Če povezava ne vodi znotraj istega mega-vozlišča (s tem se izognemo zankam na isti postaji)
     if novi_u != novi_v:
         if G2.has_edge(novi_u, novi_v):
             G2[novi_u][novi_v]['weight'] += utez
         else:
             G2.add_edge(novi_u, novi_v, weight=utez)
 
-# Poročilo o uspešnosti združevanja
-print("\n--- STATISTIKA MODELA 2 ---")
-print(f"Prvotno število vozlišč (G1): {G1.number_of_nodes()}")
-print(f"Novo število mega-vozlišč (G2): {G2.number_of_nodes()}")
-print(f"Prvotno število povezav (G1): {G1.number_of_edges()}")
-print(f"Novo število povezav (G2): {G2.number_of_edges()}")
+# Izpis končne statistike
+st_zdruzenih = sum(1 for s in končne_skupine if len(s) == 2)
+print("\n--- STATISTIKA STROGEGA ZDRUŽEVANJA ---")
+print(f"Skupno število novih vozlišč v G2: {G2.number_of_nodes()}")
+print(f"Število uspešno združenih parov (velikosti 2): {st_zdruzenih}")
+print(f"Število povezav v G2: {G2.number_of_edges()}")
 
-# 5. Shranjevanje modela 2
+# 6. Shranjevanje modela 2
 nx.write_graphml(G2, "model 2/model2_zdruzene_postaje.graphml")
-print("\nModel 2 uspešno shranjen kot 'model2_zdruzene_postaje.graphml'.")
+print("\nModel 2 uspešno posodobljen in shranjen.")

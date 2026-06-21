@@ -3,8 +3,8 @@ import random
 import pandas as pd
 
 # --- KONFIGURACIJA SIMULACIJE ---
-GRAF_PATH = "model 1/model1_frekvenca.graphml"
-OUTPUT_CSV = "model 1/simulacija_srecanja_rezultati.csv"
+GRAF_PATH = "model 2/model2_zdruzene_postaje.graphml"
+OUTPUT_CSV = "model 2/simulacija_srecanja_rezultati.csv"
 STEVILO_SIMULACIJ = 1000  # Kolikokrat želimo ponoviti celoten poskus
 MAKSIMALNO_KORAKOV = 5000  # Zgornja meja korakov, da ne ostanemo v neskončni zanki
 # --------------------------------
