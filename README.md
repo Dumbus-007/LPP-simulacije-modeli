@@ -9,7 +9,7 @@
 
 ## Model 1: 
 
-### Ontologija grafa
+### Lastnosti grafa
 
 **Vozlišča**: 905 postajališč LPP
 
@@ -27,7 +27,7 @@
 
 ## Model 2: 
 
-### Ontologija grafa
+### Lastnosti grafa
 
 **Vozlišča**: 494 postajališč, od tega 411 "dvojnih" postajališč (vozlišča modela 1 so združena v pare npr.: Konzorcij/Pošta)
  - pravila združevanja: 
