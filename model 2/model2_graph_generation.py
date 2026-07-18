@@ -1,7 +1,7 @@
 import math
 import networkx as nx
 
-# Vaša funkcija za izračun razdalje
+# funkcija za izračun razdalje
 def haversine(lat1, lon1, lat2, lon2):
     """Calculates the distance in meters between two GPS coordinates."""
     R = 6371000  # Earth radius in meters
@@ -36,17 +36,19 @@ for i in range(len(vsa_vozlisca)):
         
         # POGOJ 2: Razdalja mora biti manjša od 300 metrov
         if razdalja < 300:
-            vsi_mozni_pari.append((razdalja, id1, id2))
+            # Če imata vozlišči enako ime, damo prioriteto 0, sicer 1
+            prioriteta_ime = 0 if attrs1['name'] == attrs2['name'] else 1
+            vsi_mozni_pari.append((prioriteta_ime, razdalja, id1, id2))
 
-# Sortiramo pare po razdalji naraščajoče (najbližji imajo prednost)
-vsi_mozni_pari.sort(key=lambda x: x[0])
+# Sortiramo pare: najprej po prioriteti imena (0 ima prednost pred 1), nato po razdalji
+vsi_mozni_pari.sort(key=lambda x: (x[0], x[1]))
 
 # 3. Izbiranje parov brez kaskadnega združevanja
 uporabljene_postaje = set()
 končne_skupine = []
 
 print("Izvajam kontrolirano združevanje (največ 2 postaji skupaj)...")
-for razdalja, id1, id2 in vsi_mozni_pari:
+for prioriteta_ime, razdalja, id1, id2 in vsi_mozni_pari:
     # Če nobena od dveh postaj še ni bila združena, tvorita novo mega-vozlišče
     if id1 not in uporabljene_postaje and id2 not in uporabljene_postaje:
         končne_skupine.append([id1, id2])
