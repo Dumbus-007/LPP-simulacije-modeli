@@ -3,16 +3,17 @@ import random
 import pandas as pd
 
 # --- KONFIGURACIJA SIMULACIJE ---
-GRAF_PATH = "model 2/model2_zdruzene_postaje.graphml"
-OUTPUT_CSV = "model 2/simulacija_srecanja_rezultati.csv"
+GRAF_PATH = "model 1.5/model1.5_zreduciran.graphml"
+OUTPUT_CSV = "model 1.5/simulacija_srecanja_rezultati.csv"
 STEVILO_SIMULACIJ = 1000  # Kolikokrat želimo ponoviti celoten poskus
-MAKSIMALNO_KORAKOV = 5000  # Zgornja meja korakov, da ne ostanemo v neskončni zanki
 # --------------------------------
 
 # 1. Naložimo vnaprej pripravljen graf
 print("Nalagam graf...")
 G1 = nx.read_graphml(GRAF_PATH)
 vsa_vozlisca = list(G1.nodes())
+
+MAKSIMALNO_KORAKOV = len(vsa_vozlisca) * 5  # Zgornja meja korakov, da ne ostanemo v neskončni zanki
 
 # Funkcija za en korak naključnega sprehoda glede na uteži
 def naredi_utezen_korak(graf, trenutno_vozlisce):
@@ -36,9 +37,10 @@ print(f"Začenjam s simulacijo ({STEVILO_SIMULACIJ} ponovitev)...")
 
 for i in range(STEVILO_SIMULACIJ):
     # Naključno izberemo začetni postaji za oba sprehajalca
-    id_a = random.choice(vsa_vozlisca)
-    id_b = random.choice(vsa_vozlisca)
+    id_a = random.choice(vsa_vozlisca) # ali fiksni začetni točki: FMF - Jadranska: Model 1: id_a = 889e3719-7d29-4888-b690-5a1531d2930e, Model 2: id_a = mega_384
+    id_b = random.choice(vsa_vozlisca) # MF - Klinicni center: Model 1: id_b = 3429cda2-6047-453c-bf54-952dfa6674c0 , Model 2: id_b = mega_122
     
+
     # Shranimo začetni poziciji za končno poročilo
     zacetna_a = id_a
     zacetna_b = id_b
