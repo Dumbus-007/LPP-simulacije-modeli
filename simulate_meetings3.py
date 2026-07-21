@@ -5,8 +5,8 @@ import numpy as np
 
 # --- KONFIGURACIJA SIMULACIJE ---
 GRAF_PATH = "model 3/model3_cakanje.graphml"
-OUTPUT_CSV = "model 3/simulacija_srecanja_rezultati.csv"
-STEVILO_SIMULACIJ = 1000  # Število ponovitev poskusa
+OUTPUT_CSV = "model 3/fixed_start_sim_rez.csv"
+STEVILO_SIMULACIJ = 5000  # Število ponovitev poskusa
 # --------------------------------
 
 print("Nalagam Model 3...")
@@ -37,9 +37,11 @@ rezultati_simulacij = []
 print(f"Začenjam s simulacijo na Modelu 3 ({STEVILO_SIMULACIJ} ponovitev)...")
 
 for i in range(STEVILO_SIMULACIJ):
-    id_a = random.choice(vsa_vozlisca)
-    id_b = random.choice(vsa_vozlisca)
-    
+    #id_a = random.choice(vsa_vozlisca)
+    #id_b = random.choice(vsa_vozlisca)
+    id_a = "889e3719-7d29-4888-b690-5a1531d2930e" #Jadranska
+    id_b = "3429cda2-6047-453c-bf54-952dfa6674c0" #Klinicni center
+
     zacetna_a = id_a
     zacetna_b = id_b
     
@@ -83,6 +85,6 @@ if not uspesna_srecanja.empty:
     print(f"Povprečno število korakov do srečanja: {uspesna_srecanja['stevilo_korakov'].mean():.1f}")
     
     top_postaje = uspesna_srecanja["srecanje_ime"].value_counts().head(5)
-    print("\n[TOP 5 POSTAJALIŠČ SREČANJA]")
+    print("\n#### TOP 5 POSTAJALIŠČ SREČANJA")
     for postaja, st_srecanj in top_postaje.items():
         print(f" - {postaja}: {st_srecanj}x")

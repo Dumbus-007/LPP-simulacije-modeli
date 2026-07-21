@@ -3,9 +3,9 @@ import random
 import pandas as pd
 
 # --- KONFIGURACIJA SIMULACIJE ---
-GRAF_PATH = "model 1.5/model1.5_zreduciran.graphml"
-OUTPUT_CSV = "model 1.5/simulacija_srecanja_rezultati.csv"
-STEVILO_SIMULACIJ = 1000  # Kolikokrat želimo ponoviti celoten poskus
+GRAF_PATH = "model 2/model2_zdruzene_postaje.graphml"
+OUTPUT_CSV = "model 2/fixed_start_sim_rez.csv"
+STEVILO_SIMULACIJ = 5000  # Kolikokrat želimo ponoviti celoten poskus
 # --------------------------------
 
 # 1. Naložimo vnaprej pripravljen graf
@@ -37,9 +37,17 @@ print(f"Začenjam s simulacijo ({STEVILO_SIMULACIJ} ponovitev)...")
 
 for i in range(STEVILO_SIMULACIJ):
     # Naključno izberemo začetni postaji za oba sprehajalca
-    id_a = random.choice(vsa_vozlisca) # ali fiksni začetni točki: FMF - Jadranska: Model 1: id_a = 889e3719-7d29-4888-b690-5a1531d2930e, Model 2: id_a = mega_384
-    id_b = random.choice(vsa_vozlisca) # MF - Klinicni center: Model 1: id_b = 3429cda2-6047-453c-bf54-952dfa6674c0 , Model 2: id_b = mega_122
+    #id_a = random.choice(vsa_vozlisca) # ali fiksni začetni točki: FMF - Jadranska: Model 1: id_a = 889e3719-7d29-4888-b690-5a1531d2930e, Model 2: id_a = mega_384
+    #id_b = random.choice(vsa_vozlisca) # MF - Klinicni center: Model 1: id_b = 3429cda2-6047-453c-bf54-952dfa6674c0 , Model 2: id_b = mega_122
     
+    #id_a = "889e3719-7d29-4888-b690-5a1531d2930e" #Jadranska
+    #id_a = "b59656a4-b6e7-4b87-977c-078c59088a50" #Hajdrihova
+    #id_b = "3429cda2-6047-453c-bf54-952dfa6674c0" #Klinicni center
+    #id_b = "aa42017d-812a-4175-bc9b-0fec03b18931" #Ambrozev trg
+
+    #fixed za model 2
+    id_a = "mega_384" #Jadranska
+    id_b = "mega_122" #Klinicni center
 
     # Shranimo začetni poziciji za končno poročilo
     zacetna_a = id_a
@@ -90,6 +98,6 @@ if not uspesna_srecanja.empty:
     
     # Izračun najbolj priljubljenih točk srečanja
     top_postaje = uspesna_srecanja["srecanje_ime"].value_counts().head(5)
-    print("\n[TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA]")
+    print("\n#### TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA")
     for postaja, st_srecanj in top_postaje.items():
         print(f" - {postaja}: {st_srecanj}x")

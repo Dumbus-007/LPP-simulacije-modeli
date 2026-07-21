@@ -5,7 +5,7 @@ import os
 
 # --- KONFIGURACIJA ---
 STEVILO_VOZLISC = 20
-STEVILO_SIMULACIJ = 500
+STEVILO_SIMULACIJ = 1000
 OUTPUT_CSV = "sinteticni primeri/sinteticni_grafi_rezultati.csv"  # Pot do izhodne datoteke
 # ---------------------
 
@@ -31,7 +31,7 @@ def naredi_korak_model3(graf, trenutno_vozlisce):
 
 def zazeni_simulacijo(graf, ime_topologije):
     vsa_vozlisca = list(graf.nodes())
-    maks_korakov = len(vsa_vozlisca) * 5
+    maks_korakov = len(vsa_vozlisca) * 10
     srečanja = 0
     skupni_koraki = 0
     
