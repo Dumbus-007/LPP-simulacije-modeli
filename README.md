@@ -48,27 +48,27 @@ Povprečno število korakov do srečanja: 1331.4
 
 ### Rezultati 5000 simulacij
 
-Uspešnost srečanj: 93.60%
-Povprečno število korakov do srečanja: 161.3 (zgornja meja: 660)
+Uspešnost srečanj: 93.24%
+Povprečno število korakov do srečanja: 156.6 (zgornja meja: 660)
 
 #### TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA
- - Bavarski dvor: 1147x
- - Drama: 506x
- - Ajdovščina: 426x
- - Pošta: 275x
- - Razstavišče: 248x
+ - Bavarski dvor: 1204x
+ - Drama: 356x
+ - Ajdovščina: 319x
+ - Pošta: 276x
+ - Razstavišče: 254x
 
 ### Rezultati 5000 simulacij z začetkom na Hajdrihovi (proti centru) in Ambroževem trgu (proti centru)
 
-Uspešnost srečanj: 97.30%
-Povprečno število korakov do srečanja: 169.7 (zg. meja: 660)
+Uspešnost srečanj: 97.72%
+Povprečno število korakov do srečanja: 163.5 (zg. meja: 660)
 
 #### TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA
- - Bavarski dvor: 1202x
- - Drama: 507x
- - Ajdovščina: 483x
- - Pošta: 274x
- - Razstavišče: 256x
+ - Bavarski dvor: 1272x
+ - Drama: 368x
+ - Ajdovščina: 340x
+ - Pošta: 289x
+ - Razstavišče: 280x
 
 
 ## Model 2: 
