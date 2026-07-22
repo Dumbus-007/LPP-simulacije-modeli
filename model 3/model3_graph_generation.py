@@ -1,7 +1,5 @@
 import math
 import os
-import csv
-from datetime import datetime
 from collections import defaultdict
 import networkx as nx
 
@@ -14,102 +12,57 @@ def haversine(lat1, lon1, lat2, lon2):
     a = math.sin(dphi / 2)**2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2)**2
     return 2 * R * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
-def time_to_seconds(time_str):
-    """Pretvori niz HH:MM:SS v sekunde."""
-    h, m, s = map(int, time_str.split(':'))
-    return h * 3600 + m * 60 + s
-
 def generate_model_3():
-    # 1. Naložimo osnovo - Model 1
+    # 1. Naložimo Model 1
     print("Nalagam Model 1...")
     G1 = nx.read_graphml("model 1/model1_frekvenca.graphml")
     
-    # Ustvarimo nov prazno usmerjen graf z istimi vozlišči
+    # Ustvarimo nov usmerjen graf z istimi vozlišči in njihovimi atributi
     G3 = nx.DiGraph()
     G3.add_nodes_from(G1.nodes(data=True))
     
-    # Poti do GTFS podatkov
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    gtfs_dir = os.path.join(script_dir, "..", "lpp_gtfs")
+    # Konstante (vse v sekundah ali metrih)
+    SERVICE_WINDOW = 18 * 3600  # 18 ur = 64800 sekund
+    WALK_THRESHOLD = 300        # 300 metrov
+    WALK_SPEED = 1.4            # 1.4 m/s (pribl. 5 km/h)
     
-    SERVICE_WINDOW = 18 * 3600  # 18 ur v sekundah
-    WALK_THRESHOLD = 300        # metri
-    WALK_SPEED = 1.4            # m/s
+    # 2. Izračun čakalnih dob v SEKUNDAH neposredno iz uteži (frekvenc) Modela 1
+    print("Računam čakalne dobe iz frekvenc Modela 1...")
+    stop_outgoing_waits = defaultdict(list)
     
-    # 2. GTFS obdelava za izračun frekvenc (enako kot v tvoji datoteki)
-    print("Obdelujem GTFS podatke...")
-    weekday_services = set()
-    with open(os.path.join(gtfs_dir, "calendar_dates.txt"), "r", encoding="utf-8-sig") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            dt = datetime.strptime(row["date"], "%Y%m%d")
-            if dt.weekday() < 5:
-                weekday_services.add(row["service_id"])
-
-    valid_weekday_trips = set()
-    with open(os.path.join(gtfs_dir, "trips.txt"), "r", encoding="utf-8-sig") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            if row["service_id"] in weekday_services:
-                valid_weekday_trips.add(row["trip_id"])
-
-    # Preštejemo vožnje med postajališči
-    edge_counts = defaultdict(int)
-    current_trip = None
-    prev_stop = None
-    
-    with open(os.path.join(gtfs_dir, "stop_times.txt"), "r", encoding="utf-8-sig") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            trip_id = row["trip_id"]
-            if trip_id not in valid_weekday_trips:
-                continue
-            stop_id = row["stop_id"]
+    for u, v, data in G1.edges(data=True):
+        count = float(data.get('weight', 1.0))
+        if count <= 0:
+            count = 1.0
             
-            if trip_id == current_trip:
-                edge_counts[(prev_stop, stop_id)] += 1
-            
-            current_trip = trip_id
-            prev_stop = stop_id
-
-    # 3. Izračun povprečnega časa čakanja za vsako povezavo (v minutah)
-    # Shranjujemo si tudi čakalne dobe za vsako izhodno postajališče, da bomo kasneje izračunali WALK uteži
-    wait_penalties = {}  # (src, tgt) -> wait_in_minutes
-    stop_outgoing_waits = defaultdict(list)  # stop_id -> lista čakalnih dob v minutah
-    
-    print("Računam čakalne dobe za avtobusne povezave...")
-    for (src, tgt), count in edge_counts.items():
-        # Izračun v sekundah in pretvorba v minute
-        wait_penalty_min = (SERVICE_WINDOW / (2 * count)) / 60.0
-        wait_penalties[(src, tgt)] = wait_penalty_min
-        stop_outgoing_waits[src].append(wait_penalty_min)
+        # Čas čakanja v SEKUNDAH
+        wait_penalty_sec = SERVICE_WINDOW / (2.0 * count)
         
-    # Izračunamo povprečno čakanje na posameznem vozlišču "v katerokoli smer od tam"
-    node_avg_wait = {}
+        # BUS povezava v Modelu 3 (utež je čas čakanja v sekundah)
+        G3.add_edge(u, v, weight=round(wait_penalty_sec, 2), type="BUS")
+        
+        # Beležimo izhodne čakalne dobe za posamezno vozlišče
+        stop_outgoing_waits[u].append(wait_penalty_sec)
+
+    # 3. Izračun povprečnega časa čakanja v SEKUNDAH na vsakem vozlišču
+    node_avg_wait_sec = {}
     for node in G3.nodes():
         waits = stop_outgoing_waits.get(node, [])
         if waits:
-            node_avg_wait[node] = sum(waits) / len(waits)
+            node_avg_wait_sec[node] = sum(waits) / len(waits)
         else:
-            # Če postajališče nima izhodnih avtobusov (npr. končna postaja), 
-            # nastavimo privzeto kazen (npr. maksimalno čakanje, npr. 30 min ali 0, odvisno od logike)
-            node_avg_wait[node] = 30.0 
+            # Če vozlišče nima izhodnih avtobusov, damo privzeto kazen (npr. 30 minut = 1800 sekund)
+            node_avg_wait_sec[node] = 1800.0
 
-    # 4. Dodajanje BUS povezav v Model 3 (samo tiste, ki so obstajale v Modelu 1)
-    print("Dodajam BUS povezave v Model 3...")
-    for u, v in G1.edges():
-        # Če imamo podatek iz GTFS, vzamemo izračunan čas čakanja, sicer damo privzeto vrednost
-        teza = wait_penalties.get((u, v), 15.0) 
-        G3.add_edge(u, v, weight=round(teza, 2), type="BUS")
-
-    # 5. Dodajanje WALK povezav (< 300m)
+    # 4. Dodajanje WALK povezav (< 300m) z utežmi v SEKUNDAH
     print("Računam in dodajam peš povezave (WALK)...")
     nodes_list = list(G3.nodes(data=True))
     walk_edges_count = 0
     
     for i in range(len(nodes_list)):
         n1, data1 = nodes_list[i]
-        # Preverimo, če ima vozlišče shranjene GPS koordinate (predpostavljam atribute 'lat' in 'lon')
+        
+        # Pridobivanje GPS koordinat
         lat1 = data1.get('lat') or data1.get('stop_lat')
         lon1 = data1.get('lon') or data1.get('stop_lon')
         if lat1 is None or lon1 is None:
@@ -126,31 +79,31 @@ def generate_model_3():
                 
             lat2, lon2 = float(lat2), float(lon2)
             
-            # Hitro grobo preverjanje razdalje
+            # Hitri grobi filter razdalje
             if abs(lat1 - lat2) < 0.003 and abs(lon1 - lon2) < 0.005:
                 dist = haversine(lat1, lon1, lat2, lon2)
                 
                 if dist <= WALK_THRESHOLD:
-                    # Čas hoje v minutah
-                    walk_time_min = (dist / WALK_SPEED) / 60.0
+                    # Čas hoje v SEKUNDAH
+                    walk_time_sec = dist / WALK_SPEED
                     
-                    # Peš povezava od n1 do n2 (vključuje čakanje na n2)
-                    weight_1_to_2 = walk_time_min + node_avg_wait[n2]
+                    # Peš pot n1 -> n2 (hoja + čakanje na n2)
+                    weight_1_to_2 = walk_time_sec + node_avg_wait_sec[n2]
                     G3.add_edge(n1, n2, weight=round(weight_1_to_2, 2), type="WALK")
                     
-                    # Peš povezava od n2 do n1 (vključuje čakanje na n1)
-                    weight_2_to_1 = walk_time_min + node_avg_wait[n1]
+                    # Peš pot n2 -> n1 (hoja + čakanje na n1)
+                    weight_2_to_1 = walk_time_sec + node_avg_wait_sec[n1]
                     G3.add_edge(n2, n1, weight=round(weight_2_to_1, 2), type="WALK")
                     
                     walk_edges_count += 1
 
-    print(f"Dodano {walk_edges_count} peš povezav.")
+    print(f"Dodano {walk_edges_count * 2} usmerjenih peš povezav ({walk_edges_count} parov).")
     
-    # 6. Shranjevanje Modela 3
+    # 5. Shranjevanje Modela 3
     os.makedirs("model 3", exist_ok=True)
     output_path = "model 3/model3_cakanje.graphml"
     nx.write_graphml(G3, output_path)
-    print(f"Model 3 je uspešno shranjen v '{output_path}'.")
+    print(f"Model 3 je uspešno generiran in shranjen v '{output_path}'.")
 
 if __name__ == "__main__":
     generate_model_3()

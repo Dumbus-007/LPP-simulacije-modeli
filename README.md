@@ -119,28 +119,28 @@ Povprečno število korakov do srečanja: 522.1
 
 ### Rezultati 5000 simulacij z naključnima začetnima vozliščema
 
-- Uspešnost srečanj: 89.24%
-- Povprečno število korakov do srečanja: 856.0 (max korakov: $5 \cdot št. vozlišč = 4525$)
+- Uspešnost srečanj: 90.84%
+- Povprečno število korakov do srečanja: 609.6 (max korakov: $5 \cdot št. vozlišč = 4525$)
 
 #### TOP 5 POSTAJALIŠČ SREČANJA
- - Drama: 786x
- - Križanke: 230x
- - Ajdovščina: 224x
- - Konzorcij: 158x
- - Aškerčeva: 139x
+ - Drama: 664x
+ - Križanke: 559x
+ - Ajdovščina: 375x
+ - Aškerčeva: 318x
+ - Konzorcij: 262x
 
 
 ### Rezultati 5000 simulacij s fiksnima začetnima točkama (Jadranska, Klinični center)
 
-Uspešnost srečanj: 99.62%
-Povprečno število korakov do srečanja: 730.4
+Uspešnost srečanj: 100.00%
+Povprečno število korakov do srečanja: 438.2
 
 #### TOP 5 POSTAJALIŠČ SREČANJA
- - Drama: 1095x
- - Križanke: 288x
- - Ajdovščina: 232x
- - Konzorcij: 188x
- - Aškerčeva: 165x
+ - Drama: 820x
+ - Križanke: 684x
+ - Aškerčeva: 401x
+ - Ajdovščina: 383x
+ - Pošta: 345x
 
 ## Sintetični primeri
 

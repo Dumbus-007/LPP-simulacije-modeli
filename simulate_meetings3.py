@@ -1,3 +1,4 @@
+import time
 import networkx as nx
 import random
 import pandas as pd
@@ -35,6 +36,7 @@ def naredi_utezen_korak_model3(graf, trenutno_vozlisce):
 rezultati_simulacij = []
 
 print(f"Začenjam s simulacijo na Modelu 3 ({STEVILO_SIMULACIJ} ponovitev)...")
+start_time = time.perf_counter()
 
 for i in range(STEVILO_SIMULACIJ):
     #id_a = random.choice(vsa_vozlisca)
@@ -72,7 +74,9 @@ for i in range(STEVILO_SIMULACIJ):
 df_rezultati = pd.DataFrame(rezultati_simulacij)
 df_rezultati.to_csv(OUTPUT_CSV, index=False)
 
+end_time = time.perf_counter()
 print(f"Simulacija končana! Rezultati so shranjeni v '{OUTPUT_CSV}'.")
+print(f"Čas simulacije: {end_time - start_time:.2f} sekund")
 
 # --- STATISTIKA ---
 uspesna_srecanja = df_rezultati[df_rezultati["srecanje_id"] != "N/A"]
