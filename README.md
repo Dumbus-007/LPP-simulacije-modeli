@@ -16,27 +16,27 @@
 
 **Uteži usmerjenih povezav**: število avtobusov, ki med danima postajališčema vozijo v enem dnevu
 ### Rezultati 5000 simulacij z naključnima začetnima vozliščema
-- Uspešnost srečanj: 85.26%
-- Povprečno število korakov do srečanja: 1335.1 (zgornja meja: $5 \cdot št. vozlišč = 4525$ preden se simulacija prekine)
+- Uspešnost srečanj: 83.88%
+- Povprečno število korakov do srečanja: 1347.7 (zgornja meja: $5 \cdot št. vozlišč = 4525$ preden se simulacija prekine)
 
 #### TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA
- - Bavarski dvor: 999x
- - Drama: 444x
- - Ajdovščina: 416x
- - Razstavišče: 281x
- - Pošta: 246x
+ - Bavarski dvor: 1106x
+ - Drama: 333x
+ - Ajdovščina: 283x
+ - Razstavišče: 250x
+ - Pošta: 216x
 
 ### Rezultati 5000 simulacij z začetkom na **FMF** - Jadranski (proti centru) in **MF** - Kliničnem centru (proti centru)
 
-Uspešnost srečanj: 94.30%
-Povprečno število korakov do srečanja: 1311.3
+Uspešnost srečanj: 92.82%
+Povprečno število korakov do srečanja: 1331.4
 
 #### TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA
- - Bavarski dvor: 1135x
- - Drama: 497x
- - Ajdovščina: 432x
- - Razstavišče: 327x
- - Pošta: 269x
+ - Bavarski dvor: 1175x
+ - Drama: 370x
+ - Ajdovščina: 329x
+ - Razstavišče: 276x
+ - Pošta: 228x
 
 ## Model 1.5:
 
