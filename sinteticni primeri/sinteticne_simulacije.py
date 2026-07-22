@@ -1,37 +1,24 @@
 import networkx as nx
 import random
 import pandas as pd
-import os
 
 # --- KONFIGURACIJA ---
-STEVILO_VOZLISC = 20
+STEVILO_VOZLISC = 6
 STEVILO_SIMULACIJ = 1000
-OUTPUT_CSV = "sinteticni primeri/sinteticni_grafi_rezultati.csv"  # Pot do izhodne datoteke
+OUTPUT_CSV = "sinteticni primeri/sinteticni_grafi_rezultati.csv"
 # ---------------------
 
-def pripravi_graf(G_undirected):
-    """Pretvori neusmerjen graf v usmerjenega in doda časovne uteži."""
-    G_directed = nx.DiGraph()
-    G_directed.add_nodes_from(G_undirected.nodes(data=True))
-    
-    # Vsako neusmerjeno povezavo pretvorimo v dve usmerjeni s časom 1.0 min
-    for u, v in G_undirected.edges():
-        G_directed.add_edge(u, v, weight=1.0)
-        G_directed.add_edge(v, u, weight=1.0)
-    return G_directed
-
-def naredi_korak_model3(graf, trenutno_vozlisce):
+# 1. Popolnoma enostaven korak (brez uteži, brez računanja verjetnosti)
+def naredi_enostaven_korak(graf, trenutno_vozlisce):
     sosedje = list(graf.successors(trenutno_vozlisce))
     if not sosedje:
         return trenutno_vozlisce
-    casi = [graf[trenutno_vozlisce][sosed]['weight'] for sosed in sosedje]
-    # Manjši čas -> večja utež za izbiro
-    inverzne_utezi = [1.0 / (c + 0.01) for c in casi]
-    return random.choices(sosedje, weights=inverzne_utezi, k=1)[0]
+    return random.choice(sosedje) # Enakomerna verjetnost za vse sosede
 
-def zazeni_simulacijo(graf, ime_topologije):
+# 2. Simulacijska zanka
+def zaženi_simulacijo(graf):
     vsa_vozlisca = list(graf.nodes())
-    maks_korakov = len(vsa_vozlisca) * 10
+    maks_korakov = len(vsa_vozlisca) * 5
     srečanja = 0
     skupni_koraki = 0
     
@@ -42,8 +29,8 @@ def zazeni_simulacijo(graf, ime_topologije):
         
         while koraki < maks_korakov:
             koraki += 1
-            id_a = naredi_korak_model3(graf, id_a)
-            id_b = naredi_korak_model3(graf, id_b)
+            id_a = naredi_enostaven_korak(graf, id_a)
+            id_b = naredi_enostaven_korak(graf, id_b)
             
             if id_a == id_b:
                 srečanja += 1
@@ -54,44 +41,37 @@ def zazeni_simulacijo(graf, ime_topologije):
     povprecni_koraki = (skupni_koraki / srečanja) if srečanja > 0 else maks_korakov
     return procent, povprecni_koraki
 
-# --- GENERIRANJE TOPOLOGIJ (vse na 20 vozliščih) ---
-grafi = {}
+# 3. DIRECTNO GENERIRANJE USMERJENIH GRAFOV (.to_directed())
+grafi = {
+    "Path": nx.path_graph(STEVILO_VOZLISC).to_directed(),
+    "Ring": nx.cycle_graph(STEVILO_VOZLISC).to_directed(),
+    "Star": nx.star_graph(STEVILO_VOZLISC - 1).to_directed(),
+    "Lattice": nx.convert_node_labels_to_integers(nx.grid_2d_graph(3, 2)).to_directed(),
+    "Lollipop": nx.lollipop_graph(m=4, n=2).to_directed(),
+    "Tadpole": nx.tadpole_graph(m=4, n=2).to_directed(),
+}
 
-grafi["Path"] = nx.path_graph(STEVILO_VOZLISC)
-grafi["Ring"] = nx.cycle_graph(STEVILO_VOZLISC)
-grafi["Star"] = nx.star_graph(STEVILO_VOZLISC - 1)
+# Za Sun graf (Cikel 3 + 3 zunanjih krakov)
+G_sun = nx.cycle_graph(3)
+for n in range(3):
+    G_sun.add_edge(n, n + 3)
+grafi["Sun"] = G_sun.to_directed()
 
-grafi["Lattice"] = nx.grid_2d_graph(4, 5)
-grafi["Lattice"] = nx.convert_node_labels_to_integers(grafi["Lattice"])
-
-grafi["Lollipop"] = nx.lollipop_graph(m=10, n=10)
-grafi["Tadpole"] = nx.tadpole_graph(m=10, n=10)
-
-G_sun = nx.cycle_graph(10)
-for n in list(G_sun.nodes()):
-    G_sun.add_edge(n, n + 10)
-grafi["Sun"] = G_sun
-
-# --- POGANJANJE SIMULACIJ ---
+# 4. Poganjanje in shranjevanje
 rezultati = []
 
-print("Začenjam simulacije na sintetičnih grafih...\n")
-for ime, G_undir in grafi.items():
-    G_dir = pripravi_graf(G_undir)
-    uspeh, koraki = zazeni_simulacijo(G_dir, ime)
+print("Začenjam poenostavljene simulacije...\n")
+for ime, G_dir in grafi.items():
+    uspeh, koraki = zaženi_simulacijo(G_dir)
     rezultati.append({
         "Topologija": ime, 
         "Uspešnost srečanj (%)": round(uspeh, 2), 
         "Povprečni koraki": round(koraki, 1)
     })
 
-# --- SHRANJEVANJE V DATOTEKO ---
+# Prikaz in zapis v CSV
 df = pd.DataFrame(rezultati)
-
-# Izpis v konzolo za hiter pregled
 print(df.to_string(index=False))
-print("\n" + "-"*40)
 
-# Zapis v CSV datoteko
 df.to_csv(OUTPUT_CSV, index=False, encoding="utf-8")
-print(f"Tabela rezultatov je uspešno shranjena v datoteko: '{OUTPUT_CSV}'")
+print(f"\nRezultati so shranjeni v '{OUTPUT_CSV}'.")
