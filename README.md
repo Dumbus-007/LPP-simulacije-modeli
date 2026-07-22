@@ -85,27 +85,27 @@ Povprečno število korakov do srečanja: 163.5 (zg. meja: 660)
 
 ### Rezultati 5000 simulacij
 
-- Uspešnost srečanj: 86.26%
-- Povprečno število korakov do srečanja: 642.5 (zgornja meja: 2460)
+- Uspešnost srečanj: 85.72%
+- Povprečno število korakov do srečanja: 674.1 (zgornja meja: 2460)
 
 #### TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA
-- Bavarski dvor: 554x
- - Ajdovščina: 397x
- - Konzorcij/Pošta: 308x
- - Drama: 231x
- - Razstavišče: 190x
+ - Bavarski dvor: 638x
+ - Ajdovščina: 331x
+ - Konzorcij/Pošta: 290x
+ - Razstavišče: 238x
+ - Drama: 191x
 
 ### Rezultati 5000 simulacij s fiksnima začetnima točkama (Jadranska, Klinični center)
 
-Uspešnost srečanj: 98.38%
-Povprečno število korakov do srečanja: 522.1
+Uspešnost srečanj: 98.16%
+Povprečno število korakov do srečanja: 516.9
 
 #### TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA
- - Bavarski dvor: 611x
- - Ajdovščina: 506x
- - Drama: 393x
- - Konzorcij/Pošta: 379x
- - Razstavišče: 235x
+ - Bavarski dvor: 800x
+ - Ajdovščina: 479x
+ - Konzorcij/Pošta: 353x
+ - Drama: 340x
+ - Razstavišče: 260x
 
 ## Model 3
 
