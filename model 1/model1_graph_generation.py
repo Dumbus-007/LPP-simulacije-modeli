@@ -1,69 +1,62 @@
 import pandas as pd
 import networkx as nx
+from datetime import datetime
 
 # 1. Naložimo vsa postajališča (Vozlišča)
-# Predpostavljamo, da je mapa 'lpp_gtfs' v istem imeniku
 stops_df = pd.read_csv('lpp_gtfs/stops.txt')
-
-# 2. Za pravilno povezovanje postajališč potrebujemo zaporedje (stop_times.txt)
-# stop_times nam pove, kateri trip (vožnja) obišče katero postajo in kdaj
 stop_times_df = pd.read_csv('lpp_gtfs/stop_times.txt')
 trips_df = pd.read_csv('lpp_gtfs/trips.txt')
+calendar_dates_df = pd.read_csv('lpp_gtfs/calendar_dates.txt')
 
-# 3. Naložimo vašo datoteko s številom voženj za posamezne linije
-# Predpostavljam, da ima stolpca: 'route_id' (ali 'trip_id') in 'num_trips' (število voženj na dan)
-all_lines_trips = pd.read_csv('model 1/all_lines_trips.csv')
+print("Podatki uspešno naloženi. Filtriram delovne dni...")
 
-print("Podatki uspešno naloženi. Začenjam z gradnjo grafa...")
+# 2. Najdemo le tiste service_id, ki veljajo za delovne dni (pon-pet)
+weekday_services = set()
+for _, row in calendar_dates_df.iterrows():
+    dt = datetime.strptime(str(row["date"]), "%Y%m%d")
+    if dt.weekday() < 5:  # 0=Ponedeljek, 4=Petek
+        weekday_services.add(row["service_id"])
 
-# Ustvarimo usmerjen graf
+# Najdemo vse veljavne delovne vožnje (trips)
+valid_weekday_trips = set(trips_df[trips_df['service_id'].isin(weekday_services)]['trip_id'])
+
+# 3. Ustvarimo usmerjen graf
 G1 = nx.DiGraph()
 
-# Dodamo vozlišča z dodatnimi atributi (ime, koordinati, če jih potrebujete)
 for _, row in stops_df.iterrows():
     G1.add_node(
-        row['stop_id'], 
+        str(row['stop_id']), 
         name=row['stop_name'], 
-        lat=row['stop_lat'], 
-        lon=row['stop_lon']
+        lat=float(row['stop_lat']), 
+        lon=float(row['stop_lon'])
     )
 
-# Združimo stop_times in trips, da vemo, kateri liniji (route_id) pripada kateri stop_time
-# Nato dodamo še podatek o številu dnevnih voženj iz vaše datoteke
-merged_stops = stop_times_df.merge(trips_df[['trip_id', 'route_id']], on='trip_id')
-merged_stops = merged_stops.merge(all_lines_trips[['route_id', 'num_trips']], on='route_id')
+# 4. Filtriramo stop_times le za veljavne delovne vožnje in uredi zaporedje
+valid_stop_times = stop_times_df[stop_times_df['trip_id'].isin(valid_weekday_trips)].copy()
+valid_stop_times = valid_stop_times.sort_values(by=['trip_id', 'stop_sequence'])
 
-# Sortiramo po trip_id in stop_sequence, da dobimo pravilno zaporedje vožnje autobusov
-merged_stops = merged_stops.sort_values(by=['trip_id', 'stop_sequence'])
-
-# Ustvarimo slovar, kjer bomo seštevali vožnje med pari postajališč
-# Ključ bo (source_stop, target_stop), vrednost pa vsota voženj
 edge_weights = {}
 
-# Grupiramo po posameznih vožnjah (trips) in poiščemo zaporedne povezave
-for trip_id, group in merged_stops.groupby('trip_id'):
-    # Pridobimo seznam postajališč v vrstnem redu za ta konkretni trip
-    stop_list = group['stop_id'].tolist()
-    # Število dnevnih voženj, ki jih ta linija predstavlja
-    daily_trips = group['num_trips'].iloc[0] 
+# 5. Preštejemo dejanske vožnje: vsak trip_id predstavlja TOČNO 1 vožnjo (+1)
+for trip_id, group in valid_stop_times.groupby('trip_id'):
+    stop_list = group['stop_id'].astype(str).tolist()
     
-    # Ustvarimo povezave med zaporednimi postajami: (stop A -> stop B)
     for i in range(len(stop_list) - 1):
         u = stop_list[i]
         v = stop_list[i+1]
         
-        # Če avtobus pelje od u do v, prištejemo število dnevnih voženj te linije
-        if (u, v) in edge_weights:
-            edge_weights[(u, v)] += daily_trips
-        else:
-            edge_weights[(u, v)] = daily_trips
+        # Vsaka vožnja doda točno 1
+        edge_weights[(u, v)] = edge_weights.get((u, v), 0) + 1
 
-# Prenesemo povezave in njihove izračunane uteži v naš NetworkX graf
+# 6. Prenesemo v graf
 for (u, v), weight in edge_weights.items():
     G1.add_edge(u, v, weight=weight)
 
-print(f"Graf je zgrajen! Število vozlišč (postaj): {G1.number_of_nodes()}, Število usmerjenih povezav: {G1.number_of_edges()}")
+print(f"Graf je zgrajen! Število vozlišč: {G1.number_of_nodes()}, Število usmerjenih povezav: {G1.number_of_edges()}")
 
-# Shranimo prvi model v datoteko GraphML za kasnejše simulacije
-nx.write_graphml(G1, "model1_frekvenca.graphml")
+# Preverjanje največje uteži
+max_edge = max(edge_weights.items(), key=lambda x: x[1])
+print(f"Največja frekvenca na povezavi: {max_edge[1]} voženj na dan (povezava {max_edge[0]}).")
+
+nx.write_graphml(G1, "model 1/model1_frekvenca.graphml")
 print("Model 1 uspešno shranjen kot 'model1_frekvenca.graphml'.")
