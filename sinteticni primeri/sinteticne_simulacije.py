@@ -4,7 +4,7 @@ import pandas as pd
 
 # --- KONFIGURACIJA ---
 STEVILO_VOZLISC = 6
-STEVILO_SIMULACIJ = 1000
+SIMULACIJ_NA_PAR = 100  # 6x6 = 36 parov -> skupaj 3600 simulacij na graf
 OUTPUT_CSV = "sinteticni primeri/sinteticni_grafi_rezultati.csv"
 # ---------------------
 
@@ -13,35 +13,44 @@ def naredi_enostaven_korak(graf, trenutno_vozlisce):
     sosedje = list(graf.successors(trenutno_vozlisce))
     if not sosedje:
         return trenutno_vozlisce
-    return random.choice(sosedje) # Enakomerna verjetnost za vse sosede
+    return random.choice(sosedje)  # Enakomerna verjetnost za vse sosede
 
 # 2. Simulacijska zanka
-def zaženi_simulacijo(graf):
+def zaženi_simulacijo(ime_topologije, graf):
     vsa_vozlisca = list(graf.nodes())
     maks_korakov = len(vsa_vozlisca) * 5
-    srečanja = 0
-    skupni_koraki = 0
+    simulacije_rezultati = []
     
-    for _ in range(STEVILO_SIMULACIJ):
-        id_a = random.choice(vsa_vozlisca)
-        id_b = random.choice(vsa_vozlisca)
-        koraki = 0
-        
-        while koraki < maks_korakov:
-            koraki += 1
-            id_a = naredi_enostaven_korak(graf, id_a)
-            id_b = naredi_enostaven_korak(graf, id_b)
-            
-            if id_a == id_b:
-                srečanja += 1
-                skupni_koraki += koraki
-                break
+    # Izvedemo simulacije za vsak par začetnih vozlišč
+    for start_a in vsa_vozlisca:
+        for start_b in vsa_vozlisca:
+            for _ in range(SIMULACIJ_NA_PAR):
+                id_a = start_a
+                id_b = start_b
+                koraki = 0
+                koncno_vozlisce = None
                 
-    procent = (srečanja / STEVILO_SIMULACIJ) * 100
-    povprecni_koraki = (skupni_koraki / srečanja) if srečanja > 0 else maks_korakov
-    return procent, povprecni_koraki
+                # Simulacija poteka dokler se ne srečata znova (korak 0 ne šteje več za srečanje)
+                while koraki < maks_korakov:
+                    koraki += 1
+                    id_a = naredi_enostaven_korak(graf, id_a)
+                    id_b = naredi_enostaven_korak(graf, id_b)
+                    
+                    if id_a == id_b:
+                        koncno_vozlisce = id_a
+                        break
+                
+                simulacije_rezultati.append({
+                    "Topologija": ime_topologije,
+                    "Zacetno_A": start_a,
+                    "Zacetno_B": start_b,
+                    "Koncno": koncno_vozlisce,
+                    "Koraki": koraki
+                })
+                
+    return simulacije_rezultati
 
-# 3. DIRECTNO GENERIRANJE USMERJENIH GRAFOV (.to_directed())
+# 3. DIREKTNO GENERIRANJE USMERJENIH GRAFOV (.to_directed())
 grafi = {
     "Path": nx.path_graph(STEVILO_VOZLISC).to_directed(),
     "Ring": nx.cycle_graph(STEVILO_VOZLISC).to_directed(),
@@ -58,20 +67,19 @@ for n in range(3):
 grafi["Sun"] = G_sun.to_directed()
 
 # 4. Poganjanje in shranjevanje
-rezultati = []
+vsi_rezultati = []
 
-print("Začenjam poenostavljene simulacije...\n")
+print("Začenjam posodobljene simulacije (merjenje ponovnega srečanja)...\n")
 for ime, G_dir in grafi.items():
-    uspeh, koraki = zaženi_simulacijo(G_dir)
-    rezultati.append({
-        "Topologija": ime, 
-        "Uspešnost srečanj (%)": round(uspeh, 2), 
-        "Povprečni koraki": round(koraki, 1)
-    })
+    rezultati_grafa = zaženi_simulacijo(ime, G_dir)
+    vsi_rezultati.extend(rezultati_grafa)
 
-# Prikaz in zapis v CSV
-df = pd.DataFrame(rezultati)
-print(df.to_string(index=False))
+# Zapis v CSV
+df = pd.DataFrame(vsi_rezultati)
+
+# Prikaz prvih nekoliko vrstic za pregled
+print(df.head(10).to_string(index=False))
+print(f"\nSkupno število izvedenih simulacij: {len(df)}")
 
 df.to_csv(OUTPUT_CSV, index=False, encoding="utf-8")
-print(f"\nRezultati so shranjeni v '{OUTPUT_CSV}'.")
+print(f"Rezultati so shranjeni v '{OUTPUT_CSV}'.")
