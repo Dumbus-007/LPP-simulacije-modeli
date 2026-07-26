@@ -17,20 +17,26 @@ vsa_vozlisca = list(G3.nodes())
 MAKSIMALNO_KORAKOV = len(vsa_vozlisca) * 5
 
 def naredi_utezen_korak_model3(graf, trenutno_vozlisce):
-    sosedje = list(graf.successors(trenutno_vozlisce))
+    # Pridobimo vse izhodne povezave (u, v, podatki_povezave)
+    # Vsaka paralelna povezava bo v seznamu nastopala kot samostojen element
+    izhodne_povezave = list(graf.out_edges(trenutno_vozlisce, data=True))
     
-    if not sosedje:
+    if not izhodne_povezave:
+        print(f"Vozlišče {trenutno_vozlisce} nima izhodnih povezav. Ostajam na mestu.")
         return trenutno_vozlisce
         
-    # Pridobimo časovne uteži za vse možne naslednje korake
-    casi = [graf[trenutno_vozlisce][sosed]['weight'] for sosed in sosedje]
+    # Pridobimo časovne uteži za vsako posamezno povezavo
+    casi = [podatki['weight'] for _, _, podatki in izhodne_povezave]
     
-    # Pretvrimo čase v inverzne vrednosti (manjši čas -> večja utež)
-    # Dodamo majhno vrednost (npr. 0.01), da preprečimo deljenje z nič, če bi bil čas naključno 0.
-    inverzne_utezi = [1.0 / (c + 0.01) for c in casi]
+    # Pretvorimo čase v stopnje / inverzne uteži (r = 1 / t)
+    inverzne_utezi = [1.0 / c for c in casi]
     
-    # Naključna izbira naslednje postaje glede na INVERZNE uteži
-    naslednje_vozlisce = random.choices(sosedje, weights=inverzne_utezi, k=1)[0]
+    # Izberemo naključno povezavo glede na izračunane inverzne uteži
+    izbrana_povezava = random.choices(izhodne_povezave, weights=inverzne_utezi, k=1)[0]
+    
+    # Izbrana povezava je v obliki (trenutno_vozlisce, ciljno_vozlisce, podatki)
+    naslednje_vozlisce = izbrana_povezava[1]
+    
     return naslednje_vozlisce
 
 rezultati_simulacij = []
@@ -41,8 +47,8 @@ start_time = time.perf_counter()
 for i in range(STEVILO_SIMULACIJ):
     #id_a = random.choice(vsa_vozlisca)
     #id_b = random.choice(vsa_vozlisca)
-    id_a = "889e3719-7d29-4888-b690-5a1531d2930e" #Jadranska
-    id_b = "3429cda2-6047-453c-bf54-952dfa6674c0" #Klinicni center
+    id_a = "603011" #Jadranska
+    id_b = "402031" #Klinicni center
 
     zacetna_a = id_a
     zacetna_b = id_b

@@ -1,6 +1,7 @@
 import math
 import os
 from collections import defaultdict
+import pandas as pd
 import networkx as nx
 
 def haversine(lat1, lon1, lat2, lon2):
@@ -17,9 +18,12 @@ def generate_model_3():
     print("Nalagam Model 1...")
     G1 = nx.read_graphml("model 1/model1_frekvenca.graphml")
     
-    # Ustvarimo nov usmerjen graf z istimi vozlišči in njihovimi atributi
-    G3 = nx.DiGraph()
-    G3.add_nodes_from(G1.nodes(data=True))
+    # Ustvarimo usmerjen MULTIGRAF za Model 3
+    G3 = nx.MultiDiGraph()
+    
+    # Prenesemo vozlišča in njun atributni profil
+    for node, data in G1.nodes(data=True):
+        G3.add_node(node, **data)
     
     # Konstante (vse v sekundah ali metrih)
     SERVICE_WINDOW = 18 * 3600  # 18 ur = 64800 sekund
@@ -27,42 +31,59 @@ def generate_model_3():
     WALK_SPEED = 1.4            # 1.4 m/s (pribl. 5 km/h)
     
     # 2. Izračun čakalnih dob v SEKUNDAH neposredno iz uteži (frekvenc) Modela 1
-    print("Računam čakalne dobe iz frekvenc Modela 1...")
+    print("Računam čakalne dobe iz frekvenc Modela 1 za BUS povezave...")
     stop_outgoing_waits = defaultdict(list)
+    skipped_bus_edges = 0
     
+    # Obdelamo vse avtobusne povezave iz Modela 1
     for u, v, data in G1.edges(data=True):
-        count = float(data.get('weight', 1.0))
+        count = float(data.get('weight', 0.0))
+        
+        # SPREMEMBA: Če je število voženj 0 ali manj, povezavo preprosto preskočimo
         if count <= 0:
-            count = 1.0
+            skipped_bus_edges += 1
+            continue
             
         # Čas čakanja v SEKUNDAH
         wait_penalty_sec = SERVICE_WINDOW / (2.0 * count)
         
-        # BUS povezava v Modelu 3 (utež je čas čakanja v sekundah)
-        G3.add_edge(u, v, weight=round(wait_penalty_sec, 2), type="BUS")
+        # Prenesemo vse obstoječe atribute in dodamo utež ter tip
+        edge_attr = dict(data)
+        edge_attr['weight'] = round(wait_penalty_sec, 2)
+        edge_attr['type'] = "BUS"
+        
+        # BUS povezava v Modelu 3
+        G3.add_edge(u, v, **edge_attr)
         
         # Beležimo izhodne čakalne dobe za posamezno vozlišče
         stop_outgoing_waits[u].append(wait_penalty_sec)
 
+    print(f"- Preskočenih neaktivnih BUS povezav (frekvenca <= 0): {skipped_bus_edges}")
+
     # 3. Izračun povprečnega časa čakanja v SEKUNDAH na vsakem vozlišču
     node_avg_wait_sec = {}
+    terminal_nodes = set()
+    
     for node in G3.nodes():
         waits = stop_outgoing_waits.get(node, [])
         if waits:
             node_avg_wait_sec[node] = sum(waits) / len(waits)
         else:
-            # Če vozlišče nima izhodnih avtobusov, damo privzeto kazen (npr. 30 minut = 1800 sekund)
-            node_avg_wait_sec[node] = 1800.0
+            # Vozlišče nima izhodnih avtobusnih linij (je končna postaja)
+            terminal_nodes.add(node)
+            node_avg_wait_sec[node] = 0.0  # Na končni postaji potnik ne čaka več na izhodni avtobus
+
+    print(f"- Število končnih postaj (brez izhodnih BUS povezav): {len(terminal_nodes)}")
 
     # 4. Dodajanje WALK povezav (< 300m) z utežmi v SEKUNDAH
     print("Računam in dodajam peš povezave (WALK)...")
     nodes_list = list(G3.nodes(data=True))
     walk_edges_count = 0
+    terminal_walk_count = 0
     
     for i in range(len(nodes_list)):
         n1, data1 = nodes_list[i]
         
-        # Pridobivanje GPS koordinat
         lat1 = data1.get('lat') or data1.get('stop_lat')
         lon1 = data1.get('lon') or data1.get('stop_lon')
         if lat1 is None or lon1 is None:
@@ -84,26 +105,62 @@ def generate_model_3():
                 dist = haversine(lat1, lon1, lat2, lon2)
                 
                 if dist <= WALK_THRESHOLD:
-                    # Čas hoje v SEKUNDAH
                     walk_time_sec = dist / WALK_SPEED
                     
-                    # Peš pot n1 -> n2 (hoja + čakanje na n2)
+                    # Peš pot n1 -> n2
                     weight_1_to_2 = walk_time_sec + node_avg_wait_sec[n2]
-                    G3.add_edge(n1, n2, weight=round(weight_1_to_2, 2), type="WALK")
+                    G3.add_edge(n1, n2, weight=round(weight_1_to_2, 2), type="WALK", dist_m=round(dist, 1))
+                    if n2 in terminal_nodes:
+                        terminal_walk_count += 1
                     
-                    # Peš pot n2 -> n1 (hoja + čakanje na n1)
+                    # Peš pot n2 -> n1
                     weight_2_to_1 = walk_time_sec + node_avg_wait_sec[n1]
-                    G3.add_edge(n2, n1, weight=round(weight_2_to_1, 2), type="WALK")
+                    G3.add_edge(n2, n1, weight=round(weight_2_to_1, 2), type="WALK", dist_m=round(dist, 1))
+                    if n1 in terminal_nodes:
+                        terminal_walk_count += 1
                     
                     walk_edges_count += 1
 
-    print(f"Dodano {walk_edges_count * 2} usmerjenih peš povezav ({walk_edges_count} parov).")
-    
-    # 5. Shranjevanje Modela 3
+    print(f"\nStatistika peš povezav:")
+    print(f"- Dodano parov peš povezav: {walk_edges_count}")
+    print(f"- Skupno usmerjenih WALK povezav: {walk_edges_count * 2}")
+    print(f"- Kolikokrat se WALK povezava konča na končni postaji: {terminal_walk_count}")
+
+    print(f"\nSkupna statistika grafa (Model 3):")
+    print(f"- Število vozlišč: {G3.number_of_nodes()}")
+    print(f"- Število vseh povezav (BUS + WALK): {G3.number_of_edges()}")
+
+    # 5. Shranjevanje Modela 3 v GraphML
     os.makedirs("model 3", exist_ok=True)
     output_path = "model 3/model3_cakanje.graphml"
     nx.write_graphml(G3, output_path)
-    print(f"Model 3 je uspešno generiran in shranjen v '{output_path}'.")
+    print(f"\nModel 3 je uspešno generiran in shranjen v '{output_path}'.")
+
+    # 6. IZVOZ V CSV ZA GEPHI (Priporočena rešitev za multigrafe v Gephiju)
+    print("Pripravljam CSV datoteke za Gephi...")
+    nodes_data = []
+    for node, data in G3.nodes(data=True):
+        nodes_data.append({
+            'Id': node,
+            'Label': data.get('name', node),
+            'lat': data.get('lat'),
+            'lon': data.get('lon')
+        })
+    pd.DataFrame(nodes_data).to_csv("model 3/nodes.csv", index=False)
+
+    edges_data = []
+    for u, v, key, data in G3.edges(keys=True, data=True):
+        edges_data.append({
+            'Source': u,
+            'Target': v,
+            'Type': 'Directed',
+            'Weight': data.get('weight'),
+            'EdgeType': data.get('type'),
+            'routes': data.get('routes', ''),
+            'dist_m': data.get('dist_m', 0)
+        })
+    pd.DataFrame(edges_data).to_csv("model 3/edges.csv", index=False)
+    print("Datoteki 'model 3/nodes.csv' in 'model 3/edges.csv' sta pripravljeni za Gephi!")
 
 if __name__ == "__main__":
     generate_model_3()
