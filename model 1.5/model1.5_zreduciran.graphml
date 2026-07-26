@@ -1,1526 +1,1588 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d4" for="edge" attr.name="routes" attr.type="string" />
   <key id="d3" for="edge" attr.name="weight" attr.type="double" />
   <key id="d2" for="node" attr.name="lon" attr.type="double" />
   <key id="d1" for="node" attr.name="lat" attr.type="double" />
   <key id="d0" for="node" attr.name="name" attr.type="string" />
   <graph edgedefault="directed">
-    <node id="609f0950-bb8c-4eaf-a931-8575b8aff1ac">
+    <node id="202031">
       <data key="d0">Savske stolpnice</data>
       <data key="d1">46.065769</data>
       <data key="d2">14.52166</data>
     </node>
-    <node id="91fb6c6e-49cf-49d3-97d4-6ae228f9bfa1">
+    <node id="404092">
       <data key="d0">Sostro</data>
       <data key="d1">46.031799</data>
       <data key="d2">14.604475</data>
     </node>
-    <node id="295616c0-387b-4f60-a337-7743cd6be04e">
+    <node id="600011">
       <data key="d0">Bavarski dvor</data>
       <data key="d1">46.05621</data>
       <data key="d2">14.505406</data>
     </node>
-    <node id="2ec182e2-769f-427f-b9b5-c4118890cb96">
+    <node id="103101">
       <data key="d0">Stožice</data>
       <data key="d1">46.08596</data>
       <data key="d2">14.513835</data>
     </node>
-    <node id="379bc761-04b5-4227-be76-3b870fe3e69f">
+    <node id="303051">
       <data key="d0">Pot na Fužine</data>
       <data key="d1">46.05624</data>
       <data key="d2">14.549652</data>
     </node>
-    <node id="ecc4ae87-ae08-4b94-995c-452fdd94df7f">
+    <node id="602111">
       <data key="d0">Privoz</data>
       <data key="d1">46.044083</data>
       <data key="d2">14.511282</data>
     </node>
-    <node id="9cfac7e2-9653-4e52-a6d3-27756d27f817">
+    <node id="802022">
       <data key="d0">Kino Šiška</data>
       <data key="d1">46.06921</data>
       <data key="d2">14.490312</data>
     </node>
-    <node id="6459bd02-d8f8-413e-9402-10b916f09a4f">
+    <node id="103111">
       <data key="d0">7. septembra</data>
       <data key="d1">46.089993</data>
       <data key="d2">14.508611</data>
     </node>
-    <node id="abc9fd26-5442-468b-93b6-4d5eb76d0f1f">
+    <node id="203142">
       <data key="d0">BTC-Emporium</data>
       <data key="d1">46.061771</data>
       <data key="d2">14.544939</data>
     </node>
-    <node id="9e109242-5aad-4fb7-b0c8-576eef8aa4e0">
+    <node id="304101">
       <data key="d0">VEVČE</data>
       <data key="d1">46.049545</data>
       <data key="d2">14.593143</data>
     </node>
-    <node id="6182f8e8-c45e-4606-b4a4-d909bd44d2cc">
+    <node id="602101">
       <data key="d0">Gornji trg</data>
       <data key="d1">46.045937</data>
       <data key="d2">14.506128</data>
     </node>
-    <node id="c627c9f2-af02-4d83-969a-566719bb09e3">
+    <node id="104221">
       <data key="d0">GAMELJNE</data>
       <data key="d1">46.126865</data>
       <data key="d2">14.497444</data>
     </node>
-    <node id="c87db9be-1fba-4102-a743-0ee4317dd5af">
+    <node id="600012">
       <data key="d0">Bavarski dvor</data>
       <data key="d1">46.056549</data>
       <data key="d2">14.505423</data>
     </node>
-    <node id="96d4c75b-6452-4c70-a31e-c234262ba38b">
+    <node id="603082">
       <data key="d0">Veliki štradon</data>
       <data key="d1">46.037907</data>
       <data key="d2">14.505477</data>
     </node>
-    <node id="8598b85d-3e1d-4767-b72f-0c209038841f">
+    <node id="403042">
       <data key="d0">Štepanja vas</data>
       <data key="d1">46.047943</data>
       <data key="d2">14.539081</data>
     </node>
-    <node id="f14a6236-8af2-47bf-9270-432377662a63">
+    <node id="202011">
       <data key="d0">Viadukt</data>
       <data key="d1">46.05941</data>
       <data key="d2">14.520622</data>
     </node>
-    <node id="ef31a8be-b01d-44cd-95cf-3db8e918af26">
+    <node id="403051">
       <data key="d0">Emona</data>
       <data key="d1">46.047771</data>
       <data key="d2">14.544743</data>
     </node>
-    <node id="80c65758-5f25-4003-8d55-10ff96fe8310">
+    <node id="404161">
       <data key="d0">OŠ Sostro</data>
       <data key="d1">46.035236</data>
       <data key="d2">14.599229</data>
     </node>
-    <node id="b59656a4-b6e7-4b87-977c-078c59088a50">
+    <node id="602031">
       <data key="d0">Hajdrihova</data>
       <data key="d1">46.045719</data>
       <data key="d2">14.49046</data>
     </node>
-    <node id="77dcd833-fa4d-4c5a-93b1-31284942e61d">
+    <node id="803016">
       <data key="d0">Šišenska</data>
       <data key="d1">46.073738</data>
       <data key="d2">14.485094</data>
     </node>
-    <node id="fef200e9-4d98-425b-ab14-8110e2aa85d7">
+    <node id="602021">
       <data key="d0">Drama</data>
       <data key="d1">46.049614</data>
       <data key="d2">14.502458</data>
     </node>
-    <node id="5d7f28a6-2a2a-4333-aa06-48edfb652f86">
+    <node id="601011">
       <data key="d0">Pošta</data>
       <data key="d1">46.051941</data>
       <data key="d2">14.50335</data>
     </node>
-    <node id="1b3ddeca-a066-43ee-9ae5-8339628129c2">
+    <node id="202062">
       <data key="d0">Žale</data>
       <data key="d1">46.065865</data>
       <data key="d2">14.527225</data>
     </node>
-    <node id="e9382efd-d64d-46b0-9a7d-a4e6a0188725">
+    <node id="804202">
       <data key="d0">Omersova</data>
       <data key="d1">46.074108</data>
       <data key="d2">14.452891</data>
     </node>
-    <node id="f2b27cbd-5207-4281-8f67-6369d0c50a9b">
+    <node id="203101">
       <data key="d0">Kodrova</data>
       <data key="d1">46.069183</data>
       <data key="d2">14.539748</data>
     </node>
-    <node id="db13a26e-19d4-4b8a-a78a-01ef25d58834">
+    <node id="104032">
       <data key="d0">Ježica</data>
       <data key="d1">46.098118</data>
       <data key="d2">14.516991</data>
     </node>
-    <node id="ac3afe7d-a2b3-4d5d-9e6a-1d2412a3bc70">
+    <node id="803051">
       <data key="d0">Litostrojska</data>
       <data key="d1">46.076813</data>
       <data key="d2">14.488618</data>
     </node>
-    <node id="ab987eb0-c970-4577-8db9-0cd507a6cab6">
+    <node id="605012">
       <data key="d0">Ig AP</data>
       <data key="d1">45.958927</data>
       <data key="d2">14.527942</data>
     </node>
-    <node id="454817d3-3750-49c7-994c-14d06fd2c634">
+    <node id="202061">
       <data key="d0">Žale</data>
       <data key="d1">46.066586</data>
       <data key="d2">14.528299</data>
     </node>
-    <node id="e9d9f622-7394-4c5c-9031-a41855a64aa7">
+    <node id="304074">
       <data key="d0">Polje</data>
       <data key="d1">46.055119</data>
       <data key="d2">14.58367</data>
     </node>
-    <node id="8589e5d1-21b4-4210-ad7a-4bf91f9a715d">
+    <node id="804252">
       <data key="d0">Vižmarje</data>
       <data key="d1">46.10054</data>
       <data key="d2">14.459461</data>
     </node>
-    <node id="35aedf45-cca3-4f2f-931b-138d29d20fe9">
+    <node id="805023">
       <data key="d0">MEDVODE</data>
       <data key="d1">46.141121</data>
       <data key="d2">14.411158</data>
     </node>
-    <node id="e0bcd677-6012-4c90-a884-44dffafdffec">
+    <node id="304051">
       <data key="d0">FUŽINE P+R</data>
       <data key="d1">46.052132</data>
       <data key="d2">14.56595</data>
     </node>
-    <node id="9a1c4c65-df77-481f-87ad-56143f02a864">
+    <node id="804251">
       <data key="d0">Vižmarje</data>
       <data key="d1">46.100262</data>
       <data key="d2">14.459461</data>
     </node>
-    <node id="7bcbdcaa-00b9-47d4-8982-09da26cd7bcb">
+    <node id="303024">
       <data key="d0">Zaloška</data>
       <data key="d1">46.055855</data>
       <data key="d2">14.54243</data>
     </node>
-    <node id="6559d555-672b-4633-8a81-0ae68fb963eb">
+    <node id="304142">
       <data key="d0">ZD POLJE</data>
       <data key="d1">46.053219</data>
       <data key="d2">14.590179</data>
     </node>
-    <node id="88cdd36c-03d2-4374-a22f-110dd9f75ea0">
+    <node id="303022">
       <data key="d0">Kajuhova</data>
       <data key="d1">46.05648</data>
       <data key="d2">14.540824</data>
     </node>
-    <node id="bc66f88b-1412-44cb-b921-030d27335261">
+    <node id="204071">
       <data key="d0">Sneberje</data>
       <data key="d1">46.077892</data>
       <data key="d2">14.569179</data>
     </node>
-    <node id="7c149b59-2bc6-45cb-95c8-69e18a0db627">
+    <node id="304031">
       <data key="d0">Rusjanov trg</data>
       <data key="d1">46.054707</data>
       <data key="d2">14.564023</data>
     </node>
-    <node id="05643914-8ff7-4064-8737-2761d44a083f">
+    <node id="804101">
       <data key="d0">Tabor</data>
       <data key="d1">46.108498</data>
       <data key="d2">14.461687</data>
     </node>
-    <node id="aa42017d-812a-4175-bc9b-0fec03b18931">
+    <node id="502013">
       <data key="d0">Ambrožev trg</data>
       <data key="d1">46.049774</data>
       <data key="d2">14.516916</data>
     </node>
-    <node id="4038e02e-f22f-4af0-ba4f-7aab855b53af">
+    <node id="803081">
       <data key="d0">Kneza Koclja</data>
       <data key="d1">46.071255</data>
       <data key="d2">14.480691</data>
     </node>
-    <node id="0b4a072e-6c2d-4c71-ab80-2b7142df81de">
+    <node id="801012">
       <data key="d0">Tivoli</data>
       <data key="d1">46.060333</data>
       <data key="d2">14.497625</data>
     </node>
-    <node id="1ce1c3a8-e0f6-4f90-b1aa-1448759d8b3c">
+    <node id="101052">
       <data key="d0">Astra</data>
       <data key="d1">46.065002</data>
       <data key="d2">14.509102</data>
     </node>
-    <node id="c0ff37c8-ac6c-4284-ad32-0ad29fd30dc2">
+    <node id="804121">
       <data key="d0">BROD</data>
       <data key="d1">46.115513</data>
       <data key="d2">14.462748</data>
     </node>
-    <node id="f33b721f-a8a3-4aad-96f2-077da09ebaa6">
+    <node id="100021">
       <data key="d0">Razstavišče</data>
       <data key="d1">46.060692</data>
       <data key="d2">14.50711</data>
     </node>
-    <node id="d4c51b31-46fd-4da8-ba15-8068e666d483">
+    <node id="404061">
       <data key="d0">Zadvor</data>
       <data key="d1">46.040257</data>
       <data key="d2">14.597719</data>
     </node>
-    <node id="12304b99-9a07-485a-a101-eaca90495d48">
+    <node id="405032">
       <data key="d0">Besnica šola</data>
       <data key="d1">46.035179</data>
       <data key="d2">14.658356</data>
     </node>
-    <node id="d98335a0-1291-4d4c-be62-16b11c356575">
+    <node id="103192">
       <data key="d0">Božičeva</data>
       <data key="d1">46.075573</data>
       <data key="d2">14.520941</data>
     </node>
-    <node id="8512e1be-4637-483b-a3e6-78ccc6d2c5b1">
+    <node id="100012">
       <data key="d0">Navje</data>
       <data key="d1">46.059723</data>
       <data key="d2">14.509243</data>
     </node>
-    <node id="21764d19-62cc-49fd-bac9-403aeac6a6b9">
+    <node id="104031">
       <data key="d0">Ježica</data>
       <data key="d1">46.09745</data>
       <data key="d2">14.516942</data>
     </node>
-    <node id="9746f277-af08-4cce-92fa-41da5eca8ac2">
+    <node id="204171">
       <data key="d0">BERIČEVO</data>
       <data key="d1">46.090172</data>
       <data key="d2">14.613146</data>
     </node>
-    <node id="f4cfd904-bd11-4247-95df-32c4555a930f">
+    <node id="402032">
       <data key="d0">Klinični center</data>
       <data key="d1">46.052315</data>
       <data key="d2">14.520921</data>
     </node>
-    <node id="dfde6478-02b5-471b-a470-29cb0e84542f">
+    <node id="803012">
       <data key="d0">Slovenija avto</data>
       <data key="d1">46.073914</data>
       <data key="d2">14.486595</data>
     </node>
-    <node id="a0e0a21b-b8ce-4d76-bbc2-04e179367fee">
+    <node id="203041">
       <data key="d0">Šola Jarše</data>
       <data key="d1">46.066689</data>
       <data key="d2">14.532968</data>
     </node>
-    <node id="717dda7e-d793-4697-8f60-b64ee8b1edc4">
+    <node id="700012">
       <data key="d0">Gosposvetska</data>
       <data key="d1">46.056129</data>
       <data key="d2">14.502123</data>
     </node>
-    <node id="48b163cd-b819-4849-aee1-8b1da77657ab">
+    <node id="804041">
       <data key="d0">Šentvid</data>
       <data key="d1">46.095272</data>
       <data key="d2">14.466693</data>
     </node>
-    <node id="7310c006-62b8-4f94-bb9c-d5c26cb3faad">
+    <node id="304071">
       <data key="d0">Polje</data>
       <data key="d1">46.054028</data>
       <data key="d2">14.582697</data>
     </node>
-    <node id="9b0074d2-2c92-4c01-830b-00be8e05b412">
+    <node id="502024">
       <data key="d0">Cukrarna</data>
       <data key="d1">46.049263</data>
       <data key="d2">14.519643</data>
     </node>
-    <node id="38b3abed-0592-407b-96c3-85a026f2e192">
+    <node id="600032">
       <data key="d0">Dalmatinova</data>
       <data key="d1">46.053883</data>
       <data key="d2">14.506376</data>
     </node>
-    <node id="fb7704f0-d31e-4561-83e4-621a8c62654b">
+    <node id="804082">
       <data key="d0">Kosmačeva</data>
       <data key="d1">46.101002</data>
       <data key="d2">14.461034</data>
     </node>
-    <node id="7484317c-269f-425f-8118-23eedab4e5f1">
+    <node id="801011">
       <data key="d0">Tivoli</data>
       <data key="d1">46.060444</data>
       <data key="d2">14.497163</data>
     </node>
-    <node id="6a89c110-a0f8-4b1a-87f0-33f49c0a658e">
+    <node id="203042">
       <data key="d0">Šola Jarše</data>
       <data key="d1">46.067261</data>
       <data key="d2">14.534705</data>
     </node>
-    <node id="a0b1fb90-3f6a-4231-910a-18be192ac762">
+    <node id="202082">
       <data key="d0">Flajšmanova</data>
       <data key="d1">46.064548</data>
       <data key="d2">14.52911</data>
     </node>
-    <node id="98fa3880-5936-4ec8-ba04-39c7ff9a0e6a">
+    <node id="802011">
       <data key="d0">Stara cerkev</data>
       <data key="d1">46.063847</data>
       <data key="d2">14.494407</data>
     </node>
-    <node id="093afa81-b65f-4182-bac3-afbc00558a9b">
+    <node id="803141">
       <data key="d0">Koseze</data>
       <data key="d1">46.072159</data>
       <data key="d2">14.467331</data>
     </node>
-    <node id="0be237aa-4b91-4d2b-ac23-0cebac975a0d">
+    <node id="602011">
       <data key="d0">Cankarjev dom</data>
       <data key="d1">46.050785</data>
       <data key="d2">14.498333</data>
     </node>
-    <node id="023d7b7a-b411-4e61-8746-b07f9e5c8f90">
+    <node id="502014">
       <data key="d0">Ambrožev trg</data>
       <data key="d1">46.049782</data>
       <data key="d2">14.516542</data>
     </node>
-    <node id="c297ac70-8f43-4fbc-a8a4-366ddb883a8d">
+    <node id="703102">
       <data key="d0">Bonifacija</data>
       <data key="d1">46.040138</data>
       <data key="d2">14.473077</data>
     </node>
-    <node id="592b37eb-8255-4758-ae8a-7cef98521013">
+    <node id="104111">
       <data key="d0">Rogovilc</data>
       <data key="d1">46.102283</data>
       <data key="d2">14.529674</data>
     </node>
-    <node id="4d216485-ef41-45e7-9182-0c254644955c">
+    <node id="104052">
       <data key="d0">Sava</data>
       <data key="d1">46.100777</data>
       <data key="d2">14.52176</data>
     </node>
-    <node id="484b5c91-1220-43ba-af79-84e712fcc46b">
+    <node id="803011">
       <data key="d0">Slovenija avto</data>
       <data key="d1">46.073196</data>
       <data key="d2">14.48622</data>
     </node>
-    <node id="1035c6f7-304e-4329-a3b2-4eb5d985a577">
+    <node id="404162">
       <data key="d0">OŠ Sostro</data>
       <data key="d1">46.035091</data>
       <data key="d2">14.599316</data>
     </node>
-    <node id="223f660b-c391-4120-bf3c-7bf06781686b">
+    <node id="203062">
       <data key="d0">Tovorni kolodvor</data>
       <data key="d1">46.060337</data>
       <data key="d2">14.539637</data>
     </node>
-    <node id="c5ec5e81-2ce4-452d-bd7a-595de4f8b34f">
+    <node id="804022">
       <data key="d0">Prušnikova</data>
       <data key="d1">46.091019</data>
       <data key="d2">14.471065</data>
     </node>
-    <node id="cdabf1ea-b04c-480a-8359-72c46e6864ab">
+    <node id="101031">
       <data key="d0">Bežigrad</data>
       <data key="d1">46.06377</data>
       <data key="d2">14.511703</data>
     </node>
-    <node id="86a75ffc-a78f-401f-8991-2eb0371417b2">
+    <node id="304062">
       <data key="d0">Studenec</data>
       <data key="d1">46.054173</data>
       <data key="d2">14.577335</data>
     </node>
-    <node id="2f18bcfa-6189-4de4-b06f-132d3392e7d6">
+    <node id="405021">
       <data key="d0">Besnica</data>
       <data key="d1">46.036663</data>
       <data key="d2">14.650791</data>
     </node>
-    <node id="277bc73c-e61d-4046-bcfd-31d6161c568e">
+    <node id="204182">
       <data key="d0">Center Zalog</data>
       <data key="d1">46.061085</data>
       <data key="d2">14.613663</data>
     </node>
-    <node id="a2f479c6-4c21-4923-b4ac-86f752507cee">
-      <data key="d0">GROSUPLJE</data>
-      <data key="d1">45.955776</data>
-      <data key="d2">14.653203</data>
-    </node>
-    <node id="8eeea585-6168-45b8-a5d4-336e61826043">
+    <node id="804382">
       <data key="d0">Zapuže</data>
       <data key="d1">46.083443</data>
       <data key="d2">14.458579</data>
     </node>
-    <node id="294c40c4-18e4-4d92-a947-911a8623de89">
+    <node id="603081">
       <data key="d0">Veliki štradon</data>
       <data key="d1">46.037743</data>
       <data key="d2">14.505013</data>
     </node>
-    <node id="5cc8a08d-c0af-491f-9a9c-b8b4f5f23bc0">
+    <node id="203141">
       <data key="d0">BTC-Emporium</data>
       <data key="d1">46.062088</data>
       <data key="d2">14.544991</data>
     </node>
-    <node id="9bd3ee10-bc61-44e8-8cf3-a37cffd54da0">
+    <node id="105131">
       <data key="d0">DOMŽALE kolodvor</data>
       <data key="d1">46.141125</data>
       <data key="d2">14.592573</data>
     </node>
-    <node id="48507e1a-32df-4552-9448-3b345760b75f">
+    <node id="304091">
       <data key="d0">Cesta na Vevče</data>
       <data key="d1">46.054001</data>
       <data key="d2">14.588969</data>
     </node>
-    <node id="a2ce7e6f-0f99-443a-a973-81a0b9c60261">
+    <node id="101051">
       <data key="d0">Astra</data>
       <data key="d1">46.064857</data>
       <data key="d2">14.508737</data>
     </node>
-    <node id="1505c6fe-6080-424e-98d1-24c312cfacf3">
+    <node id="603071">
       <data key="d0">Pot na Rakovo jelšo</data>
       <data key="d1">46.032867</data>
       <data key="d2">14.501381</data>
     </node>
-    <node id="e786b2df-34ed-4246-832e-7c3d538ac1f4">
+    <node id="203211">
       <data key="d0">Kranjčeva</data>
       <data key="d1">46.069221</data>
       <data key="d2">14.52589</data>
     </node>
-    <node id="5de6ff80-1352-43df-b5ec-1df59f2f492b">
+    <node id="603072">
       <data key="d0">Pot na Rakovo jelšo</data>
       <data key="d1">46.033329</data>
       <data key="d2">14.501924</data>
     </node>
-    <node id="0dc86a8f-0f41-44c7-978c-e06cb63cbbcf">
+    <node id="805012">
       <data key="d0">Medvoška a.p.</data>
       <data key="d1">46.137974</data>
       <data key="d2">14.415123</data>
     </node>
-    <node id="1b0f629f-acdb-4e94-8c54-018f4334ebf7">
+    <node id="404084">
       <data key="d0">Križišče Sostro</data>
       <data key="d1">46.037487</data>
       <data key="d2">14.608483</data>
     </node>
-    <node id="e6f5183b-c615-4f47-b4fb-204ee070e825">
+    <node id="101032">
       <data key="d0">Bežigrad</data>
       <data key="d1">46.063519</data>
       <data key="d2">14.511629</data>
     </node>
-    <node id="47a3bd8a-72ae-4e20-b43f-10bfaf49012c">
+    <node id="303032">
       <data key="d0">Ob sotočju</data>
       <data key="d1">46.054035</data>
       <data key="d2">14.539985</data>
     </node>
-    <node id="52e5adea-e194-4fc1-809c-1d6421f8f8db">
+    <node id="803211">
       <data key="d0">Kovinarska</data>
       <data key="d1">46.080406</data>
       <data key="d2">14.491417</data>
     </node>
-    <node id="923bd774-0651-4e0a-8624-3acfb7ecd5ff">
+    <node id="402061">
       <data key="d0">Gornje Poljane</data>
       <data key="d1">46.048935</data>
       <data key="d2">14.522733</data>
     </node>
-    <node id="3edd6057-3847-4c42-b8ec-6e89ff95793a">
+    <node id="204083">
       <data key="d0">Zadobrova</data>
       <data key="d1">46.072594</data>
       <data key="d2">14.5804</data>
     </node>
-    <node id="cee2862b-9b70-4880-8fa3-16c6d2efae1b">
+    <node id="103032">
       <data key="d0">AMZS</data>
       <data key="d1">46.077362</data>
       <data key="d2">14.51225</data>
     </node>
-    <node id="a719a87c-4e93-4387-a6d1-2631a487f7e0">
+    <node id="600022">
       <data key="d0">Ajdovščina</data>
       <data key="d1">46.053761</data>
       <data key="d2">14.504131</data>
     </node>
-    <node id="a7177a3d-8db2-43fb-8910-f95857f0ed97">
-      <data key="d0">Škocjan</data>
-      <data key="d1">45.884727</data>
-      <data key="d2">14.632565</data>
-    </node>
-    <node id="6edebb46-d04f-45c4-99a4-100f7f0b2660">
+    <node id="404062">
       <data key="d0">Zadvor</data>
       <data key="d1">46.040119</data>
       <data key="d2">14.597842</data>
     </node>
-    <node id="7fa32ea0-e884-435a-a81c-51bbd5cedf3e">
+    <node id="303021">
       <data key="d0">Zaloška</data>
       <data key="d1">46.056095</data>
       <data key="d2">14.539826</data>
     </node>
-    <node id="3c6ebf90-c611-4535-b2b0-22fba3f7649a">
+    <node id="103182">
       <data key="d0">Štajerska</data>
       <data key="d1">46.076302</data>
       <data key="d2">14.525114</data>
     </node>
-    <node id="1eadcdb9-60cd-47c9-8eec-527c3465a685">
+    <node id="304072">
       <data key="d0">Polje</data>
       <data key="d1">46.053757</data>
       <data key="d2">14.583648</data>
     </node>
-    <node id="f15ddf31-fc11-41ba-988d-376c83e38f58">
+    <node id="102072">
       <data key="d0">Vodovodna</data>
       <data key="d1">46.07539</data>
       <data key="d2">14.505082</data>
     </node>
-    <node id="769b7bc7-4f95-4bb2-9c99-37ba8e8b4bd5">
+    <node id="704011">
       <data key="d0">D. MOST P+R</data>
       <data key="d1">46.036953</data>
       <data key="d2">14.46368</data>
     </node>
-    <node id="7eb88e01-82e9-4af4-84d0-69c6ea9dc82c">
+    <node id="300012">
       <data key="d0">Kolodvor</data>
       <data key="d1">46.057571</data>
       <data key="d2">14.511196</data>
     </node>
-    <node id="eb165f50-9c43-4b09-9658-469a16d3dc83">
+    <node id="403022">
       <data key="d0">Kodeljevo</data>
       <data key="d1">46.051487</data>
       <data key="d2">14.539051</data>
     </node>
-    <node id="3fbf6322-fb74-4a50-a81a-bfca73abc26b">
+    <node id="804141">
       <data key="d0">Tacenski most</data>
       <data key="d1">46.117733</data>
       <data key="d2">14.461617</data>
     </node>
-    <node id="c22879e5-8e90-4540-9a74-5f139208e492">
+    <node id="301011">
       <data key="d0">Friškovec</data>
       <data key="d1">46.05743</data>
       <data key="d2">14.518347</data>
     </node>
-    <node id="a7094427-e180-4deb-acaf-5d4488326e9e">
+    <node id="204081">
       <data key="d0">ZADOBROVA</data>
       <data key="d1">46.071068</data>
       <data key="d2">14.580005</data>
     </node>
-    <node id="47637057-8d6a-4cf9-bd56-3ac90748fcc4">
+    <node id="604023">
       <data key="d0">Barje</data>
       <data key="d1">46.016033</data>
       <data key="d2">14.511757</data>
     </node>
-    <node id="8c7fa045-888b-46d0-8189-6f82623bf481">
+    <node id="502012">
       <data key="d0">Poljanska</data>
       <data key="d1">46.050323</data>
       <data key="d2">14.514113</data>
     </node>
-    <node id="4ca7ae7e-380b-45e3-81de-00ffab5bb531">
+    <node id="203192">
       <data key="d0">Yulon</data>
       <data key="d1">46.061871</data>
       <data key="d2">14.550273</data>
     </node>
-    <node id="6bd46cb7-9e5d-453a-878a-bcc38fb2a5f2">
+    <node id="104051">
       <data key="d0">Sava</data>
       <data key="d1">46.100925</data>
       <data key="d2">14.521701</data>
     </node>
-    <node id="fb0042f8-d9e2-4916-b60a-38a026acf0c9">
+    <node id="204011">
       <data key="d0">Leskoškova</data>
       <data key="d1">46.06208</data>
       <data key="d2">14.558679</data>
     </node>
-    <node id="59ee5f7d-476b-4958-a922-2040a9308f3b">
+    <node id="203212">
       <data key="d0">Kranjčeva</data>
       <data key="d1">46.070721</data>
       <data key="d2">14.525866</data>
     </node>
-    <node id="717c914e-f928-4671-95f6-26c1ddb95799">
+    <node id="704152">
       <data key="d0">Cesta v Gorice</data>
       <data key="d1">46.032341</data>
       <data key="d2">14.464224</data>
     </node>
-    <node id="7fad8003-fb10-489d-bf8d-6d433310ad90">
+    <node id="203161">
       <data key="d0">Nove Jarše</data>
       <data key="d1">46.070415</data>
       <data key="d2">14.548994</data>
     </node>
-    <node id="9a14b0ec-f13a-46f0-8c4f-07d8b99241e2">
+    <node id="404071">
       <data key="d0">Cesta v Zavoglje</data>
       <data key="d1">46.04026</data>
       <data key="d2">14.602519</data>
     </node>
-    <node id="e468b92f-fa4a-4819-bb11-37761deaf4ca">
+    <node id="405111">
       <data key="d0">BESNICA obrač.</data>
       <data key="d1">46.035427</data>
       <data key="d2">14.654818</data>
     </node>
-    <node id="1dc99fbb-5496-4aab-a4b6-32e653ccc789">
+    <node id="204181">
       <data key="d0">Center Zalog</data>
       <data key="d1">46.060871</data>
       <data key="d2">14.613598</data>
     </node>
-    <node id="2f874852-bc80-4ff3-b6bf-a914e31251c8">
+    <node id="202032">
       <data key="d0">Savske stolpnice</data>
       <data key="d1">46.065926</data>
       <data key="d2">14.523151</data>
     </node>
-    <node id="271db19a-744b-41a0-869d-0c3e0e2cb6bf">
+    <node id="405022">
       <data key="d0">Besnica</data>
       <data key="d1">46.036812</data>
       <data key="d2">14.650412</data>
     </node>
-    <node id="81f21fc1-3bd2-4d2a-b563-2d063479c68e">
+    <node id="403043">
       <data key="d0">Štepanja vas</data>
       <data key="d1">46.048428</data>
       <data key="d2">14.538531</data>
     </node>
-    <node id="25cde952-4896-4977-b229-75e09b3e3661">
+    <node id="304042">
       <data key="d0">Chengdujska</data>
       <data key="d1">46.054874</data>
       <data key="d2">14.56765</data>
     </node>
-    <node id="6c56976b-4ae1-429f-bcab-0cfc37e3580d">
+    <node id="704141">
       <data key="d0">Zgornji log</data>
       <data key="d1">46.032787</data>
       <data key="d2">14.462171</data>
     </node>
-    <node id="98b60d07-8054-441a-be44-be7aa24f4253">
+    <node id="804401">
       <data key="d0">Dolnice</data>
       <data key="d1">46.082066</data>
       <data key="d2">14.450661</data>
     </node>
-    <node id="58db973d-ecbb-4aa6-a56c-c26aaff7f263">
+    <node id="801021">
       <data key="d0">SŽ ŠIŠKA</data>
       <data key="d1">46.061039</data>
       <data key="d2">14.500232</data>
     </node>
-    <node id="4e8ccfa1-b58c-4ee1-ad82-2e8a645071f3">
+    <node id="404201">
       <data key="d0">Sostro - 2</data>
       <data key="d1">46.0331</data>
       <data key="d2">14.604354</data>
     </node>
-    <node id="1e157c31-d34d-4c2e-91b4-8c000c88f6dd">
+    <node id="102091">
       <data key="d0">Kardeljeva ploščad</data>
       <data key="d1">46.071896</data>
       <data key="d2">14.519063</data>
     </node>
-    <node id="2388ce1f-c947-42d7-97f3-e01a7254c933">
-      <data key="d0">Škocjan</data>
-      <data key="d1">45.884834</data>
-      <data key="d2">14.632687</data>
-    </node>
-    <node id="5de84f88-3f32-4636-8c30-03cc267ecf37">
+    <node id="704181">
       <data key="d0">Podvozna pot</data>
       <data key="d1">46.035645</data>
       <data key="d2">14.462325</data>
     </node>
-    <edge source="609f0950-bb8c-4eaf-a931-8575b8aff1ac" target="cdabf1ea-b04c-480a-8359-72c46e6864ab">
+    <edge source="202031" target="101031">
       <data key="d3">250.0</data>
     </edge>
-    <edge source="609f0950-bb8c-4eaf-a931-8575b8aff1ac" target="a2ce7e6f-0f99-443a-a973-81a0b9c60261">
+    <edge source="202031" target="101051">
       <data key="d3">141.0</data>
     </edge>
-    <edge source="91fb6c6e-49cf-49d3-97d4-6ae228f9bfa1" target="80c65758-5f25-4003-8d55-10ff96fe8310">
+    <edge source="404092" target="404201">
       <data key="d3">35.0</data>
     </edge>
-    <edge source="91fb6c6e-49cf-49d3-97d4-6ae228f9bfa1" target="4e8ccfa1-b58c-4ee1-ad82-2e8a645071f3">
+    <edge source="404092" target="404161">
       <data key="d3">35.0</data>
     </edge>
-    <edge source="295616c0-387b-4f60-a337-7743cd6be04e" target="7eb88e01-82e9-4af4-84d0-69c6ea9dc82c">
+    <edge source="600011" target="300012">
       <data key="d3">547.0</data>
+      <data key="d4">2, 25, 27, 9, SŽ</data>
     </edge>
-    <edge source="295616c0-387b-4f60-a337-7743cd6be04e" target="8512e1be-4637-483b-a3e6-78ccc6d2c5b1">
+    <edge source="600011" target="100012">
       <data key="d3">18.0</data>
+      <data key="d4">11B</data>
     </edge>
-    <edge source="295616c0-387b-4f60-a337-7743cd6be04e" target="0b4a072e-6c2d-4c71-ab80-2b7142df81de">
+    <edge source="600011" target="801012">
       <data key="d3">16.0</data>
+      <data key="d4">N5</data>
     </edge>
-    <edge source="295616c0-387b-4f60-a337-7743cd6be04e" target="e6f5183b-c615-4f47-b4fb-204ee070e825">
+    <edge source="600011" target="101032">
       <data key="d3">430.0</data>
     </edge>
-    <edge source="295616c0-387b-4f60-a337-7743cd6be04e" target="1ce1c3a8-e0f6-4f90-b1aa-1448759d8b3c">
+    <edge source="600011" target="101052">
       <data key="d3">600.0</data>
     </edge>
-    <edge source="295616c0-387b-4f60-a337-7743cd6be04e" target="c87db9be-1fba-4102-a743-0ee4317dd5af">
+    <edge source="600011" target="600012">
       <data key="d3">119.0</data>
     </edge>
-    <edge source="295616c0-387b-4f60-a337-7743cd6be04e" target="f15ddf31-fc11-41ba-988d-376c83e38f58">
+    <edge source="600011" target="102072">
       <data key="d3">148.0</data>
     </edge>
-    <edge source="2ec182e2-769f-427f-b9b5-c4118890cb96" target="a2ce7e6f-0f99-443a-a973-81a0b9c60261">
+    <edge source="103101" target="101051">
       <data key="d3">459.0</data>
     </edge>
-    <edge source="2ec182e2-769f-427f-b9b5-c4118890cb96" target="d98335a0-1291-4d4c-be62-16b11c356575">
+    <edge source="103101" target="103192">
       <data key="d3">64.0</data>
     </edge>
-    <edge source="379bc761-04b5-4227-be76-3b870fe3e69f" target="7fa32ea0-e884-435a-a81c-51bbd5cedf3e">
+    <edge source="303051" target="303021">
       <data key="d3">354.0</data>
+      <data key="d4">11, 11B, 20, 20Z, 25</data>
     </edge>
-    <edge source="379bc761-04b5-4227-be76-3b870fe3e69f" target="88cdd36c-03d2-4374-a22f-110dd9f75ea0">
+    <edge source="303051" target="303022">
       <data key="d3">125.0</data>
+      <data key="d4">22</data>
     </edge>
-    <edge source="ecc4ae87-ae08-4b94-995c-452fdd94df7f" target="6182f8e8-c45e-4606-b4a4-d909bd44d2cc">
+    <edge source="602111" target="602101">
       <data key="d3">557.0</data>
+      <data key="d4">11, 11B, 19B, 19I, 27, 3, 3B, N3, N3B</data>
     </edge>
-    <edge source="9cfac7e2-9653-4e52-a6d3-27756d27f817" target="77dcd833-fa4d-4c5a-93b1-31284942e61d">
+    <edge source="802022" target="803016">
       <data key="d3">268.0</data>
+      <data key="d4">22, 5, N5</data>
     </edge>
-    <edge source="9cfac7e2-9653-4e52-a6d3-27756d27f817" target="dfde6478-02b5-471b-a470-29cb0e84542f">
+    <edge source="802022" target="803012">
       <data key="d3">249.0</data>
+      <data key="d4">3, 3B, 8</data>
     </edge>
-    <edge source="9cfac7e2-9653-4e52-a6d3-27756d27f817" target="c5ec5e81-2ce4-452d-bd7a-595de4f8b34f">
+    <edge source="802022" target="804022">
       <data key="d3">333.0</data>
     </edge>
-    <edge source="6459bd02-d8f8-413e-9402-10b916f09a4f" target="52e5adea-e194-4fc1-809c-1d6421f8f8db">
+    <edge source="103111" target="803211">
       <data key="d3">64.0</data>
     </edge>
-    <edge source="6459bd02-d8f8-413e-9402-10b916f09a4f" target="f33b721f-a8a3-4aad-96f2-077da09ebaa6">
+    <edge source="103111" target="100021">
       <data key="d3">148.0</data>
     </edge>
-    <edge source="abc9fd26-5442-468b-93b6-4d5eb76d0f1f" target="4ca7ae7e-380b-45e3-81de-00ffab5bb531">
+    <edge source="203142" target="203192">
       <data key="d3">134.0</data>
+      <data key="d4">27</data>
     </edge>
-    <edge source="abc9fd26-5442-468b-93b6-4d5eb76d0f1f" target="223f660b-c391-4120-bf3c-7bf06781686b">
+    <edge source="203142" target="203062">
       <data key="d3">53.0</data>
+      <data key="d4">24</data>
     </edge>
-    <edge source="9e109242-5aad-4fb7-b0c8-576eef8aa4e0" target="6559d555-672b-4633-8a81-0ae68fb963eb">
+    <edge source="304101" target="304142">
       <data key="d3">35.0</data>
     </edge>
-    <edge source="9e109242-5aad-4fb7-b0c8-576eef8aa4e0" target="48507e1a-32df-4552-9448-3b345760b75f">
+    <edge source="304101" target="304091">
       <data key="d3">187.0</data>
     </edge>
-    <edge source="6182f8e8-c45e-4606-b4a4-d909bd44d2cc" target="fef200e9-4d98-425b-ab14-8110e2aa85d7">
+    <edge source="602101" target="602021">
       <data key="d3">701.0</data>
     </edge>
-    <edge source="c627c9f2-af02-4d83-969a-566719bb09e3" target="3fbf6322-fb74-4a50-a81a-bfca73abc26b">
+    <edge source="104221" target="804141">
       <data key="d3">127.0</data>
     </edge>
-    <edge source="c627c9f2-af02-4d83-969a-566719bb09e3" target="4d216485-ef41-45e7-9182-0c254644955c">
+    <edge source="104221" target="104052">
       <data key="d3">23.0</data>
     </edge>
-    <edge source="c87db9be-1fba-4102-a743-0ee4317dd5af" target="a719a87c-4e93-4387-a6d1-2631a487f7e0">
+    <edge source="600012" target="600022">
       <data key="d3">1300.0</data>
+      <data key="d4">11, 11B, 14, 18, 18L, 19B, 19I, 2, 27, 6, 6B, 9, N3, N3B</data>
     </edge>
-    <edge source="c87db9be-1fba-4102-a743-0ee4317dd5af" target="38b3abed-0592-407b-96c3-85a026f2e192">
+    <edge source="600012" target="600032">
       <data key="d3">230.0</data>
+      <data key="d4">13, 20, 20Z, N5</data>
     </edge>
-    <edge source="c87db9be-1fba-4102-a743-0ee4317dd5af" target="717dda7e-d793-4697-8f60-b64ee8b1edc4">
+    <edge source="600012" target="700012">
       <data key="d3">378.0</data>
+      <data key="d4">25, 7, 8, N1, SŽ</data>
     </edge>
-    <edge source="96d4c75b-6452-4c70-a31e-c234262ba38b" target="294c40c4-18e4-4d92-a947-911a8623de89">
+    <edge source="603082" target="603081">
       <data key="d3">25.0</data>
     </edge>
-    <edge source="96d4c75b-6452-4c70-a31e-c234262ba38b" target="ecc4ae87-ae08-4b94-995c-452fdd94df7f">
+    <edge source="603082" target="602111">
       <data key="d3">141.0</data>
     </edge>
-    <edge source="8598b85d-3e1d-4767-b72f-0c209038841f" target="1035c6f7-304e-4329-a3b2-4eb5d985a577">
+    <edge source="403042" target="404162">
       <data key="d3">53.0</data>
     </edge>
-    <edge source="8598b85d-3e1d-4767-b72f-0c209038841f" target="6edebb46-d04f-45c4-99a4-100f7f0b2660">
+    <edge source="403042" target="404062">
       <data key="d3">87.0</data>
     </edge>
-    <edge source="8598b85d-3e1d-4767-b72f-0c209038841f" target="ef31a8be-b01d-44cd-95cf-3db8e918af26">
+    <edge source="403042" target="403051">
       <data key="d3">143.0</data>
     </edge>
-    <edge source="f14a6236-8af2-47bf-9270-432377662a63" target="c22879e5-8e90-4540-9a74-5f139208e492">
+    <edge source="202011" target="301011">
       <data key="d3">359.0</data>
+      <data key="d4">12D, 2, 27</data>
     </edge>
-    <edge source="ef31a8be-b01d-44cd-95cf-3db8e918af26" target="81f21fc1-3bd2-4d2a-b563-2d063479c68e">
+    <edge source="403051" target="403043">
       <data key="d3">286.0</data>
+      <data key="d4">5, 9, N5</data>
     </edge>
-    <edge source="ef31a8be-b01d-44cd-95cf-3db8e918af26" target="923bd774-0651-4e0a-8624-3acfb7ecd5ff">
+    <edge source="403051" target="402061">
       <data key="d3">87.0</data>
     </edge>
-    <edge source="80c65758-5f25-4003-8d55-10ff96fe8310" target="d4c51b31-46fd-4da8-ba15-8068e666d483">
+    <edge source="404161" target="404061">
       <data key="d3">35.0</data>
+      <data key="d4">26</data>
     </edge>
-    <edge source="80c65758-5f25-4003-8d55-10ff96fe8310" target="81f21fc1-3bd2-4d2a-b563-2d063479c68e">
+    <edge source="404161" target="403043">
       <data key="d3">53.0</data>
     </edge>
-    <edge source="b59656a4-b6e7-4b87-977c-078c59088a50" target="fef200e9-4d98-425b-ab14-8110e2aa85d7">
+    <edge source="602031" target="602021">
       <data key="d3">558.0</data>
     </edge>
-    <edge source="77dcd833-fa4d-4c5a-93b1-31284942e61d" target="0be237aa-4b91-4d2b-ac23-0cebac975a0d">
+    <edge source="803016" target="602011">
       <data key="d3">119.0</data>
     </edge>
-    <edge source="77dcd833-fa4d-4c5a-93b1-31284942e61d" target="e9382efd-d64d-46b0-9a7d-a4e6a0188725">
+    <edge source="803016" target="804202">
       <data key="d3">143.0</data>
     </edge>
-    <edge source="77dcd833-fa4d-4c5a-93b1-31284942e61d" target="8eeea585-6168-45b8-a5d4-336e61826043">
+    <edge source="803016" target="804382">
       <data key="d3">125.0</data>
     </edge>
-    <edge source="fef200e9-4d98-425b-ab14-8110e2aa85d7" target="5d7f28a6-2a2a-4333-aa06-48edfb652f86">
+    <edge source="602021" target="601011">
       <data key="d3">1402.0</data>
+      <data key="d4">1, 11, 11B, 19B, 19I, 1B, 2, 27, 3, 3B, 6, 6B, 9, N1, N3, N3B</data>
     </edge>
-    <edge source="5d7f28a6-2a2a-4333-aa06-48edfb652f86" target="295616c0-387b-4f60-a337-7743cd6be04e">
+    <edge source="601011" target="600011">
       <data key="d3">1281.0</data>
     </edge>
-    <edge source="5d7f28a6-2a2a-4333-aa06-48edfb652f86" target="717dda7e-d793-4697-8f60-b64ee8b1edc4">
+    <edge source="601011" target="700012">
       <data key="d3">377.0</data>
     </edge>
-    <edge source="5d7f28a6-2a2a-4333-aa06-48edfb652f86" target="c87db9be-1fba-4102-a743-0ee4317dd5af">
+    <edge source="601011" target="600012">
       <data key="d3">11.0</data>
     </edge>
-    <edge source="1b3ddeca-a066-43ee-9ae5-8339628129c2" target="a0b1fb90-3f6a-4231-910a-18be192ac762">
+    <edge source="202062" target="202082">
       <data key="d3">303.0</data>
+      <data key="d4">22, 24, 7</data>
     </edge>
-    <edge source="1b3ddeca-a066-43ee-9ae5-8339628129c2" target="454817d3-3750-49c7-994c-14d06fd2c634">
+    <edge source="202062" target="202061">
       <data key="d3">144.0</data>
     </edge>
-    <edge source="e9382efd-d64d-46b0-9a7d-a4e6a0188725" target="093afa81-b65f-4182-bac3-afbc00558a9b">
+    <edge source="804202" target="803141">
       <data key="d3">143.0</data>
     </edge>
-    <edge source="e9382efd-d64d-46b0-9a7d-a4e6a0188725" target="98b60d07-8054-441a-be44-be7aa24f4253">
+    <edge source="804202" target="804401">
       <data key="d3">10.0</data>
     </edge>
-    <edge source="f2b27cbd-5207-4281-8f67-6369d0c50a9b" target="a0e0a21b-b8ce-4d76-bbc2-04e179367fee">
+    <edge source="203101" target="203041">
       <data key="d3">537.0</data>
     </edge>
-    <edge source="db13a26e-19d4-4b8a-a78a-01ef25d58834" target="4d216485-ef41-45e7-9182-0c254644955c">
+    <edge source="104032" target="104052">
       <data key="d3">272.0</data>
+      <data key="d4">21D, 6</data>
     </edge>
-    <edge source="db13a26e-19d4-4b8a-a78a-01ef25d58834" target="21764d19-62cc-49fd-bac9-403aeac6a6b9">
+    <edge source="104032" target="104031">
       <data key="d3">112.0</data>
     </edge>
-    <edge source="db13a26e-19d4-4b8a-a78a-01ef25d58834" target="6bd46cb7-9e5d-453a-878a-bcc38fb2a5f2">
+    <edge source="104032" target="104051">
       <data key="d3">116.0</data>
     </edge>
-    <edge source="ac3afe7d-a2b3-4d5d-9e6a-1d2412a3bc70" target="484b5c91-1220-43ba-af79-84e712fcc46b">
+    <edge source="803051" target="803011">
       <data key="d3">264.0</data>
+      <data key="d4">3, 3B, 8, N3</data>
     </edge>
-    <edge source="ac3afe7d-a2b3-4d5d-9e6a-1d2412a3bc70" target="77dcd833-fa4d-4c5a-93b1-31284942e61d">
+    <edge source="803051" target="803016">
       <data key="d3">119.0</data>
+      <data key="d4">18, 18L</data>
     </edge>
-    <edge source="ab987eb0-c970-4577-8db9-0cd507a6cab6" target="47637057-8d6a-4cf9-bd56-3ac90748fcc4">
+    <edge source="605012" target="604023">
       <data key="d3">69.0</data>
     </edge>
-    <edge source="ab987eb0-c970-4577-8db9-0cd507a6cab6" target="ab987eb0-c970-4577-8db9-0cd507a6cab6">
+    <edge source="605012" target="605012">
       <data key="d3">69.0</data>
     </edge>
-    <edge source="454817d3-3750-49c7-994c-14d06fd2c634" target="609f0950-bb8c-4eaf-a931-8575b8aff1ac">
+    <edge source="202061" target="202031">
       <data key="d3">250.0</data>
+      <data key="d4">22, 7</data>
     </edge>
-    <edge source="454817d3-3750-49c7-994c-14d06fd2c634" target="59ee5f7d-476b-4958-a922-2040a9308f3b">
+    <edge source="202061" target="203212">
       <data key="d3">53.0</data>
+      <data key="d4">24</data>
     </edge>
-    <edge source="454817d3-3750-49c7-994c-14d06fd2c634" target="f14a6236-8af2-47bf-9270-432377662a63">
+    <edge source="202061" target="202011">
       <data key="d3">144.0</data>
     </edge>
-    <edge source="e9d9f622-7394-4c5c-9031-a41855a64aa7" target="a7094427-e180-4deb-acaf-5d4488326e9e">
+    <edge source="304074" target="204081">
       <data key="d3">97.0</data>
     </edge>
-    <edge source="e9d9f622-7394-4c5c-9031-a41855a64aa7" target="3edd6057-3847-4c42-b8ec-6e89ff95793a">
+    <edge source="304074" target="204083">
       <data key="d3">53.0</data>
     </edge>
-    <edge source="8589e5d1-21b4-4210-ad7a-4bf91f9a715d" target="9a1c4c65-df77-481f-87ad-56143f02a864">
+    <edge source="804252" target="804251">
       <data key="d3">236.0</data>
     </edge>
-    <edge source="8589e5d1-21b4-4210-ad7a-4bf91f9a715d" target="fb7704f0-d31e-4561-83e4-621a8c62654b">
+    <edge source="804252" target="804082">
       <data key="d3">36.0</data>
     </edge>
-    <edge source="8589e5d1-21b4-4210-ad7a-4bf91f9a715d" target="0dc86a8f-0f41-44c7-978c-e06cb63cbbcf">
+    <edge source="804252" target="805012">
       <data key="d3">97.0</data>
     </edge>
-    <edge source="35aedf45-cca3-4f2f-931b-138d29d20fe9" target="3fbf6322-fb74-4a50-a81a-bfca73abc26b">
+    <edge source="805023" target="804141">
       <data key="d3">36.0</data>
     </edge>
-    <edge source="35aedf45-cca3-4f2f-931b-138d29d20fe9" target="9a1c4c65-df77-481f-87ad-56143f02a864">
+    <edge source="805023" target="804251">
       <data key="d3">97.0</data>
     </edge>
-    <edge source="35aedf45-cca3-4f2f-931b-138d29d20fe9" target="0dc86a8f-0f41-44c7-978c-e06cb63cbbcf">
+    <edge source="805023" target="805012">
       <data key="d3">36.0</data>
     </edge>
-    <edge source="e0bcd677-6012-4c90-a884-44dffafdffec" target="7c149b59-2bc6-45cb-95c8-69e18a0db627">
+    <edge source="304051" target="304031">
       <data key="d3">252.0</data>
+      <data key="d4">20, 20Z, 22</data>
     </edge>
-    <edge source="e0bcd677-6012-4c90-a884-44dffafdffec" target="25cde952-4896-4977-b229-75e09b3e3661">
+    <edge source="304051" target="304042">
       <data key="d3">0.0</data>
+      <data key="d4">20Z</data>
     </edge>
-    <edge source="9a1c4c65-df77-481f-87ad-56143f02a864" target="48b163cd-b819-4849-aee1-8b1da77657ab">
+    <edge source="804251" target="804041">
       <data key="d3">333.0</data>
+      <data key="d4">1, 1B, 25, N1</data>
     </edge>
-    <edge source="7bcbdcaa-00b9-47d4-8982-09da26cd7bcb" target="25cde952-4896-4977-b229-75e09b3e3661">
+    <edge source="303024" target="304042">
       <data key="d3">97.0</data>
     </edge>
-    <edge source="7bcbdcaa-00b9-47d4-8982-09da26cd7bcb" target="e0bcd677-6012-4c90-a884-44dffafdffec">
+    <edge source="303024" target="304051">
       <data key="d3">252.0</data>
     </edge>
-    <edge source="6559d555-672b-4633-8a81-0ae68fb963eb" target="9e109242-5aad-4fb7-b0c8-576eef8aa4e0">
+    <edge source="304142" target="304101">
       <data key="d3">187.0</data>
+      <data key="d4">24, 27</data>
     </edge>
-    <edge source="6559d555-672b-4633-8a81-0ae68fb963eb" target="6edebb46-d04f-45c4-99a4-100f7f0b2660">
+    <edge source="304142" target="404062">
       <data key="d3">88.0</data>
     </edge>
-    <edge source="88cdd36c-03d2-4374-a22f-110dd9f75ea0" target="5cc8a08d-c0af-491f-9a9c-b8b4f5f23bc0">
+    <edge source="303022" target="203141">
       <data key="d3">53.0</data>
+      <data key="d4">24</data>
     </edge>
-    <edge source="88cdd36c-03d2-4374-a22f-110dd9f75ea0" target="a0e0a21b-b8ce-4d76-bbc2-04e179367fee">
+    <edge source="303022" target="203041">
       <data key="d3">125.0</data>
     </edge>
-    <edge source="88cdd36c-03d2-4374-a22f-110dd9f75ea0" target="6a89c110-a0f8-4b1a-87f0-33f49c0a658e">
+    <edge source="303022" target="203042">
       <data key="d3">144.0</data>
     </edge>
-    <edge source="bc66f88b-1412-44cb-b921-030d27335261" target="7fad8003-fb10-489d-bf8d-6d433310ad90">
+    <edge source="204071" target="203161">
       <data key="d3">134.0</data>
     </edge>
-    <edge source="7c149b59-2bc6-45cb-95c8-69e18a0db627" target="379bc761-04b5-4227-be76-3b870fe3e69f">
+    <edge source="304031" target="303051">
       <data key="d3">349.0</data>
     </edge>
-    <edge source="05643914-8ff7-4064-8737-2761d44a083f" target="8589e5d1-21b4-4210-ad7a-4bf91f9a715d">
+    <edge source="804101" target="804252">
       <data key="d3">47.0</data>
     </edge>
-    <edge source="05643914-8ff7-4064-8737-2761d44a083f" target="48b163cd-b819-4849-aee1-8b1da77657ab">
+    <edge source="804101" target="804041">
       <data key="d3">116.0</data>
     </edge>
-    <edge source="aa42017d-812a-4175-bc9b-0fec03b18931" target="6182f8e8-c45e-4606-b4a4-d909bd44d2cc">
+    <edge source="502013" target="602101">
       <data key="d3">144.0</data>
     </edge>
-    <edge source="aa42017d-812a-4175-bc9b-0fec03b18931" target="717dda7e-d793-4697-8f60-b64ee8b1edc4">
+    <edge source="502013" target="700012">
       <data key="d3">127.0</data>
     </edge>
-    <edge source="aa42017d-812a-4175-bc9b-0fec03b18931" target="295616c0-387b-4f60-a337-7743cd6be04e">
+    <edge source="502013" target="600011">
       <data key="d3">143.0</data>
     </edge>
-    <edge source="4038e02e-f22f-4af0-ba4f-7aab855b53af" target="484b5c91-1220-43ba-af79-84e712fcc46b">
+    <edge source="803081" target="803011">
       <data key="d3">268.0</data>
+      <data key="d4">22, 5, N5</data>
     </edge>
-    <edge source="4038e02e-f22f-4af0-ba4f-7aab855b53af" target="dfde6478-02b5-471b-a470-29cb0e84542f">
+    <edge source="803081" target="803012">
       <data key="d3">119.0</data>
+      <data key="d4">18, 18L</data>
     </edge>
-    <edge source="0b4a072e-6c2d-4c71-ab80-2b7142df81de" target="9cfac7e2-9653-4e52-a6d3-27756d27f817">
+    <edge source="801012" target="802022">
       <data key="d3">725.0</data>
     </edge>
-    <edge source="0b4a072e-6c2d-4c71-ab80-2b7142df81de" target="98fa3880-5936-4ec8-ba04-39c7ff9a0e6a">
+    <edge source="801012" target="802011">
       <data key="d3">125.0</data>
     </edge>
-    <edge source="1ce1c3a8-e0f6-4f90-b1aa-1448759d8b3c" target="9cfac7e2-9653-4e52-a6d3-27756d27f817">
+    <edge source="101052" target="802022">
       <data key="d3">125.0</data>
     </edge>
-    <edge source="1ce1c3a8-e0f6-4f90-b1aa-1448759d8b3c" target="2f874852-bc80-4ff3-b6bf-a914e31251c8">
+    <edge source="101052" target="202032">
       <data key="d3">141.0</data>
     </edge>
-    <edge source="1ce1c3a8-e0f6-4f90-b1aa-1448759d8b3c" target="cee2862b-9b70-4880-8fa3-16c6d2efae1b">
+    <edge source="101052" target="103032">
       <data key="d3">459.0</data>
     </edge>
-    <edge source="c0ff37c8-ac6c-4284-ad32-0ad29fd30dc2" target="05643914-8ff7-4064-8737-2761d44a083f">
+    <edge source="804121" target="804101">
       <data key="d3">47.0</data>
     </edge>
-    <edge source="f33b721f-a8a3-4aad-96f2-077da09ebaa6" target="7eb88e01-82e9-4af4-84d0-69c6ea9dc82c">
+    <edge source="100021" target="300012">
       <data key="d3">81.0</data>
+      <data key="d4">12D</data>
     </edge>
-    <edge source="f33b721f-a8a3-4aad-96f2-077da09ebaa6" target="c87db9be-1fba-4102-a743-0ee4317dd5af">
+    <edge source="100021" target="600012">
       <data key="d3">1105.0</data>
+      <data key="d4">11, 11B, 13, 14, 19B, 19I, 20, 20Z, 6, 7, 8</data>
     </edge>
-    <edge source="d4c51b31-46fd-4da8-ba15-8068e666d483" target="9e109242-5aad-4fb7-b0c8-576eef8aa4e0">
+    <edge source="404061" target="304101">
       <data key="d3">88.0</data>
     </edge>
-    <edge source="d4c51b31-46fd-4da8-ba15-8068e666d483" target="ef31a8be-b01d-44cd-95cf-3db8e918af26">
+    <edge source="404061" target="403051">
       <data key="d3">87.0</data>
     </edge>
-    <edge source="12304b99-9a07-485a-a101-eaca90495d48" target="2f18bcfa-6189-4de4-b06f-132d3392e7d6">
+    <edge source="405032" target="405021">
       <data key="d3">35.0</data>
     </edge>
-    <edge source="12304b99-9a07-485a-a101-eaca90495d48" target="e468b92f-fa4a-4819-bb11-37761deaf4ca">
+    <edge source="405032" target="405111">
       <data key="d3">23.0</data>
     </edge>
-    <edge source="d98335a0-1291-4d4c-be62-16b11c356575" target="3c6ebf90-c611-4535-b2b0-22fba3f7649a">
+    <edge source="103192" target="103182">
       <data key="d3">151.0</data>
+      <data key="d4">13, 18</data>
     </edge>
-    <edge source="8512e1be-4637-483b-a3e6-78ccc6d2c5b1" target="cdabf1ea-b04c-480a-8359-72c46e6864ab">
+    <edge source="100012" target="101031">
       <data key="d3">99.0</data>
     </edge>
-    <edge source="21764d19-62cc-49fd-bac9-403aeac6a6b9" target="2ec182e2-769f-427f-b9b5-c4118890cb96">
+    <edge source="104031" target="103101">
       <data key="d3">459.0</data>
     </edge>
-    <edge source="9746f277-af08-4cce-92fa-41da5eca8ac2" target="592b37eb-8255-4758-ae8a-7cef98521013">
+    <edge source="204171" target="104111">
       <data key="d3">41.0</data>
     </edge>
-    <edge source="f4cfd904-bd11-4247-95df-32c4555a930f" target="47a3bd8a-72ae-4e20-b43f-10bfaf49012c">
+    <edge source="402032" target="303032">
       <data key="d3">143.0</data>
     </edge>
-    <edge source="f4cfd904-bd11-4247-95df-32c4555a930f" target="7bcbdcaa-00b9-47d4-8982-09da26cd7bcb">
+    <edge source="402032" target="303024">
       <data key="d3">354.0</data>
     </edge>
-    <edge source="f4cfd904-bd11-4247-95df-32c4555a930f" target="88cdd36c-03d2-4374-a22f-110dd9f75ea0">
+    <edge source="402032" target="303022">
       <data key="d3">144.0</data>
     </edge>
-    <edge source="dfde6478-02b5-471b-a470-29cb0e84542f" target="ac3afe7d-a2b3-4d5d-9e6a-1d2412a3bc70">
+    <edge source="803012" target="803051">
       <data key="d3">55.0</data>
     </edge>
-    <edge source="dfde6478-02b5-471b-a470-29cb0e84542f" target="52e5adea-e194-4fc1-809c-1d6421f8f8db">
+    <edge source="803012" target="803211">
       <data key="d3">188.0</data>
     </edge>
-    <edge source="dfde6478-02b5-471b-a470-29cb0e84542f" target="f15ddf31-fc11-41ba-988d-376c83e38f58">
+    <edge source="803012" target="102072">
       <data key="d3">64.0</data>
     </edge>
-    <edge source="dfde6478-02b5-471b-a470-29cb0e84542f" target="c5ec5e81-2ce4-452d-bd7a-595de4f8b34f">
+    <edge source="803012" target="804022">
       <data key="d3">116.0</data>
     </edge>
-    <edge source="a0e0a21b-b8ce-4d76-bbc2-04e179367fee" target="454817d3-3750-49c7-994c-14d06fd2c634">
+    <edge source="203041" target="202061">
       <data key="d3">303.0</data>
+      <data key="d4">22, 24, 7</data>
     </edge>
-    <edge source="a0e0a21b-b8ce-4d76-bbc2-04e179367fee" target="609f0950-bb8c-4eaf-a931-8575b8aff1ac">
+    <edge source="203041" target="202031">
       <data key="d3">125.0</data>
+      <data key="d4">7</data>
     </edge>
-    <edge source="a0e0a21b-b8ce-4d76-bbc2-04e179367fee" target="59ee5f7d-476b-4958-a922-2040a9308f3b">
+    <edge source="203041" target="203212">
       <data key="d3">53.0</data>
+      <data key="d4">24</data>
     </edge>
-    <edge source="a0e0a21b-b8ce-4d76-bbc2-04e179367fee" target="f14a6236-8af2-47bf-9270-432377662a63">
+    <edge source="203041" target="202011">
       <data key="d3">215.0</data>
     </edge>
-    <edge source="a0e0a21b-b8ce-4d76-bbc2-04e179367fee" target="223f660b-c391-4120-bf3c-7bf06781686b">
+    <edge source="203041" target="203062">
       <data key="d3">144.0</data>
     </edge>
-    <edge source="717dda7e-d793-4697-8f60-b64ee8b1edc4" target="0b4a072e-6c2d-4c71-ab80-2b7142df81de">
+    <edge source="700012" target="801012">
       <data key="d3">834.0</data>
+      <data key="d4">1, 1B, 25, 3, 3B, 5, 7, 8, N1</data>
     </edge>
-    <edge source="717dda7e-d793-4697-8f60-b64ee8b1edc4" target="c87db9be-1fba-4102-a743-0ee4317dd5af">
+    <edge source="700012" target="600012">
       <data key="d3">19.0</data>
+      <data key="d4">N3, N3B</data>
     </edge>
-    <edge source="717dda7e-d793-4697-8f60-b64ee8b1edc4" target="58db973d-ecbb-4aa6-a56c-c26aaff7f263">
+    <edge source="700012" target="801021">
       <data key="d3">29.0</data>
+      <data key="d4">SŽ</data>
     </edge>
-    <edge source="48b163cd-b819-4849-aee1-8b1da77657ab" target="484b5c91-1220-43ba-af79-84e712fcc46b">
+    <edge source="804041" target="803011">
       <data key="d3">333.0</data>
     </edge>
-    <edge source="48b163cd-b819-4849-aee1-8b1da77657ab" target="ac3afe7d-a2b3-4d5d-9e6a-1d2412a3bc70">
+    <edge source="804041" target="803051">
       <data key="d3">116.0</data>
     </edge>
-    <edge source="7310c006-62b8-4f94-bb9c-d5c26cb3faad" target="e0bcd677-6012-4c90-a884-44dffafdffec">
+    <edge source="304071" target="304051">
       <data key="d3">0.0</data>
     </edge>
-    <edge source="7310c006-62b8-4f94-bb9c-d5c26cb3faad" target="7c149b59-2bc6-45cb-95c8-69e18a0db627">
+    <edge source="304071" target="304031">
       <data key="d3">97.0</data>
     </edge>
-    <edge source="7310c006-62b8-4f94-bb9c-d5c26cb3faad" target="fb0042f8-d9e2-4916-b60a-38a026acf0c9">
+    <edge source="304071" target="204011">
       <data key="d3">134.0</data>
     </edge>
-    <edge source="7310c006-62b8-4f94-bb9c-d5c26cb3faad" target="379bc761-04b5-4227-be76-3b870fe3e69f">
+    <edge source="304071" target="303051">
       <data key="d3">130.0</data>
     </edge>
-    <edge source="9b0074d2-2c92-4c01-830b-00be8e05b412" target="f4cfd904-bd11-4247-95df-32c4555a930f">
+    <edge source="502024" target="402032">
       <data key="d3">401.0</data>
+      <data key="d4">11, 11B, 2, 20, 20Z</data>
     </edge>
-    <edge source="38b3abed-0592-407b-96c3-85a026f2e192" target="023d7b7a-b411-4e61-8746-b07f9e5c8f90">
+    <edge source="600032" target="502014">
       <data key="d3">143.0</data>
     </edge>
-    <edge source="38b3abed-0592-407b-96c3-85a026f2e192" target="8c7fa045-888b-46d0-8189-6f82623bf481">
+    <edge source="600032" target="502012">
       <data key="d3">214.0</data>
     </edge>
-    <edge source="fb7704f0-d31e-4561-83e4-621a8c62654b" target="c0ff37c8-ac6c-4284-ad32-0ad29fd30dc2">
+    <edge source="804082" target="804121">
       <data key="d3">11.0</data>
     </edge>
-    <edge source="fb7704f0-d31e-4561-83e4-621a8c62654b" target="c627c9f2-af02-4d83-969a-566719bb09e3">
+    <edge source="804082" target="104221">
       <data key="d3">127.0</data>
     </edge>
-    <edge source="fb7704f0-d31e-4561-83e4-621a8c62654b" target="35aedf45-cca3-4f2f-931b-138d29d20fe9">
+    <edge source="804082" target="805023">
       <data key="d3">36.0</data>
     </edge>
-    <edge source="7484317c-269f-425f-8118-23eedab4e5f1" target="c87db9be-1fba-4102-a743-0ee4317dd5af">
+    <edge source="801011" target="600012">
       <data key="d3">42.0</data>
+      <data key="d4">N1, N3, N5</data>
     </edge>
-    <edge source="7484317c-269f-425f-8118-23eedab4e5f1" target="38b3abed-0592-407b-96c3-85a026f2e192">
+    <edge source="801011" target="600032">
       <data key="d3">127.0</data>
     </edge>
-    <edge source="7484317c-269f-425f-8118-23eedab4e5f1" target="a719a87c-4e93-4387-a6d1-2631a487f7e0">
+    <edge source="801011" target="600022">
       <data key="d3">358.0</data>
     </edge>
-    <edge source="7484317c-269f-425f-8118-23eedab4e5f1" target="295616c0-387b-4f60-a337-7743cd6be04e">
+    <edge source="801011" target="600011">
       <data key="d3">367.0</data>
     </edge>
-    <edge source="6a89c110-a0f8-4b1a-87f0-33f49c0a658e" target="7fad8003-fb10-489d-bf8d-6d433310ad90">
+    <edge source="203042" target="203161">
       <data key="d3">144.0</data>
     </edge>
-    <edge source="6a89c110-a0f8-4b1a-87f0-33f49c0a658e" target="abc9fd26-5442-468b-93b6-4d5eb76d0f1f">
+    <edge source="203042" target="203142">
       <data key="d3">134.0</data>
     </edge>
-    <edge source="6a89c110-a0f8-4b1a-87f0-33f49c0a658e" target="a7094427-e180-4deb-acaf-5d4488326e9e">
+    <edge source="203042" target="204081">
       <data key="d3">53.0</data>
     </edge>
-    <edge source="6a89c110-a0f8-4b1a-87f0-33f49c0a658e" target="4ca7ae7e-380b-45e3-81de-00ffab5bb531">
+    <edge source="203042" target="203192">
       <data key="d3">125.0</data>
     </edge>
-    <edge source="6a89c110-a0f8-4b1a-87f0-33f49c0a658e" target="9bd3ee10-bc61-44e8-8cf3-a37cffd54da0">
+    <edge source="203042" target="105131">
       <data key="d3">81.0</data>
     </edge>
-    <edge source="a0b1fb90-3f6a-4231-910a-18be192ac762" target="6a89c110-a0f8-4b1a-87f0-33f49c0a658e">
+    <edge source="202082" target="203042">
       <data key="d3">393.0</data>
+      <data key="d4">12D, 24, 27, 7</data>
     </edge>
-    <edge source="a0b1fb90-3f6a-4231-910a-18be192ac762" target="223f660b-c391-4120-bf3c-7bf06781686b">
+    <edge source="202082" target="203062">
       <data key="d3">125.0</data>
     </edge>
-    <edge source="98fa3880-5936-4ec8-ba04-39c7ff9a0e6a" target="7484317c-269f-425f-8118-23eedab4e5f1">
+    <edge source="802011" target="801011">
       <data key="d3">865.0</data>
+      <data key="d4">1, 1B, 25, 3, 3B, 5, 7, 8, N1, N3, N5</data>
     </edge>
-    <edge source="093afa81-b65f-4182-bac3-afbc00558a9b" target="4038e02e-f22f-4af0-ba4f-7aab855b53af">
+    <edge source="803141" target="803081">
       <data key="d3">268.0</data>
     </edge>
-    <edge source="0be237aa-4b91-4d2b-ac23-0cebac975a0d" target="5d7f28a6-2a2a-4333-aa06-48edfb652f86">
+    <edge source="602011" target="601011">
       <data key="d3">267.0</data>
+      <data key="d4">14, 18, 18L</data>
     </edge>
-    <edge source="023d7b7a-b411-4e61-8746-b07f9e5c8f90" target="9b0074d2-2c92-4c01-830b-00be8e05b412">
+    <edge source="502014" target="502024">
       <data key="d3">271.0</data>
+      <data key="d4">2, 20, 20Z</data>
     </edge>
-    <edge source="023d7b7a-b411-4e61-8746-b07f9e5c8f90" target="eb165f50-9c43-4b09-9658-469a16d3dc83">
+    <edge source="502014" target="403022">
       <data key="d3">143.0</data>
     </edge>
-    <edge source="023d7b7a-b411-4e61-8746-b07f9e5c8f90" target="8598b85d-3e1d-4767-b72f-0c209038841f">
+    <edge source="502014" target="403042">
       <data key="d3">87.0</data>
     </edge>
-    <edge source="c297ac70-8f43-4fbc-a8a4-366ddb883a8d" target="6c56976b-4ae1-429f-bcab-0cfc37e3580d">
+    <edge source="703102" target="704141">
       <data key="d3">25.0</data>
     </edge>
-    <edge source="c297ac70-8f43-4fbc-a8a4-366ddb883a8d" target="769b7bc7-4f95-4bb2-9c99-37ba8e8b4bd5">
+    <edge source="703102" target="704011">
       <data key="d3">231.0</data>
     </edge>
-    <edge source="c297ac70-8f43-4fbc-a8a4-366ddb883a8d" target="5de84f88-3f32-4636-8c30-03cc267ecf37">
+    <edge source="703102" target="704181">
       <data key="d3">91.0</data>
     </edge>
-    <edge source="592b37eb-8255-4758-ae8a-7cef98521013" target="6bd46cb7-9e5d-453a-878a-bcc38fb2a5f2">
+    <edge source="104111" target="104051">
       <data key="d3">295.0</data>
     </edge>
-    <edge source="4d216485-ef41-45e7-9182-0c254644955c" target="9746f277-af08-4cce-92fa-41da5eca8ac2">
+    <edge source="104052" target="204171">
       <data key="d3">41.0</data>
     </edge>
-    <edge source="4d216485-ef41-45e7-9182-0c254644955c" target="9bd3ee10-bc61-44e8-8cf3-a37cffd54da0">
+    <edge source="104052" target="105131">
       <data key="d3">41.0</data>
     </edge>
-    <edge source="4d216485-ef41-45e7-9182-0c254644955c" target="592b37eb-8255-4758-ae8a-7cef98521013">
+    <edge source="104052" target="104111">
       <data key="d3">23.0</data>
     </edge>
-    <edge source="484b5c91-1220-43ba-af79-84e712fcc46b" target="98fa3880-5936-4ec8-ba04-39c7ff9a0e6a">
+    <edge source="803011" target="802011">
       <data key="d3">740.0</data>
     </edge>
-    <edge source="484b5c91-1220-43ba-af79-84e712fcc46b" target="a2ce7e6f-0f99-443a-a973-81a0b9c60261">
+    <edge source="803011" target="101051">
       <data key="d3">125.0</data>
     </edge>
-    <edge source="1035c6f7-304e-4329-a3b2-4eb5d985a577" target="1b0f629f-acdb-4e94-8c54-018f4334ebf7">
+    <edge source="404162" target="404092">
       <data key="d3">35.0</data>
+      <data key="d4">26</data>
     </edge>
-    <edge source="1035c6f7-304e-4329-a3b2-4eb5d985a577" target="91fb6c6e-49cf-49d3-97d4-6ae228f9bfa1">
+    <edge source="404162" target="404084">
       <data key="d3">35.0</data>
+      <data key="d4">26</data>
     </edge>
-    <edge source="1035c6f7-304e-4329-a3b2-4eb5d985a577" target="4e8ccfa1-b58c-4ee1-ad82-2e8a645071f3">
+    <edge source="404162" target="404201">
       <data key="d3">53.0</data>
+      <data key="d4">24</data>
     </edge>
-    <edge source="223f660b-c391-4120-bf3c-7bf06781686b" target="7fa32ea0-e884-435a-a81c-51bbd5cedf3e">
+    <edge source="203062" target="303021">
       <data key="d3">144.0</data>
+      <data key="d4">2</data>
     </edge>
-    <edge source="223f660b-c391-4120-bf3c-7bf06781686b" target="7bcbdcaa-00b9-47d4-8982-09da26cd7bcb">
+    <edge source="203062" target="303024">
       <data key="d3">125.0</data>
+      <data key="d4">22</data>
     </edge>
-    <edge source="223f660b-c391-4120-bf3c-7bf06781686b" target="47a3bd8a-72ae-4e20-b43f-10bfaf49012c">
+    <edge source="203062" target="303032">
       <data key="d3">53.0</data>
+      <data key="d4">24</data>
     </edge>
-    <edge source="c5ec5e81-2ce4-452d-bd7a-595de4f8b34f" target="8589e5d1-21b4-4210-ad7a-4bf91f9a715d">
+    <edge source="804022" target="804252">
       <data key="d3">333.0</data>
     </edge>
-    <edge source="c5ec5e81-2ce4-452d-bd7a-595de4f8b34f" target="fb7704f0-d31e-4561-83e4-621a8c62654b">
+    <edge source="804022" target="804082">
       <data key="d3">127.0</data>
     </edge>
-    <edge source="cdabf1ea-b04c-480a-8359-72c46e6864ab" target="f33b721f-a8a3-4aad-96f2-077da09ebaa6">
+    <edge source="101031" target="100021">
       <data key="d3">438.0</data>
+      <data key="d4">11B, 12D, 13, 20, 20Z, 7</data>
     </edge>
-    <edge source="cdabf1ea-b04c-480a-8359-72c46e6864ab" target="1ce1c3a8-e0f6-4f90-b1aa-1448759d8b3c">
+    <edge source="101031" target="101052">
       <data key="d3">125.0</data>
+      <data key="d4">22</data>
     </edge>
-    <edge source="86a75ffc-a78f-401f-8991-2eb0371417b2" target="1eadcdb9-60cd-47c9-8eec-527c3465a685">
+    <edge source="304062" target="304072">
       <data key="d3">264.0</data>
+      <data key="d4">11, 11B, 20Z, 27</data>
     </edge>
-    <edge source="86a75ffc-a78f-401f-8991-2eb0371417b2" target="e9d9f622-7394-4c5c-9031-a41855a64aa7">
+    <edge source="304062" target="304074">
       <data key="d3">97.0</data>
+      <data key="d4">25</data>
     </edge>
-    <edge source="2f18bcfa-6189-4de4-b06f-132d3392e7d6" target="9a14b0ec-f13a-46f0-8c4f-07d8b99241e2">
+    <edge source="405021" target="404071">
       <data key="d3">35.0</data>
     </edge>
-    <edge source="2f18bcfa-6189-4de4-b06f-132d3392e7d6" target="80c65758-5f25-4003-8d55-10ff96fe8310">
+    <edge source="405021" target="404161">
       <data key="d3">35.0</data>
     </edge>
-    <edge source="2f18bcfa-6189-4de4-b06f-132d3392e7d6" target="277bc73c-e61d-4046-bcfd-31d6161c568e">
+    <edge source="405021" target="204182">
       <data key="d3">23.0</data>
     </edge>
-    <edge source="277bc73c-e61d-4046-bcfd-31d6161c568e" target="1dc99fbb-5496-4aab-a4b6-32e653ccc789">
+    <edge source="204182" target="204181">
       <data key="d3">130.0</data>
     </edge>
-    <edge source="277bc73c-e61d-4046-bcfd-31d6161c568e" target="a7094427-e180-4deb-acaf-5d4488326e9e">
+    <edge source="204182" target="204081">
       <data key="d3">23.0</data>
     </edge>
-    <edge source="a2f479c6-4c21-4923-b4ac-86f752507cee" target="a2f479c6-4c21-4923-b4ac-86f752507cee">
-      <data key="d3">4.0</data>
-    </edge>
-    <edge source="8eeea585-6168-45b8-a5d4-336e61826043" target="e9382efd-d64d-46b0-9a7d-a4e6a0188725">
+    <edge source="804382" target="804202">
       <data key="d3">10.0</data>
     </edge>
-    <edge source="8eeea585-6168-45b8-a5d4-336e61826043" target="98b60d07-8054-441a-be44-be7aa24f4253">
+    <edge source="804382" target="804401">
       <data key="d3">125.0</data>
     </edge>
-    <edge source="294c40c4-18e4-4d92-a947-911a8623de89" target="1505c6fe-6080-424e-98d1-24c312cfacf3">
+    <edge source="603081" target="603071">
       <data key="d3">25.0</data>
+      <data key="d4">16</data>
     </edge>
-    <edge source="294c40c4-18e4-4d92-a947-911a8623de89" target="ab987eb0-c970-4577-8db9-0cd507a6cab6">
+    <edge source="603081" target="605012">
       <data key="d3">69.0</data>
     </edge>
-    <edge source="294c40c4-18e4-4d92-a947-911a8623de89" target="47637057-8d6a-4cf9-bd56-3ac90748fcc4">
+    <edge source="603081" target="604023">
       <data key="d3">72.0</data>
     </edge>
-    <edge source="5cc8a08d-c0af-491f-9a9c-b8b4f5f23bc0" target="f2b27cbd-5207-4281-8f67-6369d0c50a9b">
+    <edge source="203141" target="203101">
       <data key="d3">134.0</data>
     </edge>
-    <edge source="5cc8a08d-c0af-491f-9a9c-b8b4f5f23bc0" target="abc9fd26-5442-468b-93b6-4d5eb76d0f1f">
+    <edge source="203141" target="203142">
       <data key="d3">53.0</data>
     </edge>
-    <edge source="9bd3ee10-bc61-44e8-8cf3-a37cffd54da0" target="bc66f88b-1412-44cb-b921-030d27335261">
+    <edge source="105131" target="204071">
       <data key="d3">81.0</data>
     </edge>
-    <edge source="9bd3ee10-bc61-44e8-8cf3-a37cffd54da0" target="9746f277-af08-4cce-92fa-41da5eca8ac2">
+    <edge source="105131" target="204171">
       <data key="d3">41.0</data>
     </edge>
-    <edge source="48507e1a-32df-4552-9448-3b345760b75f" target="7310c006-62b8-4f94-bb9c-d5c26cb3faad">
+    <edge source="304091" target="304071">
       <data key="d3">264.0</data>
+      <data key="d4">11, 11B, 20Z, 27</data>
     </edge>
-    <edge source="48507e1a-32df-4552-9448-3b345760b75f" target="e9d9f622-7394-4c5c-9031-a41855a64aa7">
+    <edge source="304091" target="304074">
       <data key="d3">53.0</data>
+      <data key="d4">24</data>
     </edge>
-    <edge source="a2ce7e6f-0f99-443a-a973-81a0b9c60261" target="e6f5183b-c615-4f47-b4fb-204ee070e825">
+    <edge source="101051" target="101032">
       <data key="d3">125.0</data>
+      <data key="d4">22</data>
     </edge>
-    <edge source="a2ce7e6f-0f99-443a-a973-81a0b9c60261" target="f33b721f-a8a3-4aad-96f2-077da09ebaa6">
+    <edge source="101051" target="100021">
       <data key="d3">600.0</data>
+      <data key="d4">11, 19B, 19I, 6, 8</data>
     </edge>
-    <edge source="1505c6fe-6080-424e-98d1-24c312cfacf3" target="5de6ff80-1352-43df-b5ec-1df59f2f492b">
+    <edge source="603071" target="603072">
       <data key="d3">143.0</data>
     </edge>
-    <edge source="1505c6fe-6080-424e-98d1-24c312cfacf3" target="c297ac70-8f43-4fbc-a8a4-366ddb883a8d">
+    <edge source="603071" target="703102">
       <data key="d3">25.0</data>
     </edge>
-    <edge source="e786b2df-34ed-4246-832e-7c3d538ac1f4" target="609f0950-bb8c-4eaf-a931-8575b8aff1ac">
+    <edge source="203211" target="202031">
       <data key="d3">141.0</data>
+      <data key="d4">19B, 19I</data>
     </edge>
-    <edge source="e786b2df-34ed-4246-832e-7c3d538ac1f4" target="1b3ddeca-a066-43ee-9ae5-8339628129c2">
+    <edge source="203211" target="202062">
       <data key="d3">53.0</data>
+      <data key="d4">24</data>
     </edge>
-    <edge source="5de6ff80-1352-43df-b5ec-1df59f2f492b" target="96d4c75b-6452-4c70-a31e-c234262ba38b">
+    <edge source="603072" target="603082">
       <data key="d3">25.0</data>
+      <data key="d4">16</data>
     </edge>
-    <edge source="5de6ff80-1352-43df-b5ec-1df59f2f492b" target="fef200e9-4d98-425b-ab14-8110e2aa85d7">
+    <edge source="603072" target="602021">
       <data key="d3">143.0</data>
     </edge>
-    <edge source="0dc86a8f-0f41-44c7-978c-e06cb63cbbcf" target="35aedf45-cca3-4f2f-931b-138d29d20fe9">
+    <edge source="805012" target="805023">
       <data key="d3">133.0</data>
+      <data key="d4">15, 25</data>
     </edge>
-    <edge source="1b0f629f-acdb-4e94-8c54-018f4334ebf7" target="271db19a-744b-41a0-869d-0c3e0e2cb6bf">
+    <edge source="404084" target="405022">
       <data key="d3">35.0</data>
     </edge>
-    <edge source="e6f5183b-c615-4f47-b4fb-204ee070e825" target="2f874852-bc80-4ff3-b6bf-a914e31251c8">
+    <edge source="101032" target="202032">
       <data key="d3">250.0</data>
     </edge>
-    <edge source="e6f5183b-c615-4f47-b4fb-204ee070e825" target="c87db9be-1fba-4102-a743-0ee4317dd5af">
+    <edge source="101032" target="600012">
       <data key="d3">91.0</data>
     </edge>
-    <edge source="e6f5183b-c615-4f47-b4fb-204ee070e825" target="d98335a0-1291-4d4c-be62-16b11c356575">
+    <edge source="101032" target="103192">
       <data key="d3">87.0</data>
     </edge>
-    <edge source="e6f5183b-c615-4f47-b4fb-204ee070e825" target="1e157c31-d34d-4c2e-91b4-8c000c88f6dd">
+    <edge source="101032" target="102091">
       <data key="d3">127.0</data>
     </edge>
-    <edge source="47a3bd8a-72ae-4e20-b43f-10bfaf49012c" target="eb165f50-9c43-4b09-9658-469a16d3dc83">
+    <edge source="303032" target="403022">
       <data key="d3">196.0</data>
+      <data key="d4">24, 9</data>
     </edge>
-    <edge source="52e5adea-e194-4fc1-809c-1d6421f8f8db" target="ac3afe7d-a2b3-4d5d-9e6a-1d2412a3bc70">
+    <edge source="803211" target="803051">
       <data key="d3">267.0</data>
+      <data key="d4">18, 18L, 3, 3B, N3</data>
     </edge>
-    <edge source="923bd774-0651-4e0a-8624-3acfb7ecd5ff" target="aa42017d-812a-4175-bc9b-0fec03b18931">
+    <edge source="402061" target="502013">
       <data key="d3">230.0</data>
+      <data key="d4">13, 5, N5</data>
     </edge>
-    <edge source="3edd6057-3847-4c42-b8ec-6e89ff95793a" target="bc66f88b-1412-44cb-b921-030d27335261">
+    <edge source="204083" target="204071">
       <data key="d3">53.0</data>
     </edge>
-    <edge source="3edd6057-3847-4c42-b8ec-6e89ff95793a" target="1dc99fbb-5496-4aab-a4b6-32e653ccc789">
+    <edge source="204083" target="204181">
       <data key="d3">23.0</data>
     </edge>
-    <edge source="cee2862b-9b70-4880-8fa3-16c6d2efae1b" target="6459bd02-d8f8-413e-9402-10b916f09a4f">
+    <edge source="103032" target="103111">
       <data key="d3">64.0</data>
     </edge>
-    <edge source="cee2862b-9b70-4880-8fa3-16c6d2efae1b" target="db13a26e-19d4-4b8a-a78a-01ef25d58834">
+    <edge source="103032" target="104032">
       <data key="d3">459.0</data>
     </edge>
-    <edge source="a719a87c-4e93-4387-a6d1-2631a487f7e0" target="717c914e-f928-4671-95f6-26c1ddb95799">
+    <edge source="600022" target="704152">
       <data key="d3">225.0</data>
     </edge>
-    <edge source="a719a87c-4e93-4387-a6d1-2631a487f7e0" target="c297ac70-8f43-4fbc-a8a4-366ddb883a8d">
+    <edge source="600022" target="703102">
       <data key="d3">322.0</data>
     </edge>
-    <edge source="a719a87c-4e93-4387-a6d1-2631a487f7e0" target="8c7fa045-888b-46d0-8189-6f82623bf481">
+    <edge source="600022" target="502012">
       <data key="d3">144.0</data>
     </edge>
-    <edge source="a719a87c-4e93-4387-a6d1-2631a487f7e0" target="9b0074d2-2c92-4c01-830b-00be8e05b412">
+    <edge source="600022" target="502024">
       <data key="d3">130.0</data>
     </edge>
-    <edge source="a719a87c-4e93-4387-a6d1-2631a487f7e0" target="4038e02e-f22f-4af0-ba4f-7aab855b53af">
+    <edge source="600022" target="803081">
       <data key="d3">119.0</data>
     </edge>
-    <edge source="a719a87c-4e93-4387-a6d1-2631a487f7e0" target="1505c6fe-6080-424e-98d1-24c312cfacf3">
+    <edge source="600022" target="603071">
       <data key="d3">143.0</data>
     </edge>
-    <edge source="a719a87c-4e93-4387-a6d1-2631a487f7e0" target="294c40c4-18e4-4d92-a947-911a8623de89">
+    <edge source="600022" target="603081">
       <data key="d3">141.0</data>
     </edge>
-    <edge source="a719a87c-4e93-4387-a6d1-2631a487f7e0" target="0be237aa-4b91-4d2b-ac23-0cebac975a0d">
+    <edge source="600022" target="602011">
       <data key="d3">148.0</data>
     </edge>
-    <edge source="a719a87c-4e93-4387-a6d1-2631a487f7e0" target="ecc4ae87-ae08-4b94-995c-452fdd94df7f">
+    <edge source="600022" target="602111">
       <data key="d3">70.0</data>
     </edge>
-    <edge source="6edebb46-d04f-45c4-99a4-100f7f0b2660" target="1035c6f7-304e-4329-a3b2-4eb5d985a577">
+    <edge source="404062" target="404162">
+      <data key="d3">35.0</data>
+      <data key="d4">26</data>
+    </edge>
+    <edge source="404062" target="404084">
       <data key="d3">35.0</data>
     </edge>
-    <edge source="6edebb46-d04f-45c4-99a4-100f7f0b2660" target="1b0f629f-acdb-4e94-8c54-018f4334ebf7">
+    <edge source="404062" target="404092">
       <data key="d3">35.0</data>
     </edge>
-    <edge source="6edebb46-d04f-45c4-99a4-100f7f0b2660" target="91fb6c6e-49cf-49d3-97d4-6ae228f9bfa1">
-      <data key="d3">35.0</data>
-    </edge>
-    <edge source="6edebb46-d04f-45c4-99a4-100f7f0b2660" target="80c65758-5f25-4003-8d55-10ff96fe8310">
+    <edge source="404062" target="404161">
       <data key="d3">53.0</data>
     </edge>
-    <edge source="6edebb46-d04f-45c4-99a4-100f7f0b2660" target="4e8ccfa1-b58c-4ee1-ad82-2e8a645071f3">
+    <edge source="404062" target="404201">
       <data key="d3">87.0</data>
     </edge>
-    <edge source="7fa32ea0-e884-435a-a81c-51bbd5cedf3e" target="aa42017d-812a-4175-bc9b-0fec03b18931">
+    <edge source="303021" target="502013">
       <data key="d3">271.0</data>
     </edge>
-    <edge source="7fa32ea0-e884-435a-a81c-51bbd5cedf3e" target="c22879e5-8e90-4540-9a74-5f139208e492">
+    <edge source="303021" target="301011">
       <data key="d3">240.0</data>
     </edge>
-    <edge source="7fa32ea0-e884-435a-a81c-51bbd5cedf3e" target="ecc4ae87-ae08-4b94-995c-452fdd94df7f">
+    <edge source="303021" target="602111">
       <data key="d3">130.0</data>
     </edge>
-    <edge source="3c6ebf90-c611-4535-b2b0-22fba3f7649a" target="1e157c31-d34d-4c2e-91b4-8c000c88f6dd">
+    <edge source="103182" target="102091">
       <data key="d3">87.0</data>
     </edge>
-    <edge source="3c6ebf90-c611-4535-b2b0-22fba3f7649a" target="cee2862b-9b70-4880-8fa3-16c6d2efae1b">
+    <edge source="103182" target="103032">
       <data key="d3">64.0</data>
     </edge>
-    <edge source="3c6ebf90-c611-4535-b2b0-22fba3f7649a" target="e786b2df-34ed-4246-832e-7c3d538ac1f4">
+    <edge source="103182" target="203211">
       <data key="d3">53.0</data>
     </edge>
-    <edge source="1eadcdb9-60cd-47c9-8eec-527c3465a685" target="6559d555-672b-4633-8a81-0ae68fb963eb">
+    <edge source="304072" target="304142">
       <data key="d3">187.0</data>
     </edge>
-    <edge source="1eadcdb9-60cd-47c9-8eec-527c3465a685" target="277bc73c-e61d-4046-bcfd-31d6161c568e">
+    <edge source="304072" target="204182">
       <data key="d3">130.0</data>
     </edge>
-    <edge source="f15ddf31-fc11-41ba-988d-376c83e38f58" target="2ec182e2-769f-427f-b9b5-c4118890cb96">
+    <edge source="102072" target="103101">
       <data key="d3">64.0</data>
     </edge>
-    <edge source="f15ddf31-fc11-41ba-988d-376c83e38f58" target="6459bd02-d8f8-413e-9402-10b916f09a4f">
+    <edge source="102072" target="103111">
       <data key="d3">148.0</data>
     </edge>
-    <edge source="769b7bc7-4f95-4bb2-9c99-37ba8e8b4bd5" target="6c56976b-4ae1-429f-bcab-0cfc37e3580d">
+    <edge source="704011" target="704141">
       <data key="d3">236.0</data>
+      <data key="d4">1, 1B, N1</data>
     </edge>
-    <edge source="769b7bc7-4f95-4bb2-9c99-37ba8e8b4bd5" target="5de84f88-3f32-4636-8c30-03cc267ecf37">
+    <edge source="704011" target="704181">
       <data key="d3">231.0</data>
+      <data key="d4">6</data>
     </edge>
-    <edge source="7eb88e01-82e9-4af4-84d0-69c6ea9dc82c" target="f4cfd904-bd11-4247-95df-32c4555a930f">
+    <edge source="300012" target="402032">
       <data key="d3">240.0</data>
     </edge>
-    <edge source="7eb88e01-82e9-4af4-84d0-69c6ea9dc82c" target="a0b1fb90-3f6a-4231-910a-18be192ac762">
+    <edge source="300012" target="202082">
       <data key="d3">215.0</data>
     </edge>
-    <edge source="7eb88e01-82e9-4af4-84d0-69c6ea9dc82c" target="58db973d-ecbb-4aa6-a56c-c26aaff7f263">
+    <edge source="300012" target="600012">
       <data key="d3">29.0</data>
     </edge>
-    <edge source="7eb88e01-82e9-4af4-84d0-69c6ea9dc82c" target="c87db9be-1fba-4102-a743-0ee4317dd5af">
+    <edge source="300012" target="801021">
       <data key="d3">29.0</data>
     </edge>
-    <edge source="7eb88e01-82e9-4af4-84d0-69c6ea9dc82c" target="1b3ddeca-a066-43ee-9ae5-8339628129c2">
+    <edge source="300012" target="202062">
       <data key="d3">144.0</data>
     </edge>
-    <edge source="eb165f50-9c43-4b09-9658-469a16d3dc83" target="8598b85d-3e1d-4767-b72f-0c209038841f">
+    <edge source="403022" target="403042">
       <data key="d3">339.0</data>
+      <data key="d4">24, 5, 9, N5</data>
     </edge>
-    <edge source="3fbf6322-fb74-4a50-a81a-bfca73abc26b" target="c0ff37c8-ac6c-4284-ad32-0ad29fd30dc2">
+    <edge source="804141" target="804121">
       <data key="d3">36.0</data>
+      <data key="d4">15</data>
     </edge>
-    <edge source="3fbf6322-fb74-4a50-a81a-bfca73abc26b" target="05643914-8ff7-4064-8737-2761d44a083f">
+    <edge source="804141" target="804101">
       <data key="d3">127.0</data>
     </edge>
-    <edge source="c22879e5-8e90-4540-9a74-5f139208e492" target="8512e1be-4637-483b-a3e6-78ccc6d2c5b1">
+    <edge source="301011" target="100012">
       <data key="d3">81.0</data>
     </edge>
-    <edge source="c22879e5-8e90-4540-9a74-5f139208e492" target="c87db9be-1fba-4102-a743-0ee4317dd5af">
+    <edge source="301011" target="600012">
       <data key="d3">518.0</data>
     </edge>
-    <edge source="a7094427-e180-4deb-acaf-5d4488326e9e" target="3edd6057-3847-4c42-b8ec-6e89ff95793a">
+    <edge source="204081" target="204083">
       <data key="d3">23.0</data>
+      <data key="d4">10</data>
     </edge>
-    <edge source="a7094427-e180-4deb-acaf-5d4488326e9e" target="7310c006-62b8-4f94-bb9c-d5c26cb3faad">
+    <edge source="204081" target="304071">
       <data key="d3">97.0</data>
     </edge>
-    <edge source="a7094427-e180-4deb-acaf-5d4488326e9e" target="1eadcdb9-60cd-47c9-8eec-527c3465a685">
+    <edge source="204081" target="304072">
       <data key="d3">53.0</data>
     </edge>
-    <edge source="47637057-8d6a-4cf9-bd56-3ac90748fcc4" target="96d4c75b-6452-4c70-a31e-c234262ba38b">
+    <edge source="604023" target="603082">
       <data key="d3">141.0</data>
     </edge>
-    <edge source="8c7fa045-888b-46d0-8189-6f82623bf481" target="023d7b7a-b411-4e61-8746-b07f9e5c8f90">
+    <edge source="502012" target="502014">
       <data key="d3">358.0</data>
+      <data key="d4">13, 2, 20, 20Z</data>
     </edge>
-    <edge source="4ca7ae7e-380b-45e3-81de-00ffab5bb531" target="fb0042f8-d9e2-4916-b60a-38a026acf0c9">
+    <edge source="203192" target="204011">
       <data key="d3">125.0</data>
     </edge>
-    <edge source="4ca7ae7e-380b-45e3-81de-00ffab5bb531" target="86a75ffc-a78f-401f-8991-2eb0371417b2">
+    <edge source="203192" target="304062">
       <data key="d3">134.0</data>
     </edge>
-    <edge source="6bd46cb7-9e5d-453a-878a-bcc38fb2a5f2" target="21764d19-62cc-49fd-bac9-403aeac6a6b9">
+    <edge source="104051" target="104031">
       <data key="d3">347.0</data>
+      <data key="d4">6, 8</data>
     </edge>
-    <edge source="6bd46cb7-9e5d-453a-878a-bcc38fb2a5f2" target="db13a26e-19d4-4b8a-a78a-01ef25d58834">
+    <edge source="104051" target="104032">
       <data key="d3">41.0</data>
     </edge>
-    <edge source="6bd46cb7-9e5d-453a-878a-bcc38fb2a5f2" target="c627c9f2-af02-4d83-969a-566719bb09e3">
+    <edge source="104051" target="104221">
       <data key="d3">23.0</data>
     </edge>
-    <edge source="fb0042f8-d9e2-4916-b60a-38a026acf0c9" target="5cc8a08d-c0af-491f-9a9c-b8b4f5f23bc0">
+    <edge source="204011" target="203141">
       <data key="d3">134.0</data>
+      <data key="d4">27</data>
     </edge>
-    <edge source="fb0042f8-d9e2-4916-b60a-38a026acf0c9" target="7fad8003-fb10-489d-bf8d-6d433310ad90">
+    <edge source="204011" target="203161">
       <data key="d3">125.0</data>
     </edge>
-    <edge source="59ee5f7d-476b-4958-a922-2040a9308f3b" target="3c6ebf90-c611-4535-b2b0-22fba3f7649a">
+    <edge source="203212" target="103182">
       <data key="d3">53.0</data>
+      <data key="d4">24</data>
     </edge>
-    <edge source="717c914e-f928-4671-95f6-26c1ddb95799" target="5de84f88-3f32-4636-8c30-03cc267ecf37">
+    <edge source="704152" target="704181">
       <data key="d3">25.0</data>
     </edge>
-    <edge source="717c914e-f928-4671-95f6-26c1ddb95799" target="769b7bc7-4f95-4bb2-9c99-37ba8e8b4bd5">
+    <edge source="704152" target="704011">
       <data key="d3">225.0</data>
     </edge>
-    <edge source="7fad8003-fb10-489d-bf8d-6d433310ad90" target="f2b27cbd-5207-4281-8f67-6369d0c50a9b">
+    <edge source="203161" target="203101">
       <data key="d3">403.0</data>
     </edge>
-    <edge source="9a14b0ec-f13a-46f0-8c4f-07d8b99241e2" target="d4c51b31-46fd-4da8-ba15-8068e666d483">
+    <edge source="404071" target="404061">
       <data key="d3">175.0</data>
+      <data key="d4">13, 24, 26</data>
     </edge>
-    <edge source="e468b92f-fa4a-4819-bb11-37761deaf4ca" target="12304b99-9a07-485a-a101-eaca90495d48">
+    <edge source="405111" target="405032">
       <data key="d3">23.0</data>
+      <data key="d4">10</data>
     </edge>
-    <edge source="e468b92f-fa4a-4819-bb11-37761deaf4ca" target="2f18bcfa-6189-4de4-b06f-132d3392e7d6">
+    <edge source="405111" target="405021">
       <data key="d3">23.0</data>
+      <data key="d4">10</data>
     </edge>
-    <edge source="1dc99fbb-5496-4aab-a4b6-32e653ccc789" target="48507e1a-32df-4552-9448-3b345760b75f">
+    <edge source="204181" target="304091">
       <data key="d3">130.0</data>
     </edge>
-    <edge source="1dc99fbb-5496-4aab-a4b6-32e653ccc789" target="271db19a-744b-41a0-869d-0c3e0e2cb6bf">
+    <edge source="204181" target="405022">
       <data key="d3">23.0</data>
     </edge>
-    <edge source="2f874852-bc80-4ff3-b6bf-a914e31251c8" target="1b3ddeca-a066-43ee-9ae5-8339628129c2">
+    <edge source="202032" target="202062">
       <data key="d3">250.0</data>
+      <data key="d4">22, 7</data>
     </edge>
-    <edge source="2f874852-bc80-4ff3-b6bf-a914e31251c8" target="e786b2df-34ed-4246-832e-7c3d538ac1f4">
+    <edge source="202032" target="203211">
       <data key="d3">141.0</data>
     </edge>
-    <edge source="271db19a-744b-41a0-869d-0c3e0e2cb6bf" target="12304b99-9a07-485a-a101-eaca90495d48">
+    <edge source="405022" target="405032">
       <data key="d3">35.0</data>
+      <data key="d4">26</data>
     </edge>
-    <edge source="271db19a-744b-41a0-869d-0c3e0e2cb6bf" target="e468b92f-fa4a-4819-bb11-37761deaf4ca">
+    <edge source="405022" target="405111">
       <data key="d3">23.0</data>
+      <data key="d4">10</data>
     </edge>
-    <edge source="81f21fc1-3bd2-4d2a-b563-2d063479c68e" target="7fa32ea0-e884-435a-a81c-51bbd5cedf3e">
+    <edge source="403043" target="303021">
       <data key="d3">143.0</data>
     </edge>
-    <edge source="81f21fc1-3bd2-4d2a-b563-2d063479c68e" target="88cdd36c-03d2-4374-a22f-110dd9f75ea0">
+    <edge source="403043" target="303022">
       <data key="d3">53.0</data>
     </edge>
-    <edge source="81f21fc1-3bd2-4d2a-b563-2d063479c68e" target="923bd774-0651-4e0a-8624-3acfb7ecd5ff">
+    <edge source="403043" target="402061">
       <data key="d3">143.0</data>
     </edge>
-    <edge source="25cde952-4896-4977-b229-75e09b3e3661" target="86a75ffc-a78f-401f-8991-2eb0371417b2">
+    <edge source="304042" target="304062">
       <data key="d3">227.0</data>
+      <data key="d4">11, 11B, 20Z, 25</data>
     </edge>
-    <edge source="6c56976b-4ae1-429f-bcab-0cfc37e3580d" target="b59656a4-b6e7-4b87-977c-078c59088a50">
+    <edge source="704141" target="602031">
       <data key="d3">236.0</data>
     </edge>
-    <edge source="6c56976b-4ae1-429f-bcab-0cfc37e3580d" target="717c914e-f928-4671-95f6-26c1ddb95799">
+    <edge source="704141" target="704152">
       <data key="d3">25.0</data>
     </edge>
-    <edge source="98b60d07-8054-441a-be44-be7aa24f4253" target="8eeea585-6168-45b8-a5d4-336e61826043">
+    <edge source="804401" target="804382">
       <data key="d3">10.0</data>
     </edge>
-    <edge source="98b60d07-8054-441a-be44-be7aa24f4253" target="093afa81-b65f-4182-bac3-afbc00558a9b">
+    <edge source="804401" target="803141">
       <data key="d3">125.0</data>
     </edge>
-    <edge source="58db973d-ecbb-4aa6-a56c-c26aaff7f263" target="7484317c-269f-425f-8118-23eedab4e5f1">
+    <edge source="801021" target="801011">
       <data key="d3">29.0</data>
+      <data key="d4">SŽ</data>
     </edge>
-    <edge source="4e8ccfa1-b58c-4ee1-ad82-2e8a645071f3" target="9a14b0ec-f13a-46f0-8c4f-07d8b99241e2">
+    <edge source="404201" target="404071">
       <data key="d3">175.0</data>
     </edge>
-    <edge source="1e157c31-d34d-4c2e-91b4-8c000c88f6dd" target="cdabf1ea-b04c-480a-8359-72c46e6864ab">
+    <edge source="102091" target="101031">
       <data key="d3">214.0</data>
     </edge>
-    <edge source="2388ce1f-c947-42d7-97f3-e01a7254c933" target="a7177a3d-8db2-43fb-8910-f95857f0ed97">
-      <data key="d3">6.0</data>
-    </edge>
-    <edge source="2388ce1f-c947-42d7-97f3-e01a7254c933" target="a2f479c6-4c21-4923-b4ac-86f752507cee">
-      <data key="d3">2.0</data>
-    </edge>
-    <edge source="5de84f88-3f32-4636-8c30-03cc267ecf37" target="b59656a4-b6e7-4b87-977c-078c59088a50">
+    <edge source="704181" target="602031">
       <data key="d3">322.0</data>
     </edge>
-    <edge source="5de84f88-3f32-4636-8c30-03cc267ecf37" target="5de6ff80-1352-43df-b5ec-1df59f2f492b">
+    <edge source="704181" target="603072">
       <data key="d3">25.0</data>
     </edge>
   </graph>

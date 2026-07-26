@@ -12,63 +12,67 @@
 
 ### Lastnosti grafa
 
-**Vozlišča**: 905 postajališč LPP
+**Vozlišča**: 857 postajališč LPP (brez Grosuplja)
 
 **Uteži usmerjenih povezav**: število avtobusov, ki med danima postajališčema vozijo v enem dnevu
 ### Rezultati 5000 simulacij z naključnima začetnima vozliščema
-- Uspešnost srečanj: 83.88%
-- Povprečno število korakov do srečanja: 1347.7 (zgornja meja: $5 \cdot št. vozlišč = 4525$ preden se simulacija prekine)
+- Trajanje: 70.08 s
+- Uspešnost srečanj: 92.78%
+- Povprečno število korakov do srečanja: 1288.8 (zgornja meja: $5 \cdot št. vozlišč = 4525$ preden se simulacija prekine)
 
 #### TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA
- - Bavarski dvor: 1106x
- - Drama: 333x
- - Ajdovščina: 283x
- - Razstavišče: 250x
- - Pošta: 216x
+ - Bavarski dvor: 1205x
+ - Drama: 347x
+ - Ajdovščina: 289x
+ - Razstavišče: 277x
+ - Pošta: 258x
 
 ### Rezultati 5000 simulacij z začetkom na **FMF** - Jadranski (proti centru) in **MF** - Kliničnem centru (proti centru)
 
-Uspešnost srečanj: 92.82%
-Povprečno število korakov do srečanja: 1331.4
+- Trajanje: 51.78s
+- Uspešnost srečanj: 92.64%
+- Povprečno število korakov do srečanja: 1284.0
 
 #### TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA
- - Bavarski dvor: 1175x
- - Drama: 370x
- - Ajdovščina: 329x
- - Razstavišče: 276x
- - Pošta: 228x
+ - Bavarski dvor: 1193x
+ - Drama: 383x
+ - Ajdovščina: 296x
+ - Razstavišče: 285x
+ - Pošta: 245x
 
 ## Model 1.5:
 
 ### Lastnosti grafa
 
-**Vozlišča**: 132 postajališč, ki imajo vhodno stopnjo večjo od ena
+**Vozlišča**: 129 postajališč, ki imajo vhodno stopnjo večjo od ena
 
 **Uteži usmerjenih povezav**: število avtobusov, ki med danima postajališčema vozijo v enem dnevu
 
 ### Rezultati 5000 simulacij
 
-Uspešnost srečanj: 93.24%
-Povprečno število korakov do srečanja: 156.6 (zgornja meja: 660)
+- Trajanje: 6.81s
+- Uspešnost srečanj: 97.46%
+- Povprečno število korakov do srečanja: 159.6 (zgornja meja: 660)
 
 #### TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA
- - Bavarski dvor: 1204x
- - Drama: 356x
- - Ajdovščina: 319x
- - Pošta: 276x
- - Razstavišče: 254x
+ - Bavarski dvor: 1269x
+ - Drama: 343x
+ - Ajdovščina: 310x
+ - Razstavišče: 298x
+ - Pošta: 272x
 
 ### Rezultati 5000 simulacij z začetkom na Hajdrihovi (proti centru) in Ambroževem trgu (proti centru)
 
-Uspešnost srečanj: 97.72%
-Povprečno število korakov do srečanja: 163.5 (zg. meja: 660)
+- Trajanje: 7.34s
+- Uspešnost srečanj: 97.50%
+- Povprečno število korakov do srečanja: 161.6 (zg. meja: 660)
 
 #### TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA
- - Bavarski dvor: 1272x
- - Drama: 368x
- - Ajdovščina: 340x
- - Pošta: 289x
- - Razstavišče: 280x
+  - Bavarski dvor: 1250x
+ - Ajdovščina: 350x
+ - Drama: 331x
+ - Pošta: 281x
+ - Razstavišče: 262x
 
 
 ## Model 2: 
