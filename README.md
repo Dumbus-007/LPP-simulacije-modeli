@@ -79,7 +79,7 @@
 
 ### Lastnosti grafa
 
-**Vozlišča**: 492 postajališč, od tega 413 "dvojnih" postajališč (vozlišča modela 1 so združena v pare npr.: Konzorcij/Pošta)
+**Vozlišča**: 461 postajališč, od tega 396 "dvojnih" postajališč (vozlišča modela 1 so združena v pare npr.: Konzorcij/Pošta)
  - pravila združevanja: 
     1. združujemo zgolj vozlišča, ki niso sosednja v grafu modela 1 (torej niso zaporedna postajališča neke linije, ker želimo namreč združiti postajališči, ki ležita na nasprotnih straneh ceste),
     2. izmed nesosednjih vozlišč združimo tisti dve, ki sta si najbližji,
@@ -89,27 +89,29 @@
 
 ### Rezultati 5000 simulacij
 
-- Uspešnost srečanj: 85.72%
-- Povprečno število korakov do srečanja: 674.1 (zgornja meja: 2460)
+- Trajanje: 29.46s
+- Uspešnost srečanj: 96.08%
+- Povprečno število korakov do srečanja: 654.1 (zgornja meja: 2460)
 
 #### TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA
- - Bavarski dvor: 638x
- - Ajdovščina: 331x
- - Konzorcij/Pošta: 290x
- - Razstavišče: 238x
- - Drama: 191x
+ - Bavarski dvor: 694x
+ - Ajdovščina: 414x
+ - Konzorcij/Pošta: 296x
+ - Razstavišče: 262x
+ - Drama: 236x
 
 ### Rezultati 5000 simulacij s fiksnima začetnima točkama (Jadranska, Klinični center)
 
-Uspešnost srečanj: 98.16%
-Povprečno število korakov do srečanja: 516.9
+- Trajanje: 22.53s
+- Uspešnost srečanj: 97.20%
+- Povprečno število korakov do srečanja: 511.3
 
 #### TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA
- - Bavarski dvor: 800x
- - Ajdovščina: 479x
- - Konzorcij/Pošta: 353x
- - Drama: 340x
- - Razstavišče: 260x
+ - Bavarski dvor: 747x
+ - Ajdovščina: 422x
+ - Konzorcij/Pošta: 385x
+ - Drama: 355x
+ - Razstavišče: 253x
 
 ## Model 3
 
