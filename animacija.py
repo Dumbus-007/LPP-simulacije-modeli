@@ -102,29 +102,10 @@ def animiraj_sprehod(G, start_a=None, start_b=None, interval=1000, invert_weight
     plt.show()
 
 # ================================================
-# ============ PRIMERI UPORABE ===================
+# ============ PRIMER UPORABE ===================
 # ================================================
 
-# ----- PRIMER 1: Generični usmerjeni obteženi graf -----
+# animacija sprehodov v sintetičnem grafu (liziki) na 6 vozliščih z začetkoma v vozlišču 0 in 5
 
-#print("--- Poganjam Primer 1 (Uporabniški graf) ---")
-# Animacija z NAKLJUČNIMI začetnimi točkami (začetni točki sta None)
-#G1 = nx.read_graphml("model 1.5/model1.5_zreduciran.graphml")
-#animiraj_sprehod(G1, start_a=None, start_b=None, interval=100)
-
-# ----- PRIMER 2: Sintetični Lollipop graf (brez uteži) -----
-print("\n--- Poganjam Primer 2 (Lollipop 20 vozlišč) ---")
-# Lollipop(10, 10) naredi poln graf 10-klik in pot 10-pot, skupaj 20 vozlišč
-G_un = nx.lollipop_graph(m=10, n=10)
-
-# Pretvori v usmerjen graf in vsaki povezavi dodaj privzeto utež 1.0 (enaka verjetnost)
-G2 = G_un.to_directed()
-
-# Animacija s FIKSNIMI začetnimi točkami:
-# start_a = '0' (vozlišče globoko v glavi klik-a)
-# start_b = '19' (končno vozlišče v repu)
-#animiraj_sprehod(G2, start_a=0, start_b=19, interval=500)
-
-G_p = nx.path_graph(6).to_directed()
-
-animiraj_sprehod(G_p, start_a=0, start_b=1, interval=500, invert_weights=False)
+G_l = nx.lollipop_graph(m=4, n=2).to_directed()
+animiraj_sprehod(G_l, start_a=0, start_b=5, interval=500, invert_weights=False)

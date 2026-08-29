@@ -45,8 +45,11 @@ print(f"Začenjam s simulacijo na Modelu 3 ({STEVILO_SIMULACIJ} ponovitev)...")
 start_time = time.perf_counter()
 
 for i in range(STEVILO_SIMULACIJ):
+    #naključna izbira začetnih vozlišč
     #id_a = random.choice(vsa_vozlisca)
     #id_b = random.choice(vsa_vozlisca)
+
+    #fiksna postajališča za model 3
     id_a = "603011" #Jadranska
     id_b = "402031" #Klinicni center
 
