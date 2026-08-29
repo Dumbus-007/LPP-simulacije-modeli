@@ -8,7 +8,7 @@ SIMULACIJ_NA_PAR = 100  # 6x6 = 36 parov -> skupaj 3600 simulacij na graf
 OUTPUT_CSV = "sinteticni primeri/sinteticni_grafi_rezultati.csv"
 # ---------------------
 
-# 1. Popolnoma enostaven korak (brez uteži, brez računanja verjetnosti)
+# 1. enostaven korak
 def naredi_enostaven_korak(graf, trenutno_vozlisce):
     sosedje = list(graf.successors(trenutno_vozlisce))
     if not sosedje:
@@ -30,7 +30,7 @@ def zaženi_simulacijo(ime_topologije, graf):
                 koraki = 0
                 koncno_vozlisce = None
                 
-                # Simulacija poteka dokler se ne srečata znova (korak 0 ne šteje več za srečanje)
+                
                 while koraki < maks_korakov:
                     koraki += 1
                     id_a = naredi_enostaven_korak(graf, id_a)
@@ -50,7 +50,7 @@ def zaženi_simulacijo(ime_topologije, graf):
                 
     return simulacije_rezultati
 
-# 3. DIREKTNO GENERIRANJE USMERJENIH GRAFOV (.to_directed())
+# 3. generiranje usmerjenih grafov (.to_directed())
 grafi = {
     "Path": nx.path_graph(STEVILO_VOZLISC).to_directed(),
     "Ring": nx.cycle_graph(STEVILO_VOZLISC).to_directed(),
@@ -76,10 +76,5 @@ for ime, G_dir in grafi.items():
 
 # Zapis v CSV
 df = pd.DataFrame(vsi_rezultati)
-
-# Prikaz prvih nekoliko vrstic za pregled
-print(df.head(10).to_string(index=False))
-print(f"\nSkupno število izvedenih simulacij: {len(df)}")
-
 df.to_csv(OUTPUT_CSV, index=False, encoding="utf-8")
 print(f"Rezultati so shranjeni v '{OUTPUT_CSV}'.")
