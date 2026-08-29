@@ -3,9 +3,34 @@
 ## Vsebina repozitorija
 
 - mapa ``lpp_gtfs``: vsebuje surove GTFS podatke za LPP
-- mape modelov, ki vsebujejo kodo za generiranje grafa, graf v ``.graphml`` datoteki in rezultate simulacij v ``.csv`` datotekah
-- python datoteko ``simulate_meetings1.py``, ki požene simulacijo na prvih modelih 1, 1.5 in 2
-- python datoteko ``simulate_meetings3.py``, ki požene simulacijo na  modelu 3
+- mape modelov:
+  - model 1:
+    - koda za pridobivanje podatkov: ``count_all_trips.py``
+    - pridobljeni podatki: ``all_lines_trips.csv``
+    - koda za generiranje grafa ``model1_graph_generation.py``
+    - graf v ``.graphml`` datoteki
+    - ``.csv`` datoteki z rezultati simulacij
+    - jupyter notebook ``analiza_simulacij.ipynb`` z analizo najpogostejših krajev srečanj in testom ustreznosti krajev srečanj
+  - model 2:
+    - koda za generiranje grafa ``model2_graph_generation.py``
+    - graf v ``.graphml`` datoteki
+    - ``.csv`` datoteki z rezultati simulacij
+    - jupyter notebook ``analiza_simulacij.ipynb`` z analizo najpogostejših krajev srečanj
+  - model 3:
+    - koda za generiranje grafa ``model3_graph_generation.py``
+    - graf v ``.graphml`` datoteki
+    - ``.csv`` datoteki z rezultati simulacij
+    - jupyter notebook ``analiza_simulacij.ipynb`` z analizo najpogostejših krajev srečanj
+    - koda za generiranje toplotnega zemljevida krajev srečanja ``heatmap.py``
+    - datoteki ``nodes.csv`` in ``edges.csv``, ki omogočata lažji vnos multigrafa v program, kot je Gephi
+  - sintetični primeri:
+    - koda za izvedbo simulacij na sintetičnih grafih ``sinteticne_simulacije.py``
+    - ``.csv`` datoteka z rezultati simulacij
+    - jupyter notebook ``matrike_casov.ipynb`` z izračuni matrik pričakovanih časov srečanja
+- python datoteka ``simulate_meetings1.py``, ki požene simulacijo na modelih 1 in 2
+- python datoteka ``simulate_meetings3.py``, ki požene simulacijo na  modelu 3
+- python datoteka ``animacija.py``, ki izvede animacijo dveh sprehodov na izbranem sintetičnem grafu
+- interaktivni toplotni zemljevid ``toplotni_zemljevid_srecanj.html``, ki ga zgenerira ``heatmap.py``
 - ``README.md``
 
 ## Model 1: 
@@ -39,40 +64,6 @@
  - Ajdovščina: 296x
  - Razstavišče: 285x
  - Pošta: 245x
-
-## Model 1.5:
-
-### Lastnosti grafa
-
-**Vozlišča**: 129 postajališč, ki imajo vhodno stopnjo večjo od ena
-
-**Uteži usmerjenih povezav**: število avtobusov, ki med danima postajališčema vozijo v enem dnevu
-
-### Rezultati 5000 simulacij
-
-- Trajanje: 6.81s
-- Uspešnost srečanj: 97.46%
-- Povprečno število korakov do srečanja: 159.6 (zgornja meja: 660)
-
-#### TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA
- - Bavarski dvor: 1269x
- - Drama: 343x
- - Ajdovščina: 310x
- - Razstavišče: 298x
- - Pošta: 272x
-
-### Rezultati 5000 simulacij z začetkom na Hajdrihovi (proti centru) in Ambroževem trgu (proti centru)
-
-- Trajanje: 7.34s
-- Uspešnost srečanj: 97.50%
-- Povprečno število korakov do srečanja: 161.6 (zg. meja: 660)
-
-#### TOP 5 POSTAJALIŠČ, KJER STA SE NAJPOGOSTEJE SREČALA
-  - Bavarski dvor: 1250x
- - Ajdovščina: 350x
- - Drama: 331x
- - Pošta: 281x
- - Razstavišče: 262x
 
 
 ## Model 2: 
@@ -150,31 +141,4 @@
  - Križanke: 327x
  - Bavarski dvor: 239x
 
-## Sintetični primeri
-
-**6 vozlišč**, **obojesmerne povezave**
-
-### Rezultati 500 simulacij (zg. meja: 5*št.vozlišč):
-
-| Topologija | Uspešnost srečanj (%) | Povprečni koraki |
-| :--- | :---: | :---: |
-| Path | 44.8 | 26.0 |
-| Ring | 46.4 | 28.2 |
-| Star | 90.6 | 1.0 |
-| Lattice | 50.6 | 13.8 |
-| Lollipop | 77.2 | 30.5 |
-| Tadpole | 47.2 | 25.6 |
-| Sun | 52.6 | 17.9 |
-
-### Rezultati 1000 simulacij (zg. meja: 10*št.vozlišč):
-
-|Topologija | Uspešnost srečanj (%) | Povprečni koraki |
-| :--- | :---: | :---: |
-|      Path  |  47.8  | 42.7
-|      Ring  |  50.1  | 33.8
-|      Star  |  91.4  |  1.0
-|   Lattice  |  47.7  | 14.4
-|  Lollipop  |  93.6  | 48.8
-|   Tadpole  |  46.3  | 35.5
-|       Sun  |  49.9  | 18.1
 
