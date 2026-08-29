@@ -78,7 +78,7 @@ for index, skupina in enumerate(končne_skupine):
         vsi_lat.append(float(G1.nodes[star_id]['lat']))
         vsi_lon.append(float(G1.nodes[star_id]['lon']))
         
-    # Združevanje imen (npr. Ajdovščina/Pošta)
+    # Združevanje imen (npr. Konzorcij/Pošta)
     unikatna_imena = sorted(list(set(Zbrana_imena)))
     novo_ime = "/".join(unikatna_imena)
     
