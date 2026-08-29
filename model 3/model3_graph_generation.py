@@ -21,7 +21,7 @@ def generate_model_3():
     # Ustvarimo usmerjen MULTIGRAF za Model 3
     G3 = nx.MultiDiGraph()
     
-    # Prenesemo vozlišča in njun atributni profil
+    # Prenesemo vozlišča
     for node, data in G1.nodes(data=True):
         G3.add_node(node, **data)
     
@@ -30,7 +30,7 @@ def generate_model_3():
     WALK_THRESHOLD = 300        # 300 metrov
     WALK_SPEED = 1.4            # 1.4 m/s (pribl. 5 km/h)
     
-    # 2. Izračun čakalnih dob v SEKUNDAH neposredno iz uteži (frekvenc) Modela 1
+    # 2. Izračun čakalnih dob neposredno iz uteži (frekvenc) Modela 1
     print("Računam čakalne dobe iz frekvenc Modela 1 za BUS povezave...")
     stop_outgoing_waits = defaultdict(list)
     skipped_bus_edges = 0
@@ -39,12 +39,12 @@ def generate_model_3():
     for u, v, data in G1.edges(data=True):
         count = float(data.get('weight', 0.0))
         
-        # SPREMEMBA: Če je število voženj 0 ali manj, povezavo preprosto preskočimo
+        # Če je število voženj 0 ali manj, povezavo preskočimo
         if count <= 0:
             skipped_bus_edges += 1
             continue
             
-        # Čas čakanja v SEKUNDAH
+        # Čas čakanja
         wait_penalty_sec = SERVICE_WINDOW / (2.0 * count)
         
         # Prenesemo vse obstoječe atribute in dodamo utež ter tip
@@ -58,9 +58,7 @@ def generate_model_3():
         # Beležimo izhodne čakalne dobe za posamezno vozlišče
         stop_outgoing_waits[u].append(wait_penalty_sec)
 
-    print(f"- Preskočenih neaktivnih BUS povezav (frekvenca <= 0): {skipped_bus_edges}")
-
-    # 3. Izračun povprečnega časa čakanja v SEKUNDAH na vsakem vozlišču
+    # 3. Izračun povprečnega časa čakanja na vsakem vozlišču
     node_avg_wait_sec = {}
     terminal_nodes = set()
     
@@ -136,7 +134,7 @@ def generate_model_3():
     nx.write_graphml(G3, output_path)
     print(f"\nModel 3 je uspešno generiran in shranjen v '{output_path}'.")
 
-    # 6. IZVOZ V CSV ZA GEPHI (Priporočena rešitev za multigrafe v Gephiju)
+    # 6. IZVOZ V CSV ZA GEPHI (za multigrafe v Gephiju)
     print("Pripravljam CSV datoteke za Gephi...")
     nodes_data = []
     for node, data in G3.nodes(data=True):
