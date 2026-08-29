@@ -6,7 +6,7 @@ print("Nalagam GTFS podatke in all_lines_trips.csv...")
 stops_df = pd.read_csv('lpp_gtfs/stops.txt')
 stop_times_df = pd.read_csv('lpp_gtfs/stop_times.txt')
 trips_df = pd.read_csv('lpp_gtfs/trips.txt')
-routes_df = pd.read_csv('lpp_gtfs/routes.txt')  # Dodano za pridobivanje route_short_name
+routes_df = pd.read_csv('lpp_gtfs/routes.txt')
 all_lines_trips = pd.read_csv('model 1/all_lines_trips.csv')
 
 # Ustvarimo slovarje za preslikavo stop_id -> stop_code in route_id -> route_short_name
@@ -16,7 +16,7 @@ route_id_to_name = dict(zip(routes_df['route_id'], routes_df['route_short_name']
 # Ustvarimo usmerjen graf
 G1 = nx.DiGraph()
 
-# Dodamo vozlišča z uporabo stop_code namesto stop_id
+# Dodamo vozlišča
 for _, row in stops_df.iterrows():
     stop_code = str(row['stop_code'])
     G1.add_node(
@@ -40,6 +40,10 @@ print("Obdelujem linije in dodajam uteži ter imena linij...")
 for _, line_row in all_lines_trips.iterrows():
     route_id = line_row['route_id']
     num_trips = float(line_row['num_trips'])
+
+    if num_trips <= 0: # nekatere linije nimajo voženj na delavnike
+        continue
+    
     route_short_name = route_id_to_name.get(route_id, str(route_id))
     
     # Pridobimo vse postanke za to konkretno linijo
@@ -74,14 +78,6 @@ for (u, v), weight in edge_weights.items():
     # Seznam linij pretvorimo v niz, ločen s vejicami (npr. "1, 6, 11")
     lines_str = ", ".join(sorted(edge_routes[(u, v)]))
     G1.add_edge(u, v, weight=round(weight, 2), routes=lines_str)
-
-
-# Preverjanje največje uteži
-if edge_weights:
-    max_edge = max(edge_weights.items(), key=lambda x: x[1])
-    lines_on_max = G1.edges[max_edge[0]]['routes']
-    print(f"- Največja frekvenca na povezavi: {max_edge[1]} voženj na dan (med postajama {max_edge[0]}).")
-    print(f"- Linije na tej povezavi: {lines_on_max}")
 
 # Odstranjevanje izoliranih/manjših komponent
 if not nx.is_weakly_connected(G1):

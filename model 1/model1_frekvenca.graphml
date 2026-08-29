@@ -4305,7 +4305,7 @@
     </edge>
     <edge source="600021" target="700012">
       <data key="d3">377.0</data>
-      <data key="d4">1, 1B, 3, 3B, N3, N3B</data>
+      <data key="d4">1, 3, 3B, N3, N3B</data>
     </edge>
     <edge source="600021" target="600012">
       <data key="d3">11.0</data>
@@ -4317,7 +4317,7 @@
     </edge>
     <edge source="603142" target="604032">
       <data key="d3">225.0</data>
-      <data key="d4">1, 1B</data>
+      <data key="d4">1</data>
     </edge>
     <edge source="600011" target="300012">
       <data key="d3">547.0</data>
@@ -4325,7 +4325,7 @@
     </edge>
     <edge source="600011" target="100022">
       <data key="d3">1178.0</data>
-      <data key="d4">11, 13, 14, 19B, 19I, 20, 20Z, 6, 6B, 7, 8</data>
+      <data key="d4">11, 13, 14, 19B, 19I, 20, 6, 6B, 7, 8</data>
     </edge>
     <edge source="600011" target="100012">
       <data key="d3">18.0</data>
@@ -4373,7 +4373,7 @@
     </edge>
     <edge source="603141" target="603041">
       <data key="d3">236.0</data>
-      <data key="d4">1, 1B, N1</data>
+      <data key="d4">1, N1</data>
     </edge>
     <edge source="702021" target="702011">
       <data key="d3">148.0</data>
@@ -4401,7 +4401,7 @@
     </edge>
     <edge source="803021" target="803011">
       <data key="d3">333.0</data>
-      <data key="d4">1, 1B, 25, N1</data>
+      <data key="d4">1, 25, N1</data>
     </edge>
     <edge source="204131" target="104181">
       <data key="d3">41.0</data>
@@ -4409,7 +4409,7 @@
     </edge>
     <edge source="102031" target="101031">
       <data key="d3">214.0</data>
-      <data key="d4">13, 20, 20Z</data>
+      <data key="d4">13, 20</data>
     </edge>
     <edge source="104131" target="104121">
       <data key="d3">23.0</data>
@@ -4425,7 +4425,7 @@
     </edge>
     <edge source="303051" target="303021">
       <data key="d3">354.0</data>
-      <data key="d4">11, 11B, 20, 20Z, 25</data>
+      <data key="d4">11, 11B, 20, 25</data>
     </edge>
     <edge source="303051" target="303022">
       <data key="d3">125.0</data>
@@ -4433,7 +4433,7 @@
     </edge>
     <edge source="602052" target="602042">
       <data key="d3">547.0</data>
-      <data key="d4">1, 1B, 6, 6B</data>
+      <data key="d4">1, 6, 6B</data>
     </edge>
     <edge source="703092" target="703102">
       <data key="d3">322.0</data>
@@ -4457,7 +4457,7 @@
     </edge>
     <edge source="804092" target="804102">
       <data key="d3">127.0</data>
-      <data key="d4">1B, 8, N1</data>
+      <data key="d4">8, N1</data>
     </edge>
     <edge source="614091" target="614081">
       <data key="d3">72.0</data>
@@ -4481,7 +4481,7 @@
     </edge>
     <edge source="802022" target="803014">
       <data key="d3">333.0</data>
-      <data key="d4">1, 1B, 25, N1</data>
+      <data key="d4">1, 25, N1</data>
     </edge>
     <edge source="802022" target="803012">
       <data key="d3">249.0</data>
@@ -4509,7 +4509,7 @@
     </edge>
     <edge source="804112" target="804142">
       <data key="d3">127.0</data>
-      <data key="d4">1B, 8, N1</data>
+      <data key="d4">8, N1</data>
     </edge>
     <edge source="804112" target="804121">
       <data key="d3">11.0</data>
@@ -4525,7 +4525,7 @@
     </edge>
     <edge source="603012" target="603022">
       <data key="d3">225.0</data>
-      <data key="d4">1, 1B</data>
+      <data key="d4">1</data>
     </edge>
     <edge source="203091" target="203041">
       <data key="d3">537.0</data>
@@ -4533,7 +4533,7 @@
     </edge>
     <edge source="104221" target="104211">
       <data key="d3">127.0</data>
-      <data key="d4">1B, 8, N1</data>
+      <data key="d4">8, N1</data>
     </edge>
     <edge source="104221" target="104361">
       <data key="d3">23.0</data>
@@ -4545,7 +4545,7 @@
     </edge>
     <edge source="600012" target="600032">
       <data key="d3">230.0</data>
-      <data key="d4">13, 20, 20Z, N5</data>
+      <data key="d4">13, 20, N5</data>
     </edge>
     <edge source="600012" target="700012">
       <data key="d3">378.0</data>
@@ -4553,7 +4553,7 @@
     </edge>
     <edge source="803042" target="804012">
       <data key="d3">333.0</data>
-      <data key="d4">1, 1B, 25, N1</data>
+      <data key="d4">1, 25, N1</data>
     </edge>
     <edge source="603082" target="602121">
       <data key="d3">166.0</data>
@@ -4593,7 +4593,7 @@
     </edge>
     <edge source="602051" target="602021">
       <data key="d3">558.0</data>
-      <data key="d4">1, 1B, 6, 6B, N1</data>
+      <data key="d4">1, 6, 6B, N1</data>
     </edge>
     <edge source="202022" target="202032">
       <data key="d3">250.0</data>
@@ -4613,7 +4613,7 @@
     </edge>
     <edge source="804032" target="804042">
       <data key="d3">449.0</data>
-      <data key="d4">1, 1B, 25, 8, N1</data>
+      <data key="d4">1, 25, 8, N1</data>
     </edge>
     <edge source="203112" target="203122">
       <data key="d3">134.0</data>
@@ -4621,7 +4621,7 @@
     </edge>
     <edge source="103161" target="103041">
       <data key="d3">127.0</data>
-      <data key="d4">20, 20Z</data>
+      <data key="d4">20</data>
     </edge>
     <edge source="404161" target="404061">
       <data key="d3">35.0</data>
@@ -4641,11 +4641,11 @@
     </edge>
     <edge source="604031" target="603141">
       <data key="d3">236.0</data>
-      <data key="d4">1, 1B, N1</data>
+      <data key="d4">1, N1</data>
     </edge>
     <edge source="803014" target="803022">
       <data key="d3">333.0</data>
-      <data key="d4">1, 1B, 25, N1</data>
+      <data key="d4">1, 25, N1</data>
     </edge>
     <edge source="803112" target="803122">
       <data key="d3">125.0</data>
@@ -4657,7 +4657,7 @@
     </edge>
     <edge source="602031" target="602041">
       <data key="d3">558.0</data>
-      <data key="d4">1, 1B, 6, 6B, N1</data>
+      <data key="d4">1, 6, 6B, N1</data>
     </edge>
     <edge source="103201" target="803211">
       <data key="d3">203.0</data>
@@ -4673,11 +4673,11 @@
     </edge>
     <edge source="602021" target="601011">
       <data key="d3">1402.0</data>
-      <data key="d4">1, 11, 11B, 19B, 19I, 1B, 2, 27, 3, 3B, 6, 6B, 9, N1, N3, N3B</data>
+      <data key="d4">1, 11, 11B, 19B, 19I, 2, 27, 3, 3B, 6, 6B, 9, N1, N3, N3B</data>
     </edge>
     <edge source="601011" target="600021">
       <data key="d3">1669.0</data>
-      <data key="d4">1, 11, 11B, 14, 18, 18L, 19B, 19I, 1B, 2, 27, 3, 3B, 6, 6B, 9, N1, N3, N3B</data>
+      <data key="d4">1, 11, 11B, 14, 18, 18L, 19B, 19I, 2, 27, 3, 3B, 6, 6B, 9, N1, N3, N3B</data>
     </edge>
     <edge source="203081" target="203071">
       <data key="d3">141.0</data>
@@ -4733,7 +4733,7 @@
     </edge>
     <edge source="601012" target="602022">
       <data key="d3">1391.0</data>
-      <data key="d4">1, 11, 11B, 19B, 19I, 1B, 2, 27, 3, 3B, 6, 6B, 9, N3, N3B</data>
+      <data key="d4">1, 11, 11B, 19B, 19I, 2, 27, 3, 3B, 6, 6B, 9, N3, N3B</data>
     </edge>
     <edge source="601012" target="602012">
       <data key="d3">267.0</data>
@@ -4761,7 +4761,7 @@
     </edge>
     <edge source="603044" target="603142">
       <data key="d3">225.0</data>
-      <data key="d4">1, 1B</data>
+      <data key="d4">1</data>
     </edge>
     <edge source="104102" target="104113">
       <data key="d3">23.0</data>
@@ -4813,17 +4813,17 @@
     </edge>
     <edge source="104191" target="804151">
       <data key="d3">127.0</data>
-      <data key="d4">1B, 8, N1</data>
+      <data key="d4">8, N1</data>
     </edge>
     <edge source="303043" target="303081">
       <data key="d3">143.0</data>
       <data key="d4">9</data>
     </edge>
-    <edge source="605012" target="605081">
+    <edge source="605012" target="625022">
       <data key="d3">69.0</data>
       <data key="d4">19I</data>
     </edge>
-    <edge source="605012" target="625022">
+    <edge source="605012" target="605081">
       <data key="d3">69.0</data>
       <data key="d4">19I</data>
     </edge>
@@ -4835,11 +4835,11 @@
       <data key="d3">119.0</data>
       <data key="d4">18, 18L</data>
     </edge>
-    <edge source="404083" target="404071">
+    <edge source="404083" target="404161">
       <data key="d3">35.0</data>
       <data key="d4">26</data>
     </edge>
-    <edge source="404083" target="404161">
+    <edge source="404083" target="404071">
       <data key="d3">35.0</data>
       <data key="d4">26</data>
     </edge>
@@ -4849,7 +4849,7 @@
     </edge>
     <edge source="704142" target="704011">
       <data key="d3">225.0</data>
-      <data key="d4">1, 1B</data>
+      <data key="d4">1</data>
     </edge>
     <edge source="202061" target="202041">
       <data key="d3">144.0</data>
@@ -4869,7 +4869,7 @@
     </edge>
     <edge source="804252" target="804241">
       <data key="d3">236.0</data>
-      <data key="d4">1, 1B, N1</data>
+      <data key="d4">1, N1</data>
     </edge>
     <edge source="804252" target="804342">
       <data key="d3">36.0</data>
@@ -4897,7 +4897,7 @@
     </edge>
     <edge source="104211" target="104201">
       <data key="d3">127.0</data>
-      <data key="d4">1B, 8, N1</data>
+      <data key="d4">8, N1</data>
     </edge>
     <edge source="614082" target="614092">
       <data key="d3">72.0</data>
@@ -4909,7 +4909,7 @@
     </edge>
     <edge source="304131" target="304111">
       <data key="d3">130.0</data>
-      <data key="d4">11, 11B, 20Z</data>
+      <data key="d4">11, 11B</data>
     </edge>
     <edge source="503011" target="602111">
       <data key="d3">286.0</data>
@@ -4917,19 +4917,15 @@
     </edge>
     <edge source="304051" target="304031">
       <data key="d3">252.0</data>
-      <data key="d4">20, 20Z, 22</data>
-    </edge>
-    <edge source="304051" target="304042">
-      <data key="d3">0.0</data>
-      <data key="d4">20Z</data>
+      <data key="d4">20, 22</data>
     </edge>
     <edge source="303071" target="303051">
       <data key="d3">349.0</data>
-      <data key="d4">20, 20Z, 22, 25</data>
+      <data key="d4">20, 22, 25</data>
     </edge>
     <edge source="804251" target="804041">
       <data key="d3">333.0</data>
-      <data key="d4">1, 1B, 25, N1</data>
+      <data key="d4">1, 25, N1</data>
     </edge>
     <edge source="104182" target="204132">
       <data key="d3">41.0</data>
@@ -4953,7 +4949,7 @@
     </edge>
     <edge source="303024" target="303072">
       <data key="d3">349.0</data>
-      <data key="d4">20, 20Z, 22, 25</data>
+      <data key="d4">20, 22, 25</data>
     </edge>
     <edge source="303024" target="303052">
       <data key="d3">130.0</data>
@@ -4993,7 +4989,7 @@
     </edge>
     <edge source="803022" target="803032">
       <data key="d3">333.0</data>
-      <data key="d4">1, 1B, 25, N1</data>
+      <data key="d4">1, 25, N1</data>
     </edge>
     <edge source="204071" target="204061">
       <data key="d3">134.0</data>
@@ -5001,7 +4997,7 @@
     </edge>
     <edge source="603022" target="603032">
       <data key="d3">225.0</data>
-      <data key="d4">1, 1B</data>
+      <data key="d4">1</data>
     </edge>
     <edge source="504031" target="504033">
       <data key="d3">82.0</data>
@@ -5021,7 +5017,7 @@
     </edge>
     <edge source="304031" target="304011">
       <data key="d3">349.0</data>
-      <data key="d4">20, 20Z, 22, 25</data>
+      <data key="d4">20, 22, 25</data>
     </edge>
     <edge source="504121" target="504041">
       <data key="d3">134.0</data>
@@ -5033,7 +5029,7 @@
     </edge>
     <edge source="804031" target="804021">
       <data key="d3">449.0</data>
-      <data key="d4">1, 1B, 25, 8, N1</data>
+      <data key="d4">1, 25, 8, N1</data>
     </edge>
     <edge source="104082" target="104092">
       <data key="d3">116.0</data>
@@ -5041,7 +5037,7 @@
     </edge>
     <edge source="804101" target="804091">
       <data key="d3">163.0</data>
-      <data key="d4">15, 1B, 8, N1</data>
+      <data key="d4">15, 8, N1</data>
     </edge>
     <edge source="502013" target="402011">
       <data key="d3">143.0</data>
@@ -5049,7 +5045,7 @@
     </edge>
     <edge source="502013" target="502011">
       <data key="d3">358.0</data>
-      <data key="d4">13, 2, 20, 20Z</data>
+      <data key="d4">13, 2, 20</data>
     </edge>
     <edge source="404112" target="404122">
       <data key="d3">53.0</data>
@@ -5057,7 +5053,7 @@
     </edge>
     <edge source="603032" target="603044">
       <data key="d3">225.0</data>
-      <data key="d4">1, 1B</data>
+      <data key="d4">1</data>
     </edge>
     <edge source="203092" target="203102">
       <data key="d3">403.0</data>
@@ -5081,7 +5077,7 @@
     </edge>
     <edge source="801012" target="802012">
       <data key="d3">850.0</data>
-      <data key="d4">1, 1B, 25, 3, 3B, 5, 7, 8, N1, N5</data>
+      <data key="d4">1, 25, 3, 3B, 5, 7, 8, N1, N5</data>
     </edge>
     <edge source="602062" target="602102">
       <data key="d3">701.0</data>
@@ -5129,11 +5125,11 @@
     </edge>
     <edge source="100021" target="600012">
       <data key="d3">1105.0</data>
-      <data key="d4">11, 11B, 13, 14, 19B, 19I, 20, 20Z, 6, 7, 8</data>
+      <data key="d4">11, 11B, 13, 14, 19B, 19I, 20, 6, 7, 8</data>
     </edge>
     <edge source="804111" target="804101">
       <data key="d3">127.0</data>
-      <data key="d4">1B, 8, N1</data>
+      <data key="d4">8, N1</data>
     </edge>
     <edge source="802042" target="803092">
       <data key="d3">125.0</data>
@@ -5197,7 +5193,7 @@
     </edge>
     <edge source="103081" target="103161">
       <data key="d3">127.0</data>
-      <data key="d4">20, 20Z</data>
+      <data key="d4">20</data>
     </edge>
     <edge source="100012" target="201011">
       <data key="d3">99.0</data>
@@ -5205,7 +5201,7 @@
     </edge>
     <edge source="804021" target="804011">
       <data key="d3">333.0</data>
-      <data key="d4">1, 1B, 25, N1</data>
+      <data key="d4">1, 25, N1</data>
     </edge>
     <edge source="804021" target="804161">
       <data key="d3">116.0</data>
@@ -5273,11 +5269,11 @@
     </edge>
     <edge source="402032" target="402042">
       <data key="d3">641.0</data>
-      <data key="d4">11, 11B, 2, 20, 20Z, 25, 9</data>
+      <data key="d4">11, 11B, 2, 20, 25, 9</data>
     </edge>
     <edge source="804042" target="804252">
       <data key="d3">333.0</data>
-      <data key="d4">1, 1B, 25, N1</data>
+      <data key="d4">1, 25, N1</data>
     </edge>
     <edge source="804042" target="804082">
       <data key="d3">127.0</data>
@@ -5285,7 +5281,7 @@
     </edge>
     <edge source="804091" target="804081">
       <data key="d3">163.0</data>
-      <data key="d4">15, 1B, 8, N1</data>
+      <data key="d4">15, 8, N1</data>
     </edge>
     <edge source="803012" target="803052">
       <data key="d3">368.0</data>
@@ -5325,7 +5321,7 @@
     </edge>
     <edge source="700012" target="801012">
       <data key="d3">834.0</data>
-      <data key="d4">1, 1B, 25, 3, 3B, 5, 7, 8, N1</data>
+      <data key="d4">1, 25, 3, 3B, 5, 7, 8, N1</data>
     </edge>
     <edge source="700012" target="600012">
       <data key="d3">19.0</data>
@@ -5345,11 +5341,11 @@
     </edge>
     <edge source="804041" target="804031">
       <data key="d3">449.0</data>
-      <data key="d4">1, 1B, 25, 8, N1</data>
+      <data key="d4">1, 25, 8, N1</data>
     </edge>
     <edge source="204201" target="204191">
       <data key="d3">130.0</data>
-      <data key="d4">11, 11B, 20Z</data>
+      <data key="d4">11, 11B</data>
     </edge>
     <edge source="304141" target="304142">
       <data key="d3">35.0</data>
@@ -5365,7 +5361,7 @@
     </edge>
     <edge source="304071" target="304061">
       <data key="d3">361.0</data>
-      <data key="d4">11, 11B, 20Z, 25, 27</data>
+      <data key="d4">11, 11B, 25, 27</data>
     </edge>
     <edge source="104331" target="104052">
       <data key="d3">23.0</data>
@@ -5377,7 +5373,7 @@
     </edge>
     <edge source="502024" target="402032">
       <data key="d3">401.0</data>
-      <data key="d4">11, 11B, 2, 20, 20Z</data>
+      <data key="d4">11, 11B, 2, 20</data>
     </edge>
     <edge source="745021" target="744021">
       <data key="d3">91.0</data>
@@ -5393,7 +5389,7 @@
     </edge>
     <edge source="602022" target="602052">
       <data key="d3">547.0</data>
-      <data key="d4">1, 1B, 6, 6B</data>
+      <data key="d4">1, 6, 6B</data>
     </edge>
     <edge source="602022" target="602062">
       <data key="d3">701.0</data>
@@ -5405,7 +5401,7 @@
     </edge>
     <edge source="600032" target="501022">
       <data key="d3">214.0</data>
-      <data key="d4">13, 20, 20Z</data>
+      <data key="d4">13, 20</data>
     </edge>
     <edge source="415061" target="415071">
       <data key="d3">35.0</data>
@@ -5413,7 +5409,7 @@
     </edge>
     <edge source="802012" target="802022">
       <data key="d3">725.0</data>
-      <data key="d4">1, 1B, 25, 3, 3B, 5, 8, N1, N5</data>
+      <data key="d4">1, 25, 3, 3B, 5, 8, N1, N5</data>
     </edge>
     <edge source="802012" target="802032">
       <data key="d3">125.0</data>
@@ -5421,7 +5417,7 @@
     </edge>
     <edge source="804082" target="804092">
       <data key="d3">163.0</data>
-      <data key="d4">15, 1B, 8, N1</data>
+      <data key="d4">15, 8, N1</data>
     </edge>
     <edge source="603181" target="603072">
       <data key="d3">143.0</data>
@@ -5429,7 +5425,7 @@
     </edge>
     <edge source="801011" target="700011">
       <data key="d3">852.0</data>
-      <data key="d4">1, 1B, 25, 3, 3B, 5, 7, 8, SŽ</data>
+      <data key="d4">1, 25, 3, 3B, 5, 7, 8, SŽ</data>
     </edge>
     <edge source="801011" target="600012">
       <data key="d3">42.0</data>
@@ -5445,7 +5441,7 @@
     </edge>
     <edge source="604032" target="704152">
       <data key="d3">225.0</data>
-      <data key="d4">1, 1B</data>
+      <data key="d4">1</data>
     </edge>
     <edge source="745101" target="745051">
       <data key="d3">72.0</data>
@@ -5457,7 +5453,7 @@
     </edge>
     <edge source="304111" target="304161">
       <data key="d3">130.0</data>
-      <data key="d4">11, 11B, 20Z</data>
+      <data key="d4">11, 11B</data>
     </edge>
     <edge source="804131" target="804101">
       <data key="d3">47.0</data>
@@ -5490,10 +5486,6 @@
     <edge source="304061" target="304041">
       <data key="d3">130.0</data>
       <data key="d4">11, 11B</data>
-    </edge>
-    <edge source="304061" target="304051">
-      <data key="d3">0.0</data>
-      <data key="d4">20Z</data>
     </edge>
     <edge source="304061" target="304031">
       <data key="d3">97.0</data>
@@ -5549,7 +5541,7 @@
     </edge>
     <edge source="603011" target="602031">
       <data key="d3">236.0</data>
-      <data key="d4">1, 1B, N1</data>
+      <data key="d4">1, N1</data>
     </edge>
     <edge source="103132" target="104372">
       <data key="d3">459.0</data>
@@ -5573,7 +5565,7 @@
     </edge>
     <edge source="104192" target="104202">
       <data key="d3">127.0</data>
-      <data key="d4">1B, 8, N1</data>
+      <data key="d4">8, N1</data>
     </edge>
     <edge source="202082" target="203042">
       <data key="d3">393.0</data>
@@ -5597,7 +5589,7 @@
     </edge>
     <edge source="100022" target="101032">
       <data key="d3">430.0</data>
-      <data key="d4">13, 20, 20Z, 6B, 7</data>
+      <data key="d4">13, 20, 6B, 7</data>
     </edge>
     <edge source="100022" target="101052">
       <data key="d3">600.0</data>
@@ -5609,7 +5601,7 @@
     </edge>
     <edge source="802011" target="801011">
       <data key="d3">865.0</data>
-      <data key="d4">1, 1B, 25, 3, 3B, 5, 7, 8, N1, N3, N5</data>
+      <data key="d4">1, 25, 3, 3B, 5, 7, 8, N1, N3, N5</data>
     </edge>
     <edge source="102071" target="102051">
       <data key="d3">148.0</data>
@@ -5621,7 +5613,7 @@
     </edge>
     <edge source="104201" target="104191">
       <data key="d3">127.0</data>
-      <data key="d4">1B, 8, N1</data>
+      <data key="d4">8, N1</data>
     </edge>
     <edge source="804212" target="804221">
       <data key="d3">153.0</data>
@@ -5649,7 +5641,7 @@
     </edge>
     <edge source="804012" target="804022">
       <data key="d3">333.0</data>
-      <data key="d4">1, 1B, 25, N1</data>
+      <data key="d4">1, 25, N1</data>
     </edge>
     <edge source="304121" target="304101">
       <data key="d3">88.0</data>
@@ -5661,7 +5653,7 @@
     </edge>
     <edge source="502014" target="502024">
       <data key="d3">271.0</data>
-      <data key="d4">2, 20, 20Z</data>
+      <data key="d4">2, 20</data>
     </edge>
     <edge source="504061" target="504051">
       <data key="d3">134.0</data>
@@ -5681,7 +5673,7 @@
     </edge>
     <edge source="502011" target="501021">
       <data key="d3">214.0</data>
-      <data key="d4">13, 20, 20Z</data>
+      <data key="d4">13, 20</data>
     </edge>
     <edge source="502011" target="501032">
       <data key="d3">144.0</data>
@@ -5709,7 +5701,7 @@
     </edge>
     <edge source="204192" target="204212">
       <data key="d3">130.0</data>
-      <data key="d4">11, 11B, 20Z</data>
+      <data key="d4">11, 11B</data>
     </edge>
     <edge source="202091" target="202011">
       <data key="d3">215.0</data>
@@ -5757,17 +5749,17 @@
     </edge>
     <edge source="803011" target="802021">
       <data key="d3">865.0</data>
-      <data key="d4">1, 1B, 22, 25, 3, 3B, 5, 8, N1, N3, N5</data>
+      <data key="d4">1, 22, 25, 3, 3B, 5, 8, N1, N3, N5</data>
     </edge>
     <edge source="203191" target="203181">
       <data key="d3">125.0</data>
       <data key="d4">7</data>
     </edge>
-    <edge source="404162" target="404092">
+    <edge source="404162" target="404084">
       <data key="d3">35.0</data>
       <data key="d4">26</data>
     </edge>
-    <edge source="404162" target="404084">
+    <edge source="404162" target="404092">
       <data key="d3">35.0</data>
       <data key="d4">26</data>
     </edge>
@@ -5817,7 +5809,7 @@
     </edge>
     <edge source="804022" target="804032">
       <data key="d3">449.0</data>
-      <data key="d4">1, 1B, 25, 8, N1</data>
+      <data key="d4">1, 25, 8, N1</data>
     </edge>
     <edge source="625022" target="625032">
       <data key="d3">69.0</data>
@@ -5845,7 +5837,7 @@
     </edge>
     <edge source="101031" target="100021">
       <data key="d3">438.0</data>
-      <data key="d4">11B, 12D, 13, 20, 20Z, 7</data>
+      <data key="d4">11B, 12D, 13, 20, 7</data>
     </edge>
     <edge source="101031" target="101052">
       <data key="d3">125.0</data>
@@ -5889,7 +5881,7 @@
     </edge>
     <edge source="803041" target="803031">
       <data key="d3">333.0</data>
-      <data key="d4">1, 1B, 25, N1</data>
+      <data key="d4">1, 25, N1</data>
     </edge>
     <edge source="204272" target="204262">
       <data key="d3">23.0</data>
@@ -5901,7 +5893,7 @@
     </edge>
     <edge source="804081" target="804252">
       <data key="d3">47.0</data>
-      <data key="d4">15, 1B, N1</data>
+      <data key="d4">15, N1</data>
     </edge>
     <edge source="804081" target="804041">
       <data key="d3">116.0</data>
@@ -5925,7 +5917,7 @@
     </edge>
     <edge source="304062" target="304072">
       <data key="d3">264.0</data>
-      <data key="d4">11, 11B, 20Z, 27</data>
+      <data key="d4">11, 11B, 27</data>
     </edge>
     <edge source="304062" target="304074">
       <data key="d3">97.0</data>
@@ -5945,11 +5937,11 @@
     </edge>
     <edge source="303011" target="402041">
       <data key="d3">641.0</data>
-      <data key="d4">11, 11B, 2, 20, 20Z, 25, 9</data>
+      <data key="d4">11, 11B, 2, 20, 25, 9</data>
     </edge>
     <edge source="602032" target="603012">
       <data key="d3">225.0</data>
-      <data key="d4">1, 1B</data>
+      <data key="d4">1</data>
     </edge>
     <edge source="602032" target="703082">
       <data key="d3">322.0</data>
@@ -5993,7 +5985,7 @@
     </edge>
     <edge source="204182" target="204192">
       <data key="d3">130.0</data>
-      <data key="d4">11, 11B, 20Z</data>
+      <data key="d4">11, 11B</data>
     </edge>
     <edge source="204182" target="204301">
       <data key="d3">23.0</data>
@@ -6005,7 +5997,7 @@
     </edge>
     <edge source="103042" target="103162">
       <data key="d3">127.0</data>
-      <data key="d4">20, 20Z</data>
+      <data key="d4">20</data>
     </edge>
     <edge source="203032" target="203232">
       <data key="d3">141.0</data>
@@ -6017,7 +6009,7 @@
     </edge>
     <edge source="402042" target="303012">
       <data key="d3">641.0</data>
-      <data key="d4">11, 11B, 2, 20, 20Z, 25, 9</data>
+      <data key="d4">11, 11B, 2, 20, 25, 9</data>
     </edge>
     <edge source="804402" target="804502">
       <data key="d3">125.0</data>
@@ -6105,7 +6097,7 @@
     </edge>
     <edge source="501021" target="500011">
       <data key="d3">214.0</data>
-      <data key="d4">13, 20, 20Z</data>
+      <data key="d4">13, 20</data>
     </edge>
     <edge source="704081" target="704071">
       <data key="d3">91.0</data>
@@ -6113,7 +6105,7 @@
     </edge>
     <edge source="304032" target="304051">
       <data key="d3">252.0</data>
-      <data key="d4">20, 20Z, 22</data>
+      <data key="d4">20, 22</data>
     </edge>
     <edge source="304032" target="304042">
       <data key="d3">97.0</data>
@@ -6173,7 +6165,7 @@
     </edge>
     <edge source="304091" target="304071">
       <data key="d3">264.0</data>
-      <data key="d4">11, 11B, 20Z, 27</data>
+      <data key="d4">11, 11B, 27</data>
     </edge>
     <edge source="304091" target="304074">
       <data key="d3">53.0</data>
@@ -6337,7 +6329,7 @@
     </edge>
     <edge source="402031" target="502013">
       <data key="d3">271.0</data>
-      <data key="d4">2, 20, 20Z</data>
+      <data key="d4">2, 20</data>
     </edge>
     <edge source="402031" target="502021">
       <data key="d3">130.0</data>
@@ -6365,7 +6357,7 @@
     </edge>
     <edge source="101032" target="101034">
       <data key="d3">214.0</data>
-      <data key="d4">13, 20, 20Z</data>
+      <data key="d4">13, 20</data>
     </edge>
     <edge source="101032" target="202022">
       <data key="d3">250.0</data>
@@ -6385,7 +6377,7 @@
     </edge>
     <edge source="803032" target="803042">
       <data key="d3">333.0</data>
-      <data key="d4">1, 1B, 25, N1</data>
+      <data key="d4">1, 25, N1</data>
     </edge>
     <edge source="204214" target="204312">
       <data key="d3">23.0</data>
@@ -6393,7 +6385,7 @@
     </edge>
     <edge source="104202" target="104212">
       <data key="d3">127.0</data>
-      <data key="d4">1B, 8, N1</data>
+      <data key="d4">8, N1</data>
     </edge>
     <edge source="803072" target="804162">
       <data key="d3">116.0</data>
@@ -6501,7 +6493,7 @@
     </edge>
     <edge source="102092" target="103042">
       <data key="d3">127.0</data>
-      <data key="d4">20, 20Z</data>
+      <data key="d4">20</data>
     </edge>
     <edge source="102092" target="103192">
       <data key="d3">87.0</data>
@@ -6561,7 +6553,7 @@
     </edge>
     <edge source="303072" target="304012">
       <data key="d3">349.0</data>
-      <data key="d4">20, 20Z, 22, 25</data>
+      <data key="d4">20, 22, 25</data>
     </edge>
     <edge source="204213" target="204321">
       <data key="d3">23.0</data>
@@ -6589,7 +6581,7 @@
     </edge>
     <edge source="804142" target="804152">
       <data key="d3">127.0</data>
-      <data key="d4">1B, 8, N1</data>
+      <data key="d4">8, N1</data>
     </edge>
     <edge source="102012" target="101051">
       <data key="d3">125.0</data>
@@ -6597,7 +6589,7 @@
     </edge>
     <edge source="103162" target="103081">
       <data key="d3">127.0</data>
-      <data key="d4">20, 20Z</data>
+      <data key="d4">20</data>
     </edge>
     <edge source="805011" target="815152">
       <data key="d3">36.0</data>
@@ -6629,7 +6621,7 @@
     </edge>
     <edge source="802021" target="802011">
       <data key="d3">740.0</data>
-      <data key="d4">1, 1B, 25, 3, 3B, 5, 8, N1, N3, N5</data>
+      <data key="d4">1, 25, 3, 3B, 5, 8, N1, N3, N5</data>
     </edge>
     <edge source="802021" target="802052">
       <data key="d3">125.0</data>
@@ -6677,7 +6669,7 @@
     </edge>
     <edge source="600022" target="601012">
       <data key="d3">1658.0</data>
-      <data key="d4">1, 11, 11B, 14, 18, 18L, 19B, 19I, 1B, 2, 27, 3, 3B, 6, 6B, 9, N3, N3B</data>
+      <data key="d4">1, 11, 11B, 14, 18, 18L, 19B, 19I, 2, 27, 3, 3B, 6, 6B, 9, N3, N3B</data>
     </edge>
     <edge source="604051" target="604023">
       <data key="d3">69.0</data>
@@ -6699,23 +6691,23 @@
       <data key="d3">116.0</data>
       <data key="d4">8</data>
     </edge>
-    <edge source="404062" target="404162">
-      <data key="d3">35.0</data>
-      <data key="d4">26</data>
-    </edge>
     <edge source="404062" target="404072">
       <data key="d3">175.0</data>
       <data key="d4">13, 24, 26</data>
     </edge>
-    <edge source="303021" target="303011">
-      <data key="d3">641.0</data>
-      <data key="d4">11, 11B, 2, 20, 20Z, 25, 9</data>
-    </edge>
-    <edge source="404093" target="404201">
+    <edge source="404062" target="404162">
       <data key="d3">35.0</data>
       <data key="d4">26</data>
     </edge>
+    <edge source="303021" target="303011">
+      <data key="d3">641.0</data>
+      <data key="d4">11, 11B, 2, 20, 25, 9</data>
+    </edge>
     <edge source="404093" target="404161">
+      <data key="d3">35.0</data>
+      <data key="d4">26</data>
+    </edge>
+    <edge source="404093" target="404201">
       <data key="d3">35.0</data>
       <data key="d4">26</data>
     </edge>
@@ -6733,7 +6725,7 @@
     </edge>
     <edge source="304072" target="304092">
       <data key="d3">317.0</data>
-      <data key="d4">11, 11B, 20Z, 24, 27</data>
+      <data key="d4">11, 11B, 24, 27</data>
     </edge>
     <edge source="102072" target="103022">
       <data key="d3">212.0</data>
@@ -6757,11 +6749,11 @@
     </edge>
     <edge source="501022" target="502012">
       <data key="d3">214.0</data>
-      <data key="d4">13, 20, 20Z</data>
+      <data key="d4">13, 20</data>
     </edge>
     <edge source="602042" target="602032">
       <data key="d3">547.0</data>
-      <data key="d4">1, 1B, 6, 6B</data>
+      <data key="d4">1, 6, 6B</data>
     </edge>
     <edge source="504032" target="504072">
       <data key="d3">70.0</data>
@@ -6809,7 +6801,7 @@
     </edge>
     <edge source="303012" target="303024">
       <data key="d3">354.0</data>
-      <data key="d4">11, 11B, 20, 20Z, 25</data>
+      <data key="d4">11, 11B, 20, 25</data>
     </edge>
     <edge source="303012" target="303022">
       <data key="d3">144.0</data>
@@ -6885,11 +6877,11 @@
     </edge>
     <edge source="804102" target="804112">
       <data key="d3">127.0</data>
-      <data key="d4">1B, 8, N1</data>
+      <data key="d4">8, N1</data>
     </edge>
     <edge source="204313" target="204211">
       <data key="d3">130.0</data>
-      <data key="d4">11, 11B, 20Z</data>
+      <data key="d4">11, 11B</data>
     </edge>
     <edge source="204313" target="204213">
       <data key="d3">23.0</data>
@@ -6897,7 +6889,7 @@
     </edge>
     <edge source="704011" target="704141">
       <data key="d3">236.0</data>
-      <data key="d4">1, 1B, N1</data>
+      <data key="d4">1, N1</data>
     </edge>
     <edge source="704011" target="704181">
       <data key="d3">231.0</data>
@@ -6905,15 +6897,15 @@
     </edge>
     <edge source="204211" target="204201">
       <data key="d3">130.0</data>
-      <data key="d4">11, 11B, 20Z</data>
+      <data key="d4">11, 11B</data>
     </edge>
     <edge source="603021" target="603011">
       <data key="d3">236.0</data>
-      <data key="d4">1, 1B, N1</data>
+      <data key="d4">1, N1</data>
     </edge>
     <edge source="804011" target="803041">
       <data key="d3">333.0</data>
-      <data key="d4">1, 1B, 25, N1</data>
+      <data key="d4">1, 25, N1</data>
     </edge>
     <edge source="625051" target="625061">
       <data key="d3">69.0</data>
@@ -6953,7 +6945,7 @@
     </edge>
     <edge source="603041" target="603031">
       <data key="d3">236.0</data>
-      <data key="d4">1, 1B, N1</data>
+      <data key="d4">1, N1</data>
     </edge>
     <edge source="815202" target="815212">
       <data key="d3">36.0</data>
@@ -6977,7 +6969,7 @@
     </edge>
     <edge source="804141" target="804111">
       <data key="d3">127.0</data>
-      <data key="d4">1B, 8, N1</data>
+      <data key="d4">8, N1</data>
     </edge>
     <edge source="301011" target="300011">
       <data key="d3">599.0</data>
@@ -6989,7 +6981,7 @@
     </edge>
     <edge source="102032" target="102092">
       <data key="d3">214.0</data>
-      <data key="d4">13, 20, 20Z</data>
+      <data key="d4">13, 20</data>
     </edge>
     <edge source="504091" target="504081">
       <data key="d3">70.0</data>
@@ -7045,7 +7037,7 @@
     </edge>
     <edge source="304162" target="304112">
       <data key="d3">130.0</data>
-      <data key="d4">11, 11B, 20Z</data>
+      <data key="d4">11, 11B</data>
     </edge>
     <edge source="204081" target="204101">
       <data key="d3">150.0</data>
@@ -7085,7 +7077,7 @@
     </edge>
     <edge source="204191" target="204181">
       <data key="d3">130.0</data>
-      <data key="d4">11, 11B, 20Z</data>
+      <data key="d4">11, 11B</data>
     </edge>
     <edge source="101062" target="102052">
       <data key="d3">148.0</data>
@@ -7105,7 +7097,7 @@
     </edge>
     <edge source="502012" target="502014">
       <data key="d3">358.0</data>
-      <data key="d4">13, 2, 20, 20Z</data>
+      <data key="d4">13, 2, 20</data>
     </edge>
     <edge source="405102" target="405022">
       <data key="d3">23.0</data>
@@ -7181,7 +7173,7 @@
     </edge>
     <edge source="304011" target="303071">
       <data key="d3">349.0</data>
-      <data key="d4">20, 20Z, 22, 25</data>
+      <data key="d4">20, 22, 25</data>
     </edge>
     <edge source="745052" target="745061">
       <data key="d3">72.0</data>
@@ -7197,7 +7189,7 @@
     </edge>
     <edge source="803031" target="803021">
       <data key="d3">333.0</data>
-      <data key="d4">1, 1B, 25, N1</data>
+      <data key="d4">1, 25, N1</data>
     </edge>
     <edge source="304122" target="404192">
       <data key="d3">88.0</data>
@@ -7261,11 +7253,11 @@
     </edge>
     <edge source="804241" target="804251">
       <data key="d3">236.0</data>
-      <data key="d4">1, 1B, N1</data>
+      <data key="d4">1, N1</data>
     </edge>
     <edge source="804241" target="804082">
       <data key="d3">11.0</data>
-      <data key="d4">1B, N1</data>
+      <data key="d4">N1</data>
     </edge>
     <edge source="204371" target="204351">
       <data key="d3">23.0</data>
@@ -7285,7 +7277,7 @@
     </edge>
     <edge source="704152" target="704142">
       <data key="d3">250.0</data>
-      <data key="d4">1, 16, 1B</data>
+      <data key="d4">1, 16</data>
     </edge>
     <edge source="102011" target="802051">
       <data key="d3">125.0</data>
@@ -7317,7 +7309,7 @@
     </edge>
     <edge source="304092" target="304162">
       <data key="d3">130.0</data>
-      <data key="d4">11, 11B, 20Z</data>
+      <data key="d4">11, 11B</data>
     </edge>
     <edge source="304092" target="304142">
       <data key="d3">187.0</data>
@@ -7353,7 +7345,7 @@
     </edge>
     <edge source="402041" target="402031">
       <data key="d3">641.0</data>
-      <data key="d4">11, 11B, 2, 20, 20Z, 25, 9</data>
+      <data key="d4">11, 11B, 2, 20, 25, 9</data>
     </edge>
     <edge source="815021" target="815141">
       <data key="d3">36.0</data>
@@ -7457,7 +7449,7 @@
     </edge>
     <edge source="204181" target="304131">
       <data key="d3">130.0</data>
-      <data key="d4">11, 11B, 20Z</data>
+      <data key="d4">11, 11B</data>
     </edge>
     <edge source="204181" target="204292">
       <data key="d3">23.0</data>
@@ -7465,7 +7457,7 @@
     </edge>
     <edge source="804152" target="104192">
       <data key="d3">127.0</data>
-      <data key="d4">1B, 8, N1</data>
+      <data key="d4">8, N1</data>
     </edge>
     <edge source="104072" target="104082">
       <data key="d3">116.0</data>
@@ -7473,7 +7465,7 @@
     </edge>
     <edge source="304132" target="204182">
       <data key="d3">130.0</data>
-      <data key="d4">11, 11B, 20Z</data>
+      <data key="d4">11, 11B</data>
     </edge>
     <edge source="504082" target="504092">
       <data key="d3">70.0</data>
@@ -7505,7 +7497,7 @@
     </edge>
     <edge source="602041" target="602051">
       <data key="d3">558.0</data>
-      <data key="d4">1, 1B, 6, 6B, N1</data>
+      <data key="d4">1, 6, 6B, N1</data>
     </edge>
     <edge source="415071" target="415051">
       <data key="d3">35.0</data>
@@ -7541,7 +7533,7 @@
     </edge>
     <edge source="103041" target="102091">
       <data key="d3">127.0</data>
-      <data key="d4">20, 20Z</data>
+      <data key="d4">20</data>
     </edge>
     <edge source="405022" target="405032">
       <data key="d3">35.0</data>
@@ -7561,7 +7553,7 @@
     </edge>
     <edge source="700011" target="600022">
       <data key="d3">358.0</data>
-      <data key="d4">1, 1B, 3, 3B</data>
+      <data key="d4">1, 3, 3B</data>
     </edge>
     <edge source="700011" target="600011">
       <data key="d3">367.0</data>
@@ -7609,7 +7601,7 @@
     </edge>
     <edge source="804151" target="804141">
       <data key="d3">127.0</data>
-      <data key="d4">1B, 8, N1</data>
+      <data key="d4">8, N1</data>
     </edge>
     <edge source="504072" target="504082">
       <data key="d3">70.0</data>
@@ -7769,7 +7761,7 @@
     </edge>
     <edge source="304012" target="304032">
       <data key="d3">349.0</data>
-      <data key="d4">20, 20Z, 22, 25</data>
+      <data key="d4">20, 22, 25</data>
     </edge>
     <edge source="815172" target="815182">
       <data key="d3">36.0</data>
@@ -7801,7 +7793,7 @@
     </edge>
     <edge source="500011" target="600011">
       <data key="d3">230.0</data>
-      <data key="d4">13, 20, 20Z, N5</data>
+      <data key="d4">13, 20, N5</data>
     </edge>
     <edge source="204161" target="204151">
       <data key="d3">41.0</data>
@@ -7825,7 +7817,7 @@
     </edge>
     <edge source="304042" target="304062">
       <data key="d3">227.0</data>
-      <data key="d4">11, 11B, 20Z, 25</data>
+      <data key="d4">11, 11B, 25</data>
     </edge>
     <edge source="204141" target="204131">
       <data key="d3">41.0</data>
@@ -7881,11 +7873,11 @@
     </edge>
     <edge source="204212" target="204313">
       <data key="d3">130.0</data>
-      <data key="d4">11, 11B, 20Z</data>
+      <data key="d4">11, 11B</data>
     </edge>
     <edge source="104212" target="104221">
       <data key="d3">127.0</data>
-      <data key="d4">1B, 8, N1</data>
+      <data key="d4">8, N1</data>
     </edge>
     <edge source="103212" target="103192">
       <data key="d3">64.0</data>
@@ -7917,7 +7909,7 @@
     </edge>
     <edge source="704141" target="704151">
       <data key="d3">261.0</data>
-      <data key="d4">1, 16, 1B, N1</data>
+      <data key="d4">1, 16, N1</data>
     </edge>
     <edge source="603122" target="603162">
       <data key="d3">134.0</data>
@@ -7937,7 +7929,7 @@
     </edge>
     <edge source="603031" target="603021">
       <data key="d3">236.0</data>
-      <data key="d4">1, 1B, N1</data>
+      <data key="d4">1, N1</data>
     </edge>
     <edge source="614071" target="614061">
       <data key="d3">72.0</data>
@@ -8073,7 +8065,7 @@
     </edge>
     <edge source="704151" target="604031">
       <data key="d3">236.0</data>
-      <data key="d4">1, 1B, N1</data>
+      <data key="d4">1, N1</data>
     </edge>
     <edge source="804171" target="803121">
       <data key="d3">125.0</data>
@@ -8081,7 +8073,7 @@
     </edge>
     <edge source="101034" target="102032">
       <data key="d3">214.0</data>
-      <data key="d4">13, 20, 20Z</data>
+      <data key="d4">13, 20</data>
     </edge>
     <edge source="803061" target="803051">
       <data key="d3">116.0</data>
@@ -8093,7 +8085,7 @@
     </edge>
     <edge source="102091" target="102031">
       <data key="d3">214.0</data>
-      <data key="d4">13, 20, 20Z</data>
+      <data key="d4">13, 20</data>
     </edge>
     <edge source="804392" target="804402">
       <data key="d3">135.0</data>
@@ -8105,7 +8097,7 @@
     </edge>
     <edge source="304112" target="304132">
       <data key="d3">130.0</data>
-      <data key="d4">11, 11B, 20Z</data>
+      <data key="d4">11, 11B</data>
     </edge>
     <edge source="105142" target="105131">
       <data key="d3">81.0</data>
@@ -8125,7 +8117,7 @@
     </edge>
     <edge source="304161" target="304091">
       <data key="d3">130.0</data>
-      <data key="d4">11, 11B, 20Z</data>
+      <data key="d4">11, 11B</data>
     </edge>
     <edge source="603061" target="602093">
       <data key="d3">143.0</data>
