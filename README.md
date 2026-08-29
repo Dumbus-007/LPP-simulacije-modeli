@@ -30,6 +30,7 @@
 - python datoteka ``simulate_meetings1.py``, ki požene simulacijo na modelih 1 in 2
 - python datoteka ``simulate_meetings3.py``, ki požene simulacijo na  modelu 3
 - python datoteka ``animacija.py``, ki izvede animacijo dveh sprehodov na izbranem sintetičnem grafu
+- jupyter notebook ``matrike_za_modele.ipynb`` z numeričnimi izračuni matrik pričakovanih časov srečanj za vse tri modele
 - interaktivni toplotni zemljevid ``toplotni_zemljevid_srecanj.html``, ki ga zgenerira ``heatmap.py``
 - ``README.md``
 
