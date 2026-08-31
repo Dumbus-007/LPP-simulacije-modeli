@@ -1,0 +1,20 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Models of LPP for random walks
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Lara
+    family-names: Velkavrh
+    email: lara.velkavrh27@gmail.com
+abstract: >-
+  Three built graphs of the LPP network and simulation code
+  to run two random walks until first meeting.
+keywords:
+  - LPP
+  - random walk
+  - simulation
