@@ -143,3 +143,6 @@
  - Bavarski dvor: 239x
 
 
+## Uporaba UI
+
+Koda je bila razvita s pomočjo uporabe Gemini Flash 3.6.
